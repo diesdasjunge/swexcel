@@ -1,0 +1,6 @@
+Sub FigureSignInterceptions()
+'get how many house cusps each sign is on
+    For x = 1 To 12: InterceptedSign%(x) = 0: Next x
+    For x = 1 To 12: TEMP7 = Int(HC(x) / 30) + 1
+    InterceptedSign%(TEMP7) = InterceptedSign%(TEMP7) + 1: Next x
+End Sub
