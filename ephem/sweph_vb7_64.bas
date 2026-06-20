@@ -859,7 +859,7 @@ Private Declare PtrSafe Function swe_get_library_path Lib "swedll64.dll" _
         ) As String
                         ' svers must be able to hold 256 bytes
 
-Private Declare PtrSafe Function swe_get_orbital_elements Lib "swedll.32.dll" _
+Private Declare PtrSafe Function swe_get_orbital_elements Lib "swedll64.dll" _
         ( _
           ByVal tjd As Double, _
           ByVal ipl As Long, _
@@ -870,7 +870,7 @@ Private Declare PtrSafe Function swe_get_orbital_elements Lib "swedll.32.dll" _
 	      ' serr must be able to hold 256 bytes
 	      ' dret should be the first item of an array of 50 double
 
-Private Declare PtrSafe Function swe_orbit_max_min_true_distance Lib "swedll.32.dll" _
+Private Declare PtrSafe Function swe_orbit_max_min_true_distance Lib "swedll64.dll" _
         ( _
           ByVal tjd As Double, _
           ByVal ipl As Long, _
