@@ -1,0 +1,13 @@
+{
+  "releaseTag": "v2.10.3bfinal",
+  "commit": "f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0",
+  "archiveUrl": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/windows/sweph.zip",
+  "archiveSha256": "f213356ab4b608bf954388c666436c7ff65b3cebc4de32d414e1fd98c050c678",
+  "archiveSize": 10984439,
+  "members": [
+    "sweph/bin/swetest.exe",
+    "sweph/bin/swetest64.exe",
+    "sweph/bin/swedll64.dll"
+  ],
+  "checkedOn": "2026-10-01"
+}

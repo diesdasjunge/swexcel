@@ -1,1 +1,7 @@
 .DS_Store
+
+# Rework build products; authoritative source and pinned assets are tracked.
+rework/dist/
+rework/build/
+rework/**/__pycache__/
+rework/**/*.pyc

@@ -1,0 +1,16 @@
+{
+  "releaseTag": "v2.10.3bfinal",
+  "commit": "f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0",
+  "archiveSha256": "f213356ab4b608bf954388c666436c7ff65b3cebc4de32d414e1fd98c050c678",
+  "note": "Pinned upstream inputs, including the official prebuilt. A fresh Windows build is separately identified and verified by its build report.",
+  "assets": [
+    {"path": "vendor/engine/swedll64.dll", "size": 999936, "sha256": "1b1645c164cdbc073408df8cd50586cea67b9c8cbf2ec8b8cee78d4706774a35"},
+    {"path": "vendor/engine/swetest64.exe", "size": 1145856, "sha256": "c44d29554927ad1ba44196b5b274904f012dacaa3b4797f7f4ae6a48618fc1c5"},
+    {"path": "vendor/engine/swetest.exe", "size": 1066496, "sha256": "86e8903a5e763e37887c12a3f16092cc1d59ccfd523bc1be7c1375f46c04d750"},
+    {"path": "vendor/ephe/sefstars.txt", "size": 136618, "sha256": "18b0dcafbe5b7240773daba2c038a325f5b3fc4163f61e0a7f4e92abd4f517c6"},
+    {"path": "vendor/ephe/seasnam.txt", "size": 16371131, "sha256": "3f08fa3bad85d0891cb91a868bfaac3efb0bb4d65e06b493c5b6f500273dc168"},
+    {"path": "vendor/ephe/seorbel.txt", "size": 6063, "sha256": "97b454ff78f4f4716b5cc987a93ca8f33e44ef4b524a165a155a8a4885fd2e18"},
+    {"path": "vendor/swisseph/swephexp.h", "size": 40912, "sha256": "53647b650504bbdec65166af1fbdb8580fa26a2ec821d5f50f032f5b0745b3cc"},
+    {"path": "vendor/swisseph/sweodef.h", "size": 10215, "sha256": "aa763c98cfa62d9a643432b6908c820ea0759fcbdee378cf4203b0de9c6c34e0"}
+  ]
+}

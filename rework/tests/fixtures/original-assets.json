@@ -1,0 +1,12 @@
+{
+  "description": "Original pre-rework files inspected before modernization. These originals must remain byte-identical.",
+  "assets": [
+    {"path": "ephem/swedll64.dll", "size": 999936, "sha256": "1b1645c164cdbc073408df8cd50586cea67b9c8cbf2ec8b8cee78d4706774a35"},
+    {"path": "ephem/sepl_18.se1", "size": 484061, "sha256": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66"},
+    {"path": "ephem/semo_18.se1", "size": 1304771, "sha256": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7"},
+    {"path": "ephem/seas_18.se1", "size": 223004, "sha256": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2"},
+    {"path": "ephem/sweph_vb7_64.bas", "size": 42139, "sha256": "4258ef00242c408c6251cbfeda417230c6bc1ab8f523a814f3b2fd8a263c66ee"},
+    {"path": "Cosmodynes and Transits SE spreadsheet_64bit.xls", "size": 368128, "sha256": "b8af3ae57860d0ab343895c90178fd4d0cdc66302539882a30b0a3a319e75882"},
+    {"path": "vba/GeneralDeclarations.vba", "size": 5697, "sha256": "85ee2bcb7043fd67cc03b7994f4932b9ddbcb92a9c9fcc125115472b5c5aecf3"}
+  ]
+}

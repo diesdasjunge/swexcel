@@ -1,0 +1,146 @@
+{
+  "releaseTag": "v2.10.3bfinal",
+  "commit": "f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0",
+  "sourceRoot": "https://github.com/aloistr/swisseph/tree/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0",
+  "purpose": "Minimal official C source for a fresh AMD64 DLL and swetest64 build; unchanged upstream files.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "b6345743292c516d07799dfad46f1a641e5270da2160cc4d6bd54594d6faa991",
+      "sizeBytes": 2371,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/LICENSE"
+    },
+    {
+      "path": "LICENSE.TXT",
+      "sha256": "c693279643b8cd5d248172d9c22cb7cf4ed163a3c98c8a3f69c2717edd3eacb7",
+      "sizeBytes": 7,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/LICENSE.TXT"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "506658fbbe3c13ccf0d9cf6d6c0948e79945b991215eb35483b5d6d51d502e63",
+      "sizeBytes": 4687,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/Makefile"
+    },
+    {
+      "path": "swecl.c",
+      "sha256": "87c0df8da0292634709d0158d151f18b5c9c683a8941cc521e0de97a4a658565",
+      "sizeBytes": 225773,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swecl.c"
+    },
+    {
+      "path": "swedate.c",
+      "sha256": "6790e989a003cb6422080d9aecf3c6567a25030f5b5647fd749e5b16422cfac7",
+      "sizeBytes": 20063,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swedate.c"
+    },
+    {
+      "path": "swedate.h",
+      "sha256": "886b001815561f2c5f5e40418ce00d62377cb8962180c38062ac83bfdab77b38",
+      "sizeBytes": 3191,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swedate.h"
+    },
+    {
+      "path": "swedll.h",
+      "sha256": "cc33c8a26c28d7cba817012040f4ff68260b378d2149d66bf2c341cbb80549d1",
+      "sizeBytes": 17785,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swedll.h"
+    },
+    {
+      "path": "swehel.c",
+      "sha256": "e4c0c6513f468462227aacaf0a52b46a7dd95569e1b86ea7356c5c27cb0fb871",
+      "sizeBytes": 122777,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swehel.c"
+    },
+    {
+      "path": "swehouse.c",
+      "sha256": "bb17029e5fc2318885bcb8bfba72af3b7cd2d6437b4013195e953e35dd06c254",
+      "sizeBytes": 112460,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swehouse.c"
+    },
+    {
+      "path": "swehouse.h",
+      "sha256": "7a91a007a4de0900ed6d234d74da421b2372d245b09a2ba8b74d6e2e054a200c",
+      "sizeBytes": 3702,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swehouse.h"
+    },
+    {
+      "path": "swejpl.c",
+      "sha256": "fcbf71ceb85cdff5e59438d4f72acb19d67363a6d8ab0ba59ceafe95d1c1fef3",
+      "sizeBytes": 33613,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swejpl.c"
+    },
+    {
+      "path": "swejpl.h",
+      "sha256": "f61ae6173b150f456540afba68500989c642506822e0397cf99c2cb7f50aac0d",
+      "sizeBytes": 3995,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swejpl.h"
+    },
+    {
+      "path": "swemmoon.c",
+      "sha256": "d268760a942971471a8164d0753769caead9f39743589204966f7307675ef278",
+      "sizeBytes": 61411,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swemmoon.c"
+    },
+    {
+      "path": "swemplan.c",
+      "sha256": "d13502ca7b92e3e32317b67ba7f012d92fabd1d358c3394c094d5515a3567caa",
+      "sizeBytes": 27880,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swemplan.c"
+    },
+    {
+      "path": "swemptab.h",
+      "sha256": "dc7595b81bd49e86a6204ed1e0a041c410a9de5c068fd1d90d350a82d604fb85",
+      "sizeBytes": 311984,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swemptab.h"
+    },
+    {
+      "path": "swenut2000a.h",
+      "sha256": "83b0a2f569174b56c8e26971b00f85f5ae52265b34c1c53436c7122e0f1faad7",
+      "sizeBytes": 68486,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swenut2000a.h"
+    },
+    {
+      "path": "sweodef.h",
+      "sha256": "aa763c98cfa62d9a643432b6908c820ea0759fcbdee378cf4203b0de9c6c34e0",
+      "sizeBytes": 10215,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/sweodef.h"
+    },
+    {
+      "path": "sweph.c",
+      "sha256": "b172aad375f3a3327bf7d0090ffafc8b777363211e8d7b0ed18e4821939444f2",
+      "sizeBytes": 290708,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/sweph.c"
+    },
+    {
+      "path": "sweph.h",
+      "sha256": "eab1d1727f85e88b2bcb8bc0df6c64c9f50430eb2a85a48e85ae1eb1250f769d",
+      "sizeBytes": 34466,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/sweph.h"
+    },
+    {
+      "path": "swephexp.h",
+      "sha256": "53647b650504bbdec65166af1fbdb8580fa26a2ec821d5f50f032f5b0745b3cc",
+      "sizeBytes": 40912,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swephexp.h"
+    },
+    {
+      "path": "swephlib.c",
+      "sha256": "19a30e5310498249edb9c1915ddc8f8a5bc9b59f74f90f34f281b174ea9e04eb",
+      "sizeBytes": 164779,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swephlib.c"
+    },
+    {
+      "path": "swephlib.h",
+      "sha256": "29a151bb0c6adcb73fa73eff805b498c26bdffbb81e82d55e1b50f79218ea82a",
+      "sizeBytes": 7786,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swephlib.h"
+    },
+    {
+      "path": "swetest.c",
+      "sha256": "fb771bb10bdd72afe882012e282d1a234f13c5ad328fc3c93b52428b41c22e43",
+      "sizeBytes": 145599,
+      "url": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/swetest.c"
+    }
+  ]
+}

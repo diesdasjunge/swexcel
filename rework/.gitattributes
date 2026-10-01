@@ -1,0 +1,2 @@
+# Preserve upstream bytes and hashes, including original line endings/spacing.
+vendor/** -text -whitespace

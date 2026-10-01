@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "engine": {
+    "releaseTag": "v2.10.3bfinal",
+    "commit": "f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0",
+    "runtimeVersion": "2.10.03",
+    "runtimeVersionEvidence": "pinned source SE_VERSION and binary string, not Windows execution",
+    "file": "runtime/engine/swexcel-se-2.10.3b-x64.dll",
+    "buildStatus": "official_prebuilt_source_build_pending",
+    "requiredSourceBuild": "tools/build-engine.ps1",
+    "releaseUrl": "https://github.com/aloistr/swisseph/releases/tag/v2.10.3bfinal"
+  },
+  "sourcePathBase": "repository_root",
+  "assets": [
+    {
+      "path": "runtime/engine/swexcel-se-2.10.3b-x64.dll",
+      "sourcePath": "rework/vendor/engine/swedll64.dll",
+      "sha256": "1b1645c164cdbc073408df8cd50586cea67b9c8cbf2ec8b8cee78d4706774a35",
+      "size": 999936,
+      "sourceUrl": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/windows/sweph.zip",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "engine_reference",
+      "coverage": {
+        "architecture": "AMD64",
+        "exportCount": 106,
+        "role": "published reference; replace with fresh latest-source Windows build before workbook integration"
+      }
+    },
+    {
+      "path": "runtime/ephe/sepl_18.se1",
+      "sourcePath": "ephem/sepl_18.se1",
+      "sha256": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66",
+      "size": 484061,
+      "sourceUrl": "https://github.com/diesdasjunge/swexcel/blob/ae6633085a03139b2a1d45200316cee123bbcd2a/ephem/SEPL_18.SE1",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "binary_ephemeris",
+      "coverage": {
+        "fileStartJulianDay": 2378496.5,
+        "fileEndJulianDay": 2597651.3591467496,
+        "jplDE": 441,
+        "header": [
+          "SWISSEPH  3",
+          "sepl_18.se1 ",
+          "Created for Astrodienst in Switzerland 2026/05/26, based on JPL Ephemeris DE441.       "
+        ],
+        "bodySpecificLimits": "pending runtime coverage audit; Chiron and other functions can have narrower limits",
+        "bodyGroup": "planets"
+      }
+    },
+    {
+      "path": "runtime/ephe/semo_18.se1",
+      "sourcePath": "ephem/semo_18.se1",
+      "sha256": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7",
+      "size": 1304771,
+      "sourceUrl": "https://github.com/diesdasjunge/swexcel/blob/ae6633085a03139b2a1d45200316cee123bbcd2a/ephem/SEMO_18.SE1",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "binary_ephemeris",
+      "coverage": {
+        "fileStartJulianDay": 2378487.555370702,
+        "fileEndJulianDay": 2597656.4574524714,
+        "jplDE": 441,
+        "header": [
+          "SWISSEPH  3",
+          "semo_18.se1 ",
+          "Created for Astrodienst in Switzerland 2026/05/26, based on JPL Ephemeris DE441.       "
+        ],
+        "bodySpecificLimits": "pending runtime coverage audit; Chiron and other functions can have narrower limits",
+        "bodyGroup": "Moon"
+      }
+    },
+    {
+      "path": "runtime/ephe/seas_18.se1",
+      "sourcePath": "ephem/seas_18.se1",
+      "sha256": "a2cd8fc33807c78ca9a700c91c2e042258b12fc4796519e00781440b5ad8b2e2",
+      "size": 223004,
+      "sourceUrl": "https://github.com/diesdasjunge/swexcel/blob/ae6633085a03139b2a1d45200316cee123bbcd2a/ephem/SEAS_18.SE1",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "binary_ephemeris",
+      "coverage": {
+        "fileStartJulianDay": 2378496.5,
+        "fileEndJulianDay": 2597996.5,
+        "jplDE": 441,
+        "header": [
+          "SWISSEPH  3",
+          "seas_18.se1 ",
+          "Created for Astrodienst in Switzerland 2026/05/26, based on JPL Ephemeris DE441.       "
+        ],
+        "bodySpecificLimits": "pending runtime coverage audit; Chiron and other functions can have narrower limits",
+        "bodyGroup": "Ceres, Pallas, Juno, Vesta, Chiron, Pholus"
+      }
+    },
+    {
+      "path": "runtime/ephe/sefstars.txt",
+      "sourcePath": "rework/vendor/ephe/sefstars.txt",
+      "sha256": "18b0dcafbe5b7240773daba2c038a325f5b3fc4163f61e0a7f4e92abd4f517c6",
+      "size": 136618,
+      "sourceUrl": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/ephe/sefstars.txt",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "supporting_catalog",
+      "coverage": {
+        "purpose": "fixed-star catalog",
+        "dateCoverage": "not a binary ephemeris pack"
+      }
+    },
+    {
+      "path": "runtime/ephe/seasnam.txt",
+      "sourcePath": "rework/vendor/ephe/seasnam.txt",
+      "sha256": "3f08fa3bad85d0891cb91a868bfaac3efb0bb4d65e06b493c5b6f500273dc168",
+      "size": 16371131,
+      "sourceUrl": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/ephe/seasnam.txt",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "supporting_catalog",
+      "coverage": {
+        "purpose": "numbered-asteroid names (not their ephemeris data)",
+        "dateCoverage": "not a binary ephemeris pack"
+      }
+    },
+    {
+      "path": "runtime/ephe/seorbel.txt",
+      "sourcePath": "rework/vendor/ephe/seorbel.txt",
+      "sha256": "97b454ff78f4f4716b5cc987a93ca8f33e44ef4b524a165a155a8a4885fd2e18",
+      "size": 6063,
+      "sourceUrl": "https://raw.githubusercontent.com/aloistr/swisseph/f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0/ephe/seorbel.txt",
+      "license": "Swiss Ephemeris AGPL route; retain upstream notices",
+      "kind": "supporting_catalog",
+      "coverage": {
+        "purpose": "fictitious-body orbital elements",
+        "dateCoverage": "not a binary ephemeris pack"
+      }
+    }
+  ]
+}
