@@ -6,6 +6,18 @@ The format follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+## [0.1.0-dev.2] - 2026-10-05
+
+### Fixed
+
+- Windows MSVC reference build: the pinned `swetest.c` Windows output branch referenced an undeclared `fp`. Build a copy with that one statement corrected to `fputs(info, stdout)` and record both source hashes and the correction in build provenance. Vendored files and engine calculations remain unchanged.
+
+### Added
+
+- Real Windows ARM64/MSVC x64 build evidence, 106-export verification, and a successful J2000 Sun calculation from the freshly built reference executable. All 22 host checks passed with the fresh binary evidence.
+
+Excel/VBA and worksheet acceptance remain pending; this is not a public workbook release.
+
 ## [0.1.0-dev.1] - 2026-10-01
 
 ### Added

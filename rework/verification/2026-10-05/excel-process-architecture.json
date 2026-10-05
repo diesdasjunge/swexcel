@@ -1,0 +1,11 @@
+[
+    {
+        "processId":  17820,
+        "sessionId":  1,
+        "processPath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+        "querySucceeded":  true,
+        "processMachine":  "0x0000",
+        "nativeMachine":  "0xAA64",
+        "scope":  "Running Excel process observed; DLL interoperability is still untested."
+    }
+]

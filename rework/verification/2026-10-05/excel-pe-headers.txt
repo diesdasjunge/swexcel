@@ -1,0 +1,275 @@
+Microsoft (R) COFF/PE Dumper Version 14.44.35229.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+            8664 machine (x64) (ARM64X)
+               D number of sections
+        6AAFB237 time date stamp Sun Sep 20 12:15:19 2026
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+              22 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.50 linker version
+         37D3600 size of code
+         142C400 size of initialized data
+               0 size of uninitialized data
+         37D5080 entry point (00000001437D5080)
+            1000 base of code
+       140000000 image base (0000000140000000 to 0000000144CB2FFF)
+            1000 section alignment
+             200 file alignment
+           10.00 operating system version
+            0.00 image version
+           10.00 subsystem version
+               0 Win32 version
+         4CB3000 size of image
+             600 size of headers
+         4C08579 checksum
+               2 subsystem (Windows GUI)
+            C160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   Control Flow Guard
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+         42E3A00 [     140] RVA [size] of Export Directory
+         46B9000 [     154] RVA [size] of Import Directory
+         46BA000 [  57A358] RVA [size] of Resource Directory
+         4696220 [     294] RVA [size] of Exception Directory
+         4C00200 [    52F0] RVA [size] of Certificates Directory
+         4C35000 [   7DE24] RVA [size] of Base Relocation Directory
+         3BF9098 [      38] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+         3D55400 [      28] RVA [size] of Thread Storage Directory
+         38DA590 [     140] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+         37D6000 [    2000] RVA [size] of Import Address Table Directory
+         42AB1A8 [     620] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+ 37D3236 virtual size
+    1000 virtual address (0000000140001000 to 00000001437D4235)
+ 37D3400 size of raw data
+     600 file pointer to raw data (00000600 to 037D39FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+.hexpthk name
+      90 virtual size
+ 37D5000 virtual address (00000001437D5000 to 00000001437D508F)
+     200 size of raw data
+ 37D3A00 file pointer to raw data (037D3A00 to 037D3BFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #3
+  .rdata name
+  B26148 virtual size
+ 37D6000 virtual address (00000001437D6000 to 00000001442FC147)
+  B26200 size of raw data
+ 37D3C00 file pointer to raw data (037D3C00 to 042F9DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    6AAFB237 cv           118 03F59CD0  3F578D0    Format: RSDS, {A340253E-81D8-4CC9-8CC0-AE828E70B059}, 1, D:\dbs\el\omr\Target\arm64\ship\postc2r\x-none\excel.pdb
+    6AAFB237 coffgrp      920 03F59DE8  3F579E8    50475500 (PGU)
+
+SECTION HEADER #4
+   .data name
+  1F83C0 virtual size
+ 42FD000 virtual address (00000001442FD000 to 00000001444F53BF)
+  14E800 size of raw data
+ 42F9E00 file pointer to raw data (042F9E00 to 044485FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #5
+  .pdata name
+  1A9E54 virtual size
+ 44F6000 virtual address (00000001444F6000 to 000000014469FE53)
+  1AA000 size of raw data
+ 4448600 file pointer to raw data (04448600 to 045F25FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #6
+  .didat name
+    F148 virtual size
+ 46A0000 virtual address (00000001446A0000 to 00000001446AF147)
+    F200 size of raw data
+ 45F2600 file pointer to raw data (045F2600 to 046017FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #7
+.detourc name
+    21F0 virtual size
+ 46B0000 virtual address (00000001446B0000 to 00000001446B21EF)
+    2200 size of raw data
+ 4601800 file pointer to raw data (04601800 to 046039FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #8
+ xsdmprc name
+    3C60 virtual size
+ 46B3000 virtual address (00000001446B3000 to 00000001446B6C5F)
+    3E00 size of raw data
+ 4603A00 file pointer to raw data (04603A00 to 046077FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #9
+.detourd name
+      18 virtual size
+ 46B7000 virtual address (00000001446B7000 to 00000001446B7017)
+     200 size of raw data
+ 4607800 file pointer to raw data (04607800 to 046079FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #A
+ .a64xrm name
+      50 virtual size
+ 46B8000 virtual address (00000001446B8000 to 00000001446B804F)
+     200 size of raw data
+ 4607A00 file pointer to raw data (04607A00 to 04607BFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #B
+    .c2r name
+     18C virtual size
+ 46B9000 virtual address (00000001446B9000 to 00000001446B918B)
+     200 size of raw data
+ 4607C00 file pointer to raw data (04607C00 to 04607DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000000 flags
+         Read Write
+
+SECTION HEADER #C
+   .rsrc name
+  57A358 virtual size
+ 46BA000 virtual address (00000001446BA000 to 0000000144C34357)
+  57A400 size of raw data
+ 4607E00 file pointer to raw data (04607E00 to 04B821FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #D
+  .reloc name
+   7DE24 virtual size
+ 4C35000 virtual address (0000000144C35000 to 0000000144CB2E23)
+   7E000 size of raw data
+ 4B82200 file pointer to raw data (04B82200 to 04C001FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        1000 .a64xrm
+        1000 .c2r
+      1F9000 .data
+        3000 .detourc
+        1000 .detourd
+       10000 .didat
+        1000 .hexpthk
+      1AA000 .pdata
+      B27000 .rdata
+       7E000 .reloc
+      57B000 .rsrc
+     37D4000 .text
+        4000 xsdmprc
+EXIT=0

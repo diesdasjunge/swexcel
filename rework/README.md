@@ -2,7 +2,7 @@
 
 Development checkpoint for a modern Swiss Ephemeris toolkit in 64-bit Microsoft 365 Excel on Windows. The original workbook, VBA and `ephem/` files remain the legacy reference.
 
-**Status: ready to prepare the first Windows integration test; not a public-ready workbook.** No Windows DLL execution, VBA compilation or Excel spill acceptance has been performed at this checkpoint. The actual XLSM must be created with Windows Excel.
+**Status: Windows x64 source build and standalone numerical reference passed; Excel integration pending.** Version `0.1.0-dev.2` fixes the Windows reference-executable build. The fresh DLL has all 106 exports; actual DLL calls from Excel, VBA compilation and spills remain unverified. The XLSM must still be created with Windows Excel. See [verification evidence](verification/2026-10-05/README.md).
 
 The source targets the latest official Swiss Ephemeris release checked on 2026-10-01: [v2.10.3bfinal](https://github.com/aloistr/swisseph/releases/tag/v2.10.3bfinal), commit `f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0`. Its C source version remains `2.10.03`. Its published Windows DLL is identical to the old repository DLL, so the Windows gate first builds an x64 engine from the pinned latest source. `runtimeVersion` alone cannot identify this upstream release.
 

@@ -1,0 +1,11 @@
+{
+  "recordedAtUtc": "2026-10-05T20:43:47.8644723Z",
+  "officeVersion": "16.0.20430.20092",
+  "platform": "x64",
+  "productIds": "O365HomePremRetail",
+  "updateChannel": "http://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60",
+  "computerArchitecture": "ARM64",
+  "sessionId": 1,
+  "userInteractive": true,
+  "policy": "Restricted"
+}

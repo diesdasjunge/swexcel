@@ -1,0 +1,30 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.41
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+swedate.c
+swehouse.c
+swejpl.c
+swemmoon.c
+swemplan.c
+sweph.c
+swephlib.c
+swecl.c
+swehel.c
+SWEngineDllMain.c
+Generating Code...
+   Creating library C:\SWExcel\SWExcel-0.1.0-dev.1\build\engine-x64\swexcel-se-2.10.3b-x64.lib and object C:\SWExcel\SWExcel-0.1.0-dev.1\build\engine-x64\swexcel-se-2.10.3b-x64.exp
+swedate.c
+swehouse.c
+swejpl.c
+swemmoon.c
+swemplan.c
+sweph.c
+swephlib.c
+swecl.c
+swehel.c
+swetest-console.c
+Generating Code...
+Built swexcel-se-2.10.3b-x64.dll from f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0 with 106 matching exports.
+Source reports 2.10.03; runtime and Excel acceptance remain unverified.
+BUILD_EXIT=0

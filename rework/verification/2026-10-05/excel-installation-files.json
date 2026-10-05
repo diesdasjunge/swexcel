@@ -1,0 +1,11 @@
+{
+    "exePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+    "fileVersion":  "16.0.20430.20092",
+    "peMachine":  "0x8664",
+    "peOptionalMagic":  "0x020B",
+    "platform":  "x64",
+    "versionToReport":  "16.0.20430.20092",
+    "cdnBaseUrl":  "http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60",
+    "updateChannel":  null,
+    "scope":  "Installation files observed only; activation, running Excel process architecture, native DLL loading and UI acceptance not yet verified."
+}

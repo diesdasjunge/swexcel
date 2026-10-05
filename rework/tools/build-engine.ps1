@@ -110,11 +110,29 @@ try {
 
     $Assets = @([ordered]@{ path = $LibraryName; sha256 = (Get-FileHash $LibraryPath -Algorithm SHA256).Hash.ToLowerInvariant(); sizeBytes = (Get-Item $LibraryPath).Length })
     $SwetestArguments = $null
+    $SwetestConsoleFix = $null
     if (-not $SkipSwetest) {
         $SwetestPath = Join-Path $OutputRoot "swetest64.exe"
+        # The pinned Windows printing branch refers to an undeclared fp.
+        # Correct only console output in a build-directory copy; all engine
+        # compilation units and the hash-pinned vendor tree stay untouched.
+        $SwetestSource = Join-Path $SourceDirectory "swetest.c"
+        $ConsoleSource = Join-Path $BuildDirectory "swetest-console.c"
+        $SwetestText = [IO.File]::ReadAllText($SwetestSource)
+        $BrokenOutput = 'fprintf(fp, info);'
+        if ([regex]::Matches($SwetestText, [regex]::Escape($BrokenOutput)).Count -ne 1) {
+            throw "The pinned swetest console-output correction no longer applies exactly once."
+        }
+        [IO.File]::WriteAllText($ConsoleSource, $SwetestText.Replace($BrokenOutput, 'fputs(info, stdout);'), [Text.UTF8Encoding]::new($false))
+        $SwetestConsoleFix = [ordered]@{
+            originalSha256 = (Get-FileHash $SwetestSource -Algorithm SHA256).Hash.ToLowerInvariant()
+            compiledSourceSha256 = (Get-FileHash $ConsoleSource -Algorithm SHA256).Hash.ToLowerInvariant()
+            replacement = 'fprintf(fp, info); -> fputs(info, stdout);'
+            scope = 'Windows console output only; engine source unchanged.'
+        }
         # Compile the same pinned sources into a standalone reference executable.
         # MAKE_DLL is intentionally absent in this second compilation.
-        $SwetestArguments = $Common + $Sources + @((Join-Path $SourceDirectory "swetest.c"), "/link", "/MACHINE:X64", "/OUT:$SwetestPath")
+        $SwetestArguments = $Common + $Sources + @($ConsoleSource, "/link", "/MACHINE:X64", "/OUT:$SwetestPath")
         Invoke-CheckedNative -Program $Compiler -Arguments $SwetestArguments
         Assert-Amd64Pe -Path $SwetestPath
         $Assets += [ordered]@{ path = "swetest64.exe"; sha256 = (Get-FileHash $SwetestPath -Algorithm SHA256).Hash.ToLowerInvariant(); sizeBytes = (Get-Item $SwetestPath).Length }
@@ -133,6 +151,7 @@ try {
         compilerSha256 = (Get-FileHash $Compiler -Algorithm SHA256).Hash.ToLowerInvariant()
         dllCompileArguments = $DllArguments
         swetestCompileArguments = $SwetestArguments
+        swetestConsoleFix = $SwetestConsoleFix
         loaderGlueSha256 = (Get-FileHash $LoaderPath -Algorithm SHA256).Hash.ToLowerInvariant()
         exportedNames = $ActualExports
         assets = $Assets

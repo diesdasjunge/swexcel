@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-05",
+  "sourceCommit": "7ca5408a88a66ff59670c9f30f3b38573d80c4f1",
+  "version": "0.1.0-dev.1",
+  "hostArchitecture": "arm64",
+  "vmName": "Windows 11",
+  "guestOS": "Windows 11 Pro 25H2",
+  "guestBuild": "26200.9168",
+  "guestArchitecture": "ARM64",
+  "sourceArchiveSha256": "3b92c0a35a631b6270a9051402f74c2abbcc0ec94f1be468aa8eb85ddcba284b",
+  "windowsPackagePath": "C:\\SWExcel\\SWExcel-0.1.0-dev.1",
+  "baselineTests": {
+    "passed": 21,
+    "skipped": 1,
+    "exitCode": 0
+  },
+  "excelInstallation": "in_progress_observed",
+  "freshEngineBuild": "pending",
+  "vbaCompilation": "pending",
+  "excelIntegration": "pending",
+  "publicReleaseReady": false
+}

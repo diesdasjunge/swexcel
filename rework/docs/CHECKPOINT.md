@@ -1,5 +1,13 @@
 # Checkpoint and stop boundary
 
+**2026-10-05 update:** The user lifted the pre-Parallels stop and authorized
+Windows verification. [Recorded evidence](../verification/2026-10-05/README.md)
+now includes Microsoft 365 and Build Tools installation, a fresh MSVC x64
+DLL with 106 matching exports, and a successful standalone Sun reference.
+Version `0.1.0-dev.2` corrects the pinned swetest Windows console-output build.
+Excel VBA import permission, workbook construction and acceptance remain pending.
+The preparation record below is historical; its earlier stop is superseded.
+
 This checkpoint prepares plan step 1, proving integration. The next required work executes Windows tools and real Microsoft 365 Excel in Parallels. The user requested a pause before that work; the VM must not be resumed or used during checkpoint preparation.
 
 ## Present

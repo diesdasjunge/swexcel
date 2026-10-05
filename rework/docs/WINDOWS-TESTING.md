@@ -22,7 +22,7 @@ From the repository root, prepare the package using the project Python command:
 python3 rework/tools/prepare.py
 ```
 
-For this checkpoint `VERSION` is `0.1.0-dev.1`, so the prepared folder is `rework/dist/SWExcel-0.1.0-dev.1`. The prepared package is source and runtime assets, not a Windows-built `.xlsm`.
+For this checkpoint `VERSION` is `0.1.0-dev.2`, so the prepared folder is `rework/dist/SWExcel-0.1.0-dev.2`. The prepared package is source and runtime assets, not a Windows-built `.xlsm`.
 
 On Windows, open the **x64 Native Tools Command Prompt for Visual Studio** with the C++ build tools installed. Change to the **prepared package folder**, start PowerShell from that prompt so it inherits the compiler environment, and build the pinned DLL before building the workbook:
 
@@ -33,6 +33,8 @@ Get-Content .\VERSION
 ```
 
 The engine build compiles release `v2.10.3bfinal`, source commit `f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0`, and writes the DLL, `swetest64.exe` and `runtime/engine/build-provenance.json`. It requires `cl.exe` and `dumpbin.exe`; it does not install a compiler. The workbook builder refuses to proceed without source-build evidence matching the pinned commit, version and source-manifest hash, the actual DLL hash/size, and the exact 106-symbol catalog. A staged published DLL alone cannot pass this gate. Source compilation remains separate from DLL call and Excel acceptance.
+
+The pinned `swetest.c` has an undeclared `fp` in its Windows printing branch. The builder corrects exactly that statement to `fputs(info, stdout)` in `build/engine-x64/swetest-console.c`, preserving the vendor tree. `swetestConsoleFix` in build provenance records the original and compiled source hashes; engine compilation units are unchanged.
 
 The script writes `SWExcel.xlsm`, exports imported modules into a fresh `evidence/<UTC-run-id>/vba-export` directory, and writes `evidence/<UTC-run-id>/build.json`. `evidence/build.json` is the latest build report. VBA source and export hashes are recorded; parity ignores VBE attribute lines, line-ending differences and trailing whitespace only. Unexpected source changes fail the build.
 

@@ -12,7 +12,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parent
-SOURCE_DIRECTORIES = ("api", "docs", "src", "tools", "vendor", "workbook", "tests")
+SOURCE_DIRECTORIES = ("api", "docs", "src", "tools", "vendor", "workbook", "tests", "verification")
 SOURCE_FILES = (".gitattributes", "VERSION", "README.md", "PLAN.md", "ROADMAP.md", "CHANGELOG.md", "LICENSE", "NOTICE.md", "package-manifest.json")
 
 
