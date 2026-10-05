@@ -30,6 +30,10 @@ Public Function SW_RunIntegrationChecks() As String
     Set mReport = ThisWorkbook.Worksheets("Integration")
     mReport.Range("A5:E23").ClearContents
     mReport.Range("G4:H16").ClearContents
+    ' Preserve diagnostic strings; Excel must not reinterpret decimal commas
+    ' or timestamps using a different regional format from VBA's CStr/Format.
+    mReport.Range("A5:E23").NumberFormat = "@"
+    mReport.Range("G4:H16").NumberFormat = "@"
     mPassed = 0
     mFailed = 0
     mNextRow = 5

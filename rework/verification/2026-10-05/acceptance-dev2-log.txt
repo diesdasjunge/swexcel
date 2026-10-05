@@ -1,0 +1,7 @@
+ACCEPTANCE_EXIT=1
+ForEach-Object : Exception calling "Parse" with "2" argument(s): "Input string was not in a correct format."
+At C:\SWExcel\SWExcel-0.1.0-dev.2\tests\test-excel-acceptance.ps1:37 char:46
++ ... .Split(',')|ForEach-Object{[double]::Parse($_.Trim(),[Globalization.C ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [ForEach-Object], MethodInvocationException
+    + FullyQualifiedErrorId : FormatException,Microsoft.PowerShell.Commands.ForEachObjectCommand

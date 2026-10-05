@@ -2,13 +2,14 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $true)] [string] $PackageDirectory,
-    [string] $SourceDirectory = (Split-Path -Parent $PSScriptRoot),
+    [string] $SourceDirectory = '',
     [string] $OutputWorkbook = 'SWExcel.xlsm',
     [switch] $RunIntegration
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (-not $SourceDirectory) { $SourceDirectory = Split-Path -Parent $PSScriptRoot }
 
 function Release-ComObject($Value) {
     if ($null -ne $Value -and [Runtime.InteropServices.Marshal]::IsComObject($Value)) {
@@ -100,7 +101,17 @@ function Normalize-Vba([string] $Text) {
     $normalized = foreach ($line in $lines) {
         if ($line -notmatch '^\s*Attribute\s+VB_') { $line.TrimEnd() }
     }
-    return (($normalized -join "`n").Trim() + "`n")
+    $source = (($normalized -join "`n").Trim() + "`n")
+    # VBE recases identifiers throughout a project. VBA identifiers are case
+    # insensitive, but string literals and comments must remain exact.
+    $tokens = '"(?:[^"\r\n]|"")*"|''[^\r\n]*|\b[Rr][Ee][Mm][ \t]+[^\r\n]*|[A-Za-z_][A-Za-z0-9_]*'
+    return [regex]::Replace($source, $tokens, [Text.RegularExpressions.MatchEvaluator]{
+        param($match)
+        if ($match.Value.StartsWith('"') -or $match.Value.StartsWith("'") -or $match.Value -match '^[Rr][Ee][Mm][ \t]') {
+            return $match.Value
+        }
+        return $match.Value.ToLowerInvariant()
+    })
 }
 
 function Expand-SeedValue($Value) {
@@ -157,6 +168,10 @@ function Render-Sheet($Sheet, $Spec, $Book, $Excel) {
     $ranges = [Collections.Generic.List[object]]::new()
     try {
         $Sheet.Name = [string]$Spec.name
+        # COM can expose the installed locale's general format (for example
+        # Standard), even with an English Office UI. Preserve its native value.
+        $formatProbe = $Sheet.Range('A1'); $ranges.Add($formatProbe)
+        $generalNumberFormat = [string]$formatProbe.NumberFormat
         $lastColumn = Column-Name ([math]::Max(@($Spec.widths).Count, @($Spec.headers).Count))
         $rows = @(Get-Property $Spec 'rows' @())
         if ((Get-Property $Spec 'source' '') -eq 'catalog') { $rows = @(Catalog-Rows $catalog) }
@@ -214,7 +229,7 @@ function Render-Sheet($Sheet, $Spec, $Book, $Excel) {
             foreach ($area in @('B27:B31', 'B36:G36', 'B40:D61', 'B63:G63')) {
                 $input = $Sheet.Range($area); $ranges.Add($input)
                 $input.Interior.Color = Get-Colour $seed.style.input
-                $input.NumberFormat = 'General'
+                $input.NumberFormat = $generalNumberFormat
             }
             foreach ($row in @(25, 34, 38)) {
                 $section = $Sheet.Range("A${row}:H${row}"); $ranges.Add($section)
@@ -231,8 +246,10 @@ function Render-Sheet($Sheet, $Spec, $Book, $Excel) {
         foreach ($item in @(Get-Property $Spec 'formulas' @())) {
             if ([string]$item.formula -notmatch '^=SW') { throw "Unexpected seed formula: $($item.formula)" }
             $cell = $Sheet.Range([string]$item.cell); $ranges.Add($cell)
-            $cell.NumberFormat = 'General'
-            $cell.Formula2 = [string]$item.formula
+            try {
+                $cell.NumberFormat = $generalNumberFormat
+                $cell.Formula2 = [string]$item.formula
+            } catch { throw "Cannot write formula at $($Sheet.Name)!$($item.cell): $($_.Exception.Message)" }
         }
         foreach ($item in @(Get-Property $Spec 'names' @())) {
             $escapedSheet = $Sheet.Name.Replace("'", "''")

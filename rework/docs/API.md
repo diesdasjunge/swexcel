@@ -1,6 +1,6 @@
 # Integration checkpoint API
 
-Seven worksheet functions are implemented as source. Their Windows execution and VBA compilation are pending. All 106 raw native exports have ABI declarations; this is not 106 completed worksheet wrappers. See `api/catalog.json` for reviewed ABI metadata and explicitly pending units, capacities, examples and runtime tests.
+Seven worksheet functions are implemented and passed the 2026-10-05 Windows Excel integration checks. Full-project VBE compilation remains a separate, unverified manual gate; see [evidence](../verification/2026-10-05/README.md). All 106 raw native exports have ABI declarations; this is not 106 completed worksheet wrappers. See `api/catalog.json` for reviewed ABI metadata and explicitly pending units, capacities, examples and runtime tests.
 
 | Formula | Result |
 |---|---|

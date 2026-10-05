@@ -1,6 +1,6 @@
 # Windows verification — 2026-10-05
 
-Status: **native source build passed; Excel acceptance pending**.
+Status: **version 0.1.0-dev.3 built and execution-tested; explicit VBE compile remains unverified**.
 
 The user authorized real Parallels testing, lifting the previous stop. The initial
 source checkpoint was `7ca5408a88a66ff59670c9f30f3b38573d80c4f1`, version
@@ -59,20 +59,62 @@ reference at printed precision. This is standalone engine execution, not a DLL
 call from Excel. All **22 host checks passed**, including the formerly skipped
 fresh Windows build evidence check. Original-source and legacy hashes passed.
 
-## Pending Excel gate
+## Excel execution
 
-Workbook generation/import, explicit VBE compilation, the 18 integration checks,
-Excel-to-swetest comparison, save/reopen, relocation, failure recovery, conflicting
-copies, interleaved options, recalculation and spill tests have **not run**.
+The initial development build exposed and fixed four issues: PowerShell default
+parameter initialization, the COM `Standard` versus `General` format token,
+VBE identifier recasing, and regional interpretation of diagnostic strings.
+The fixes are version `0.1.0-dev.3`; pre-version-bump testing used the dev.2
+package with corrected source.
 
-Excel currently has `Disable VBA macros with notification` selected and
-`Trust access to the VBA project object model` unchecked. Temporary permission
-for the latter was requested for source import and remains pending. No trust
-setting has been changed. Build commands used process-only `RemoteSigned`;
-persistent execution policy remains unchanged. A temporary browser clock error
-cleared after time synchronization without bypassing a security interstitial.
+`SWExcel-verified.xlsm` passed normalized import/export parity and
+`PASS=18;FAIL=0`. The first report (`workbook-build-dev2.json`) predates the
+text-format correction: some decimal strings in that historical report were
+reinterpreted as large integers. The numerical assertions passed, but those
+report strings must not be used as numerical evidence. The later acceptance
+report verifies the corrected string `280,3689186699` against the direct Double.
 
-Continue with the already installed compiler and the corrected source package.
-After VBA import permission is granted, follow `../../docs/WINDOWS-TESTING.md`.
-Restore that developer-only permission after testing. Public release acceptance
-remains pending. Credentials and account screenshots are excluded from evidence.
+`acceptance-dev2.json` records 24 passing checks and zero failures, including all
+six direct Excel values within 1e-7 of the freshly compiled swetest's printed
+output, interleaved sidereal modes and observers, restoration of default
+options, spill unblock/reblock, input/dependent recalculation, a 200-formula
+batch (about 0.51 seconds), fresh-session save/reopen, space and München paths,
+explicit rejection of a path outside the ANSI code page, missing DLL/data,
+rejection of an actual x86 DLL, and different-package collision handling.
+These tests do not cover all native functions or all data/date ranges.
+
+The final `SWExcel.xlsm` was rebuilt as **0.1.0-dev.3**. Its normalized source
+parity and all 18 integration checks passed (`workbook-build-dev3.json`). The
+final `acceptance-dev3.json` records **25 passed, 0 failed**, adding simultaneous
+same-package workbooks with different observers to the preceding checks. The
+200-formula batch took about 0.67 seconds in this VM; this is a single observed
+run, not a performance guarantee. Tracked report copies normalize line endings and trailing whitespace only.
+JSON is the authoritative numerical report;
+the console log may replace non-ASCII characters during host decoding.
+
+The Welcome sheet was inspected in real Excel. VBE was opened through
+Parallels Coherence and Debug/Compile was attempted through the keyboard.
+No error dialog was observed, but subsequent inputs did not reliably reach
+the guest, and neither the command result nor its disabled state could be
+confirmed. **Explicit full-project VBE compilation remains unverified.** The
+executed smoke macro proves only its compiled/executed paths. The workbook
+was saved and closed; no compile success is inferred from that save.
+
+The user approved temporary VBA-project access. On resumption the VM already
+had AccessVBOM=1 and VBAWarnings=1 (all macros enabled), changed during manual
+setup. After testing, both settings were restored to AccessVBOM=0 and
+VBAWarnings=2 (disable VBA macros with notification), verified by registry
+readback in `security-restoration.json`. The pre-existing blank Book1 session
+was left open; new Excel sessions use the restored defaults.
+Persistent PowerShell policy remains Restricted, with every policy scope
+Undefined. Builds used process-only RemoteSigned. Credentials and account
+screenshots are excluded. No trusted location or permanent macro exception
+was created by this verification work.
+
+The local Windows checkpoint package includes the tested workbook, freshly
+built engine, source, data and evidence. `package-files.json` identifies the
+final packaged bytes; `evidence/build.json` identifies the workbook at build
+time, before acceptance edits/save. Test peer workbooks are kept outside the
+deliverable. The source-only ZIP remains a historical preparation artifact.
+This checkpoint is not a public release. Full API and downloaded-release
+macro onboarding remain pending.

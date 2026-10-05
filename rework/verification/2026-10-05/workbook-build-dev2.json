@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "generatedAtUtc": "2026-10-05T21:09:18.9138881Z",
+  "version": "0.1.0-dev.2",
+  "workbook": "SWExcel-tested.xlsm",
+  "sourceDirectory": "C:\\SWExcel\\SWExcel-0.1.0-dev.2",
+  "packageDirectory": "C:\\SWExcel\\SWExcel-0.1.0-dev.2",
+  "engine": {
+    "expectedPath": "C:\\SWExcel\\SWExcel-0.1.0-dev.2\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+    "sha256": "16a7eedf061f5133a999a72ef87105f3af75fb0efd92532e6a94736191f51736",
+    "expectedRuntimeVersion": "2.10.03",
+    "sourceBuild": {
+      "evidencePath": "C:\\SWExcel\\SWExcel-0.1.0-dev.2\\runtime\\engine\\build-provenance.json",
+      "evidenceSha256": "24f7b75c5eb40bc31a702a493cc62563e4e1b78e9b32854bfb7e6e708226aff7",
+      "sourceCommit": "f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0",
+      "sourceVersion": "2.10.03",
+      "sourceManifestSha256": "4312a79b62fec145a8e4c359df8a1d72f35f075b0122bbdc5944ea9c7747f375",
+      "dllSha256": "16a7eedf061f5133a999a72ef87105f3af75fb0efd92532e6a94736191f51736",
+      "exportCount": 106,
+      "verificationScope": "Source-build evidence and DLL hash matched; runtime and Excel execution are separate checks."
+    }
+  },
+  "buildStatus": "saved",
+  "sourceParityStatus": "passed",
+  "sourceParity": [
+    {
+      "source": "src/vba/SWCalculation.bas",
+      "moduleName": "SWCalculation",
+      "sourceSha256": "64b7236dc952381b4a88e16caabe9c83c13e670d0c0e947cf6552e4c35632560",
+      "exportSha256": "97cb82728e83b03a7f434cfdb630ce857622db1d4df40d9d0bdc49145a2d910c",
+      "normalizedEqual": true
+    },
+    {
+      "source": "src/vba/SWConstants.bas",
+      "moduleName": "SWConstants",
+      "sourceSha256": "4d6d2bf9fa7a6aa82c46d212077e70f9e14c7d34a8586ee33513c1ba7f4cc65c",
+      "exportSha256": "6bff20fe871cd99c7b2a5b920cca1a13035dd6b69f49ae223634b5a5319f562c",
+      "normalizedEqual": true
+    },
+    {
+      "source": "src/vba/SWFunctions.bas",
+      "moduleName": "SWFunctions",
+      "sourceSha256": "f3822a8e6e471145c2dee077ecec62fbf63657c01035fdc22c60f25e39136752",
+      "exportSha256": "61718b6474b87cc55fd5e0a885b434cbf35fbd11328d37b4009f75ffd1a5845b",
+      "normalizedEqual": true
+    },
+    {
+      "source": "src/vba/SWIntegration.bas",
+      "moduleName": "SWIntegration",
+      "sourceSha256": "36b49ed1814d8927a6a95d1dff72a9e25114f119ba40a4d6d9e309ed4ea403f5",
+      "exportSha256": "304533adcf0902fa9e88db6cc0cda3449502237385292598f77214893eb85f4f",
+      "normalizedEqual": true
+    },
+    {
+      "source": "src/vba/SWNative.bas",
+      "moduleName": "SWNative",
+      "sourceSha256": "44ab18a072875e95f9b8c127f65071c14d3973f56b55e1156d4662c604f3452b",
+      "exportSha256": "e44082bcaa1085f5cb4e9b505d84a55b10307a8b2ec9d922815b4c180eefdd46",
+      "normalizedEqual": true
+    },
+    {
+      "source": "src/vba/SWRuntime.bas",
+      "moduleName": "SWRuntime",
+      "sourceSha256": "e9d0604bed5cd8d2078fe55fcefaddb6c1ae39385c20f96f8554bdce787cd0da",
+      "exportSha256": "88540095ab011361c10553af74f0b6e6501682add92f6d63c814af6ae0dcf71e",
+      "normalizedEqual": true
+    }
+  ],
+  "integrationStatus": "passed_first_checkpoint_only",
+  "integrationSummary": "PASS=18;FAIL=0",
+  "integrationChecks": [
+    {
+      "name": "Host architecture",
+      "expected": "64-bit Excel / VBA",
+      "actual": "Win64",
+      "result": "PASS",
+      "notes": "Win64 VBA; processMachine=0x0; nativeMachine=0xAA64"
+    },
+    {
+      "name": "Expected engine metadata",
+      "expected": "Resolved runtime version",
+      "actual": "2.10.03",
+      "result": "PASS",
+      "notes": "Read from package manifest during build."
+    },
+    {
+      "name": "SW_JULDAY",
+      "expected": "2451545",
+      "actual": "2451545",
+      "result": "PASS",
+      "notes": "Calendar date/time to J2000 UT; direct wrapper call."
+    },
+    {
+      "name": "SW_DEGNORM",
+      "expected": "359",
+      "actual": "359",
+      "result": "PASS",
+      "notes": "Normalization scalar."
+    },
+    {
+      "name": "SW_VERSION",
+      "expected": "2.10.03",
+      "actual": "2.10.03",
+      "result": "PASS",
+      "notes": "Native pointer-to-string return."
+    },
+    {
+      "name": "SW_BODY_NAME",
+      "expected": "Sun",
+      "actual": "Sun",
+      "result": "PASS",
+      "notes": "Native output buffer plus pointer return."
+    },
+    {
+      "name": "Verified module path",
+      "expected": "c:\\swexcel\\swexcel-0.1.0-dev.2\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+      "actual": "C:\\SWExcel\\SWExcel-0.1.0-dev.2\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+      "result": "PASS",
+      "notes": "Runtime must report the actual loaded module path."
+    },
+    {
+      "name": "SW_CALC_UT return",
+      "expected": "1 x 6 Double array",
+      "actual": "1 x 6 array",
+      "result": "PASS",
+      "notes": "Longitude, latitude, distance and three speeds."
+    },
+    {
+      "name": "SW_LONGITUDE parity",
+      "expected": "2803689186699",
+      "actual": "2803689186699",
+      "result": "PASS",
+      "notes": "Same inputs/options as the first CALC_UT result."
+    },
+    {
+      "name": "Sun J2000 broad reference",
+      "expected": "280.369 degrees +/- 0.01",
+      "actual": "2803689186699",
+      "result": "PASS",
+      "notes": "Independent broad README reference; not exact pinned-data numerical acceptance."
+    },
+    {
+      "name": "Invalid calendar date",
+      "expected": "Excel error",
+      "actual": "Error 2015",
+      "result": "PASS",
+      "notes": "February 30 must fail rather than silently roll into March."
+    },
+    {
+      "name": "Native failure then recovery",
+      "expected": "Error for body 1000; valid Sun calculation",
+      "actual": "Error 2042; then 280,3689186699",
+      "result": "PASS",
+      "notes": "Valid calculation immediately after native failure confirms calculation guard release."
+    },
+    {
+      "name": "Direct detail",
+      "expected": "Required fields; flags 258; Status OK; scalar/path parity",
+      "actual": "22 x 3 array",
+      "result": "PASS",
+      "notes": "Status=OK; flags=258; warning="
+    },
+    {
+      "name": "Formula2 scalar cells",
+      "expected": "JULDAY 2451545; DEGNORM 359; version; Sun",
+      "actual": "See B27:B30",
+      "result": "PASS",
+      "notes": "Stored worksheet formulas, independently recalculated."
+    },
+    {
+      "name": "Formula2 longitude",
+      "expected": "2803689186699",
+      "actual": "2803689186699",
+      "result": "PASS",
+      "notes": "Worksheet formula versus direct call."
+    },
+    {
+      "name": "Formula2 calculation spill",
+      "expected": "Six adjacent numeric values",
+      "actual": "2803689186699",
+      "result": "PASS",
+      "notes": "Compares every spilled value to the direct vector."
+    },
+    {
+      "name": "Formula2 detail spill",
+      "expected": "Required fields; flags 258; Status OK; scalar/path parity",
+      "actual": "22 x 3 array",
+      "result": "PASS",
+      "notes": "Status=OK; flags=258; warning="
+    },
+    {
+      "name": "Blocked spill demonstration",
+      "expected": "#SPILL! (2045)",
+      "actual": "Error 2045",
+      "result": "PASS",
+      "notes": "C63 intentionally blocks output. This expected error is a PASS."
+    }
+  ],
+  "environment": {
+    "applicationVersion": "16.0",
+    "applicationBuild": "20430",
+    "OperatingSystem": "Windows (64-bit ARM) NT 10.00",
+    "powershellProcessBits": 64,
+    "Application.Version": "16",
+    "Application.Build": "20430",
+    "Host process architecture": "Win64 VBA; processMachine=0x0; nativeMachine=0xAA64",
+    "Workbook path": "C:\\SWExcel\\SWExcel-0.1.0-dev.2\\SWExcel-tested.xlsm",
+    "Native module path": "C:\\SWExcel\\SWExcel-0.1.0-dev.2\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+    "Data path": "C:\\SWExcel\\SWExcel-0.1.0-dev.2\\runtime\\ephe",
+    "Runtime status": "Ready for integration testing; runtime 2.10.03",
+    "Run time (local)": "46300.9649074074",
+    "Smoke summary": "PASS=18;FAIL=0",
+    "Coverage": "First integration checkpoint only; full API acceptance pending."
+  },
+  "compilationStatus": "checkpoint_macro_executed; full_API_execution_not_established",
+  "coverage": "First checkpoint only; full API worksheet and runtime acceptance pending.",
+  "evidenceDirectory": "evidence/20261005T210918896Z-26da291e",
+  "workbookSha256": "8ff3fa35b71bee47099671d5ed0bc89078343158f57866a462c028b2d2303c4d"
+}

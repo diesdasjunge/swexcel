@@ -1,0 +1,13 @@
+{
+  "recordedAtUtc": "2026-10-05T21:31:53.722860+00:00",
+  "version": "0.1.0-dev.3",
+  "archive": "SWExcel-0.1.0-dev.3-windows-checkpoint.zip",
+  "archiveSha256": "f8b8f8e255b3ce86d0f22b5acb7f6ba5f6a3fd5adf6606b38e0d92dfbf46bf8e",
+  "archiveSize": 15417602,
+  "verifiedInventoryFileCount": 110,
+  "workbookSha256": "b2ff3adec564bc295f271a2457b724eb5e8bd1b061560f6c24d453b063f3ddb9",
+  "dllSha256": "16a7eedf061f5133a999a72ef87105f3af75fb0efd92532e6a94736191f51736",
+  "inventorySha256": "e2421f5962abe2431f9949e310fcbaa832723585a5d3918d578424137b893f32",
+  "manualCompile": "unverified",
+  "note": "This report is external to the archive to avoid a self-referential hash."
+}

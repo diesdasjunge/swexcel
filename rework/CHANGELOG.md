@@ -6,6 +6,21 @@ The format follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+## [0.1.0-dev.3] - 2026-10-05
+
+### Fixed
+
+- Resolve the workbook builder's default source directory after PowerShell parameter binding.
+- Preserve Excel's installed general number format instead of assuming the English `General` token.
+- Accept VBE's case-insensitive identifier recasing in source parity while preserving string and comment contents; add focused Windows regression checks.
+- Store integration diagnostics as text so regional decimal commas and timestamps are not silently reinterpreted.
+
+### Added
+
+- Real Excel workbook generation and all 18 smoke checks, plus 25 passing extended checks and a repeatable desktop acceptance suite for numerical parity, state isolation, spills, recalculation, relocation and loader failures.
+
+Explicit full-project VBE compilation is unverified due to unreliable Parallels UI control. Full API coverage and public/downloaded-release acceptance remain pending.
+
 ## [0.1.0-dev.2] - 2026-10-05
 
 ### Fixed

@@ -1,0 +1,28 @@
+{
+    "recordedAtUtc":  "2026-10-05T21:27:25.6219930Z",
+    "AccessVBOM":  0,
+    "VBAWarnings":  2,
+    "effectivePowerShellPolicy":  "Restricted",
+    "policyScopes":  [
+                         {
+                             "scope":  "MachinePolicy",
+                             "policy":  "Undefined"
+                         },
+                         {
+                             "scope":  "UserPolicy",
+                             "policy":  "Undefined"
+                         },
+                         {
+                             "scope":  "Process",
+                             "policy":  "Undefined"
+                         },
+                         {
+                             "scope":  "CurrentUser",
+                             "policy":  "Undefined"
+                         },
+                         {
+                             "scope":  "LocalMachine",
+                             "policy":  "Undefined"
+                         }
+                     ]
+}

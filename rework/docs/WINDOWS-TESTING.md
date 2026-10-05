@@ -22,7 +22,7 @@ From the repository root, prepare the package using the project Python command:
 python3 rework/tools/prepare.py
 ```
 
-For this checkpoint `VERSION` is `0.1.0-dev.2`, so the prepared folder is `rework/dist/SWExcel-0.1.0-dev.2`. The prepared package is source and runtime assets, not a Windows-built `.xlsm`.
+For this checkpoint `VERSION` is `0.1.0-dev.3`, so the prepared folder is `rework/dist/SWExcel-0.1.0-dev.3`. The prepared package is source and runtime assets, not a Windows-built `.xlsm`.
 
 On Windows, open the **x64 Native Tools Command Prompt for Visual Studio** with the C++ build tools installed. Change to the **prepared package folder**, start PowerShell from that prompt so it inherits the compiler environment, and build the pinned DLL before building the workbook:
 
@@ -36,7 +36,7 @@ The engine build compiles release `v2.10.3bfinal`, source commit `f4dcd18e8005dd
 
 The pinned `swetest.c` has an undeclared `fp` in its Windows printing branch. The builder corrects exactly that statement to `fputs(info, stdout)` in `build/engine-x64/swetest-console.c`, preserving the vendor tree. `swetestConsoleFix` in build provenance records the original and compiled source hashes; engine compilation units are unchanged.
 
-The script writes `SWExcel.xlsm`, exports imported modules into a fresh `evidence/<UTC-run-id>/vba-export` directory, and writes `evidence/<UTC-run-id>/build.json`. `evidence/build.json` is the latest build report. VBA source and export hashes are recorded; parity ignores VBE attribute lines, line-ending differences and trailing whitespace only. Unexpected source changes fail the build.
+The script writes `SWExcel.xlsm`, exports imported modules into a fresh `evidence/<UTC-run-id>/vba-export` directory, and writes `evidence/<UTC-run-id>/build.json`. `evidence/build.json` is the latest build report. VBA source and export hashes are recorded; parity ignores VBE attribute lines, line-ending differences, trailing whitespace and identifier casing. String literals and comments remain case-sensitive. Unexpected source changes fail the build.
 
 The generated workbook starts on **Welcome** and includes Setup, Function Catalog, Bodies, Options, Diagnostics, Integration, and clearly labeled pending example/roadmap sheets. All 106 catalog symbols are listed as native inventory; unimplemented worksheet interfaces remain pending. The workbook stores formulas with `Formula2`. Ordinary UDF calculations during construction/opening are **not a recorded smoke test**. Without `-RunIntegration`, the check table remains `PENDING`, the report says `not_run`, and compilation/runtime acceptance remains unverified.
 
@@ -107,3 +107,8 @@ Signed VBA with an already trusted publisher is another deployment path; signatu
 - Full API examples/tests, public release, Excel 2024, older Excel, Mac/web and the full astrology workspace: pending or deferred.
 
 After closing Excel and writing its reports, the workbook builder refreshes `package-files.json` with hashes and sizes of the complete current package, including workbook, engine build artifacts and evidence; the inventory excludes itself. `package-manifest.json` retains provenance for the initially staged published reference DLL. For the fresh Windows build, `runtime/engine/build-provenance.json` and the current file inventory record the authoritative DLL hash. A current inventory is integrity evidence, not public-release acceptance.
+
+## Repeatable desktop acceptance
+
+Run `tests/test-vba-normalization.ps1` on Windows for the builder parity regression.
+After building the workbook, run `tests/test-excel-acceptance.ps1 -PackageDirectory . -Workbook SWExcel.xlsm -OutputDirectory C:\SWExcel\acceptance-new-run` with a new output directory. This opens dedicated Excel instances, uses disposable runtime/workbook copies for failure and relocation tests, and preserves a JSON report. It also creates a peer workbook in the package for same-package state isolation. General formatting is read from a blank Excel cell, so non-English installation formats are supported. VBE compile and downloaded-archive onboarding remain separate gates.
