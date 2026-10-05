@@ -1,4 +1,10 @@
-# Checkpoint and stop boundary
+# Current development package and historical checkpoints
+
+**2026-10-06:** Full API interfaces, examples and helpers are implemented in 0.1.0-dev.4. The explicit VBA compile gate passed through the authorized Windows script. See [current evidence](../verification/2026-10-06/README.md) and [API guide](API.md). Public-release download/onboarding acceptance is explicitly deferred.
+
+The sections below preserve the earlier checkpoint record; their pending/stop statements describe those earlier versions, not the current development package.
+
+## Historical checkpoint and stop boundary
 
 **2026-10-05 update:** The user lifted the pre-Parallels stop and authorized
 Windows verification. [Recorded evidence](../verification/2026-10-05/README.md)

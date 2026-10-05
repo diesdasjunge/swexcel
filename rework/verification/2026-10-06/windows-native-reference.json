@@ -1,0 +1,4456 @@
+{
+  "platform": "Windows MSVC x64 typed DLL caller",
+  "cases": [
+    {
+      "name": "swe_azalt",
+      "worksheetName": "SW_SWE_AZALT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        1013.25,
+        15.0,
+        [
+          280.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xaz[0]",
+          "value": 12.499675487189961
+        },
+        {
+          "label": "xaz[1]",
+          "value": 14.550598028096616
+        },
+        {
+          "label": "xaz[2]",
+          "value": 14.611050987295235
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_azalt_rev",
+      "worksheetName": "SW_SWE_AZALT_REV",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        [
+          90.0,
+          15.0
+        ]
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xout[0]",
+          "value": 206.51667659194652
+        },
+        {
+          "label": "xout[1]",
+          "value": 23.65024156353813
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_calc",
+      "worksheetName": "SW_SWE_CALC",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xx[0]",
+          "value": 280.36816555258
+        },
+        {
+          "label": "xx[1]",
+          "value": 0.00022735854969243674
+        },
+        {
+          "label": "xx[2]",
+          "value": 0.9833276307941747
+        },
+        {
+          "label": "xx[3]",
+          "value": 1.0194340908530986
+        },
+        {
+          "label": "xx[4]",
+          "value": -5.823717561102987e-07
+        },
+        {
+          "label": "xx[5]",
+          "value": -7.3540442781398495e-06
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_calc_pctr",
+      "worksheetName": "SW_SWE_CALC_PCTR",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        4,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xxret[0]",
+          "value": 179.43838403598232
+        },
+        {
+          "label": "xxret[1]",
+          "value": 1.4197785798362854
+        },
+        {
+          "label": "xxret[2]",
+          "value": 1.3912077135476815
+        },
+        {
+          "label": "xxret[3]",
+          "value": 0.6259465509706199
+        },
+        {
+          "label": "xxret[4]",
+          "value": -0.01295398047499386
+        },
+        {
+          "label": "xxret[5]",
+          "value": 0.0005185539722580353
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_calc_ut",
+      "worksheetName": "SW_SWE_CALC_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xx[0]",
+          "value": 280.3689186698997
+        },
+        {
+          "label": "xx[1]",
+          "value": 0.0002273534758712041
+        },
+        {
+          "label": "xx[2]",
+          "value": 0.9833276253625055
+        },
+        {
+          "label": "xx[3]",
+          "value": 1.0194341629435535
+        },
+        {
+          "label": "xx[4]",
+          "value": -5.876111779464568e-07
+        },
+        {
+          "label": "xx[5]",
+          "value": -7.3507779749972415e-06
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_close",
+      "worksheetName": "SW_CMD_CLOSE",
+      "command": true,
+      "inputs": [],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_cotrans",
+      "worksheetName": "SW_SWE_COTRANS",
+      "command": false,
+      "inputs": [
+        [
+          280.0,
+          1.0,
+          1.0
+        ],
+        23.4392911
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xpn[0]",
+          "value": 280.9610013136499
+        },
+        {
+          "label": "xpn[1]",
+          "value": 24.059595366121687
+        },
+        {
+          "label": "xpn[2]",
+          "value": 1
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_cotrans_sp",
+      "worksheetName": "SW_SWE_COTRANS_SP",
+      "command": false,
+      "inputs": [
+        [
+          280.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        23.4392911
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xpn[0]",
+          "value": 280.9610013136499
+        },
+        {
+          "label": "xpn[1]",
+          "value": 24.059595366121687
+        },
+        {
+          "label": "xpn[2]",
+          "value": 1
+        },
+        {
+          "label": "xpn[3]",
+          "value": 1.091839903298529
+        },
+        {
+          "label": "xpn[4]",
+          "value": -0.0756336671360985
+        },
+        {
+          "label": "xpn[5]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_cs2degstr",
+      "worksheetName": "SW_SWE_CS2DEGSTR",
+      "command": false,
+      "inputs": [
+        1234567
+      ],
+      "nativeReturn": " 3°25'45",
+      "warning": "",
+      "fields": [
+        {
+          "label": "a",
+          "value": " 3°25'45"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_cs2lonlatstr",
+      "worksheetName": "SW_SWE_CS2LONLATSTR",
+      "command": false,
+      "inputs": [
+        1234567,
+        "N",
+        "S"
+      ],
+      "nativeReturn": "3N25'46",
+      "warning": "",
+      "fields": [
+        {
+          "label": "s",
+          "value": "3N25'46"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_cs2timestr",
+      "worksheetName": "SW_SWE_CS2TIMESTR",
+      "command": false,
+      "inputs": [
+        1234567,
+        58,
+        0
+      ],
+      "nativeReturn": "03:25:46",
+      "warning": "",
+      "fields": [
+        {
+          "label": "a",
+          "value": "03:25:46"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_csnorm",
+      "worksheetName": "SW_SWE_CSNORM",
+      "command": false,
+      "inputs": [
+        -360000
+      ],
+      "nativeReturn": 129240000,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 129240000
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_csroundsec",
+      "worksheetName": "SW_SWE_CSROUNDSEC",
+      "command": false,
+      "inputs": [
+        1234567
+      ],
+      "nativeReturn": 1234600,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 1234600
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_d2l",
+      "worksheetName": "SW_SWE_D2L",
+      "command": false,
+      "inputs": [
+        12.345
+      ],
+      "nativeReturn": 12,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 12
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_date_conversion",
+      "worksheetName": "SW_SWE_DATE_CONVERSION",
+      "command": false,
+      "inputs": [
+        2000,
+        1,
+        1,
+        12.0,
+        "g"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tjd[0]",
+          "value": 2451545
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_day_of_week",
+      "worksheetName": "SW_SWE_DAY_OF_WEEK",
+      "command": false,
+      "inputs": [
+        2451545.0
+      ],
+      "nativeReturn": 5,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 5
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_deg_midp",
+      "worksheetName": "SW_SWE_DEG_MIDP",
+      "command": false,
+      "inputs": [
+        350.0,
+        10.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_degnorm",
+      "worksheetName": "SW_SWE_DEGNORM",
+      "command": false,
+      "inputs": [
+        12.345
+      ],
+      "nativeReturn": 12.345,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 12.345
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_deltat",
+      "worksheetName": "SW_SWE_DELTAT",
+      "command": false,
+      "inputs": [
+        2451545.0
+      ],
+      "nativeReturn": 0.00073876058949334,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 0.00073876058949334
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_deltat_ex",
+      "worksheetName": "SW_SWE_DELTAT_EX",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 0.00073876058949334,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 0.00073876058949334
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_difcs2n",
+      "worksheetName": "SW_SWE_DIFCS2N",
+      "command": false,
+      "inputs": [
+        129600000,
+        360000
+      ],
+      "nativeReturn": -360000,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": -360000
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_difcsn",
+      "worksheetName": "SW_SWE_DIFCSN",
+      "command": false,
+      "inputs": [
+        129600000,
+        360000
+      ],
+      "nativeReturn": 129240000,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 129240000
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_difdeg2n",
+      "worksheetName": "SW_SWE_DIFDEG2N",
+      "command": false,
+      "inputs": [
+        350.0,
+        10.0
+      ],
+      "nativeReturn": -20,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": -20
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_difdegn",
+      "worksheetName": "SW_SWE_DIFDEGN",
+      "command": false,
+      "inputs": [
+        350.0,
+        10.0
+      ],
+      "nativeReturn": 340,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 340
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_difrad2n",
+      "worksheetName": "SW_SWE_DIFRAD2N",
+      "command": false,
+      "inputs": [
+        3.0,
+        -3.0
+      ],
+      "nativeReturn": -0.28318530717958623,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": -0.28318530717958623
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_fixstar",
+      "worksheetName": "SW_SWE_FIXSTAR",
+      "command": false,
+      "inputs": [
+        "Spica",
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "star",
+          "value": "Spica,alVir"
+        },
+        {
+          "label": "xx[0]",
+          "value": 203.83614804459174
+        },
+        {
+          "label": "xx[1]",
+          "value": -2.0542853995665387
+        },
+        {
+          "label": "xx[2]",
+          "value": 15793630.102246389
+        },
+        {
+          "label": "xx[3]",
+          "value": 0.0001391349313050733
+        },
+        {
+          "label": "xx[4]",
+          "value": 3.1788054986622915e-06
+        },
+        {
+          "label": "xx[5]",
+          "value": -0.020714232013625176
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_fixstar2",
+      "worksheetName": "SW_SWE_FIXSTAR2",
+      "command": false,
+      "inputs": [
+        "Spica",
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "star",
+          "value": "Spica,alVir"
+        },
+        {
+          "label": "xx[0]",
+          "value": 203.83614804459174
+        },
+        {
+          "label": "xx[1]",
+          "value": -2.0542853995665387
+        },
+        {
+          "label": "xx[2]",
+          "value": 15793630.102246389
+        },
+        {
+          "label": "xx[3]",
+          "value": 0.0001391349313050733
+        },
+        {
+          "label": "xx[4]",
+          "value": 3.1788054986622915e-06
+        },
+        {
+          "label": "xx[5]",
+          "value": -0.020714232013625176
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_fixstar2_mag",
+      "worksheetName": "SW_SWE_FIXSTAR2_MAG",
+      "command": false,
+      "inputs": [
+        "Spica"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "star",
+          "value": "Spica,alVir"
+        },
+        {
+          "label": "mag[0]",
+          "value": 0.97
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_fixstar2_ut",
+      "worksheetName": "SW_SWE_FIXSTAR2_UT",
+      "command": false,
+      "inputs": [
+        "Spica",
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "star",
+          "value": "Spica,alVir"
+        },
+        {
+          "label": "xx[0]",
+          "value": 203.83614814722316
+        },
+        {
+          "label": "xx[1]",
+          "value": -2.054285399162121
+        },
+        {
+          "label": "xx[2]",
+          "value": 15793630.102234246
+        },
+        {
+          "label": "xx[3]",
+          "value": 0.00013913771390873067
+        },
+        {
+          "label": "xx[4]",
+          "value": 3.1762239683877407e-06
+        },
+        {
+          "label": "xx[5]",
+          "value": -0.017517447598900414
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_fixstar_mag",
+      "worksheetName": "SW_SWE_FIXSTAR_MAG",
+      "command": false,
+      "inputs": [
+        "Spica"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "star",
+          "value": "Spica,alVir"
+        },
+        {
+          "label": "mag[0]",
+          "value": 0.97
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_fixstar_ut",
+      "worksheetName": "SW_SWE_FIXSTAR_UT",
+      "command": false,
+      "inputs": [
+        "Spica",
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 258,
+      "warning": "",
+      "fields": [
+        {
+          "label": "star",
+          "value": "Spica,alVir"
+        },
+        {
+          "label": "xx[0]",
+          "value": 203.83614814722316
+        },
+        {
+          "label": "xx[1]",
+          "value": -2.054285399162121
+        },
+        {
+          "label": "xx[2]",
+          "value": 15793630.102234246
+        },
+        {
+          "label": "xx[3]",
+          "value": 0.00013913771390873067
+        },
+        {
+          "label": "xx[4]",
+          "value": 3.1762239683877407e-06
+        },
+        {
+          "label": "xx[5]",
+          "value": -0.017517447598900414
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_gauquelin_sector",
+      "worksheetName": "SW_SWE_GAUQUELIN_SECTOR",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        "",
+        258,
+        0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        1013.25,
+        15.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "dgsect[0]",
+          "value": 12.010650879965004
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_astro_models",
+      "worksheetName": "SW_SWE_GET_ASTRO_MODELS",
+      "command": false,
+      "inputs": [
+        "0,0,0,0,0,0,0,0",
+        258
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "sdet",
+          "value": "JPL eph. 431; tidal acc. Moon used by SE: -25.8000\nSwiss Ephemeris compressed files sepl*/semo*\nDelta T (long-term): Stephenson/Morrison/Hohenkerk 2016 (before 1955)\nPrecession: VondrÃ¡k 2011\nNutation: IAU 2000B (Mathews)\nFrame bias: IAU 2006\nSid. time: IERS Convention 2010 + long-term extension by Astrodienst\nswetest parameters:      D P P N B J J S\n                    -amod0,0,0,0,0,0,0,0, -tidacc-25.800000\nFor list of all available astronomical models, add a '+' to the version string\n(swetest parameter -amod0,0,0,0,0,0,0,0+ or -amod0,0,0,0,0,0,0,0,+)\n"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_ayanamsa",
+      "worksheetName": "SW_SWE_GET_AYANAMSA",
+      "command": false,
+      "inputs": [
+        2451545.0
+      ],
+      "nativeReturn": 24.740299966181283,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 24.740299966181283
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_ayanamsa_ex",
+      "worksheetName": "SW_SWE_GET_AYANAMSA_EX",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2,
+      "warning": "",
+      "fields": [
+        {
+          "label": "daya[0]",
+          "value": 24.736430097045456
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_ayanamsa_ex_ut",
+      "worksheetName": "SW_SWE_GET_AYANAMSA_EX_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2,
+      "warning": "",
+      "fields": [
+        {
+          "label": "daya[0]",
+          "value": 24.736430126755206
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_ayanamsa_name",
+      "worksheetName": "SW_SWE_GET_AYANAMSA_NAME",
+      "command": false,
+      "inputs": [
+        1
+      ],
+      "nativeReturn": "Lahiri",
+      "warning": "",
+      "fields": [
+        {
+          "label": "Name",
+          "value": "Lahiri"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_ayanamsa_ut",
+      "worksheetName": "SW_SWE_GET_AYANAMSA_UT",
+      "command": false,
+      "inputs": [
+        2451545.0
+      ],
+      "nativeReturn": 24.740299994434963,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 24.740299994434963
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_current_file_data",
+      "worksheetName": "SW_CMD_GET_CURRENT_FILE_DATA",
+      "command": true,
+      "inputs": [
+        0
+      ],
+      "nativeReturn": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\ephe\\sepl_18.se1",
+      "warning": "",
+      "fields": [
+        {
+          "label": "Name",
+          "value": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\ephe\\sepl_18.se1"
+        },
+        {
+          "label": "tfstart[0]",
+          "value": 2378496.5
+        },
+        {
+          "label": "tfend[0]",
+          "value": 2597651.3591467496
+        },
+        {
+          "label": "denum[0]",
+          "value": 441
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_library_path",
+      "worksheetName": "SW_SWE_GET_LIBRARY_PATH",
+      "command": false,
+      "inputs": [],
+      "nativeReturn": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+      "warning": "",
+      "fields": [
+        {
+          "label": "arg1",
+          "value": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_orbital_elements",
+      "worksheetName": "SW_SWE_GET_ORBITAL_ELEMENTS",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        4,
+        258
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "dret[0]",
+          "value": 1.5236791585029867
+        },
+        {
+          "label": "dret[1]",
+          "value": 0.09331514189311135
+        },
+        {
+          "label": "dret[2]",
+          "value": 1.8498883401623287
+        },
+        {
+          "label": "dret[3]",
+          "value": 49.56185790389445
+        },
+        {
+          "label": "dret[4]",
+          "value": 286.5376505085378
+        },
+        {
+          "label": "dret[5]",
+          "value": 336.0995084124323
+        },
+        {
+          "label": "dret[6]",
+          "value": 19.356382544459443
+        },
+        {
+          "label": "dret[7]",
+          "value": 23.333078905138517
+        },
+        {
+          "label": "dret[8]",
+          "value": 21.29838829828135
+        },
+        {
+          "label": "dret[9]",
+          "value": 355.4558909568917
+        },
+        {
+          "label": "dret[10]",
+          "value": 1.8808629019495937
+        },
+        {
+          "label": "dret[11]",
+          "value": 0.524039209920485
+        },
+        {
+          "label": "dret[12]",
+          "value": 1.8808013951265423
+        },
+        {
+          "label": "dret[13]",
+          "value": 779.9493081262774
+        },
+        {
+          "label": "dret[14]",
+          "value": 2451508.063102573
+        },
+        {
+          "label": "dret[15]",
+          "value": 1.3814968216277042
+        },
+        {
+          "label": "dret[16]",
+          "value": 1.6658614953782693
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_planet_name",
+      "worksheetName": "SW_SWE_GET_PLANET_NAME",
+      "command": false,
+      "inputs": [
+        0
+      ],
+      "nativeReturn": "Sun",
+      "warning": "",
+      "fields": [
+        {
+          "label": "spname",
+          "value": "Sun"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_get_tid_acc",
+      "worksheetName": "SW_SWE_GET_TID_ACC",
+      "command": false,
+      "inputs": [],
+      "nativeReturn": -25.8,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": -25.8
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_heliacal_angle",
+      "worksheetName": "SW_SWE_HELIACAL_ANGLE",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        [
+          1013.25,
+          15.0,
+          40.0,
+          0.0
+        ],
+        [
+          36.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        0,
+        0.0,
+        90.0,
+        100.0,
+        110.0,
+        -10.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "datm[0]",
+          "value": 1013.25
+        },
+        {
+          "label": "datm[1]",
+          "value": 15
+        },
+        {
+          "label": "datm[2]",
+          "value": 40
+        },
+        {
+          "label": "datm[3]",
+          "value": 0
+        },
+        {
+          "label": "dobs[0]",
+          "value": 36
+        },
+        {
+          "label": "dobs[1]",
+          "value": 1
+        },
+        {
+          "label": "dobs[2]",
+          "value": 1
+        },
+        {
+          "label": "dobs[3]",
+          "value": 1
+        },
+        {
+          "label": "dobs[4]",
+          "value": 0
+        },
+        {
+          "label": "dobs[5]",
+          "value": 0
+        },
+        {
+          "label": "dret[0]",
+          "value": 4.84375
+        },
+        {
+          "label": "dret[1]",
+          "value": 13.834877014160156
+        },
+        {
+          "label": "dret[2]",
+          "value": -8.991127014160156
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_heliacal_pheno_ut",
+      "worksheetName": "SW_SWE_HELIACAL_PHENO_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        [
+          1013.25,
+          15.0,
+          40.0,
+          0.0
+        ],
+        [
+          36.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "venus",
+        1,
+        0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "datm[0]",
+          "value": 1013.25
+        },
+        {
+          "label": "datm[1]",
+          "value": 15
+        },
+        {
+          "label": "datm[2]",
+          "value": 40
+        },
+        {
+          "label": "datm[3]",
+          "value": 0
+        },
+        {
+          "label": "dobs[0]",
+          "value": 36
+        },
+        {
+          "label": "dobs[1]",
+          "value": 1
+        },
+        {
+          "label": "dobs[2]",
+          "value": 1
+        },
+        {
+          "label": "dobs[3]",
+          "value": 1
+        },
+        {
+          "label": "dobs[4]",
+          "value": 0
+        },
+        {
+          "label": "dobs[5]",
+          "value": 0
+        },
+        {
+          "label": "darr[0]",
+          "value": 5.0713518876497234
+        },
+        {
+          "label": "darr[1]",
+          "value": 5.227667129384335
+        },
+        {
+          "label": "darr[2]",
+          "value": 5.073485759957809
+        },
+        {
+          "label": "darr[3]",
+          "value": 230.355979922355
+        },
+        {
+          "label": "darr[4]",
+          "value": 13.651200796847816
+        },
+        {
+          "label": "darr[5]",
+          "value": 191.8972055564522
+        },
+        {
+          "label": "darr[6]",
+          "value": -8.579848909198091
+        },
+        {
+          "label": "darr[7]",
+          "value": -8.577715036890005
+        },
+        {
+          "label": "darr[8]",
+          "value": -38.4587743659028
+        },
+        {
+          "label": "darr[9]",
+          "value": 39.258663053061035
+        },
+        {
+          "label": "darr[10]",
+          "value": 0.2724643069334991
+        },
+        {
+          "label": "darr[11]",
+          "value": 7.113523483276367
+        },
+        {
+          "label": "darr[12]",
+          "value": 2451545.6758427955
+        },
+        {
+          "label": "darr[13]",
+          "value": 2451545.6889003986
+        },
+        {
+          "label": "darr[14]",
+          "value": 2451545.805144685
+        },
+        {
+          "label": "darr[15]",
+          "value": 99999999
+        },
+        {
+          "label": "darr[16]",
+          "value": 0
+        },
+        {
+          "label": "darr[17]",
+          "value": 0
+        },
+        {
+          "label": "darr[18]",
+          "value": 0
+        },
+        {
+          "label": "darr[19]",
+          "value": 0.0021338723080859268
+        },
+        {
+          "label": "darr[20]",
+          "value": -4.066115281199664
+        },
+        {
+          "label": "darr[21]",
+          "value": 2451545.6699851155
+        },
+        {
+          "label": "darr[22]",
+          "value": 2451545.8051426755
+        },
+        {
+          "label": "darr[23]",
+          "value": -0.13515755999833345
+        },
+        {
+          "label": "darr[24]",
+          "value": 0.129301889333874
+        },
+        {
+          "label": "darr[25]",
+          "value": 0
+        },
+        {
+          "label": "darr[26]",
+          "value": 38.84964325144673
+        },
+        {
+          "label": "darr[27]",
+          "value": 75.80915546186753
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_heliacal_ut",
+      "worksheetName": "SW_SWE_HELIACAL_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        [
+          1013.25,
+          15.0,
+          40.0,
+          0.0
+        ],
+        [
+          36.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "venus",
+        1,
+        258
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "datm[0]",
+          "value": 1013.25
+        },
+        {
+          "label": "datm[1]",
+          "value": 15
+        },
+        {
+          "label": "datm[2]",
+          "value": 40
+        },
+        {
+          "label": "datm[3]",
+          "value": 0
+        },
+        {
+          "label": "dobs[0]",
+          "value": 36
+        },
+        {
+          "label": "dobs[1]",
+          "value": 1
+        },
+        {
+          "label": "dobs[2]",
+          "value": 1
+        },
+        {
+          "label": "dobs[3]",
+          "value": 1
+        },
+        {
+          "label": "dobs[4]",
+          "value": 0
+        },
+        {
+          "label": "dobs[5]",
+          "value": 0
+        },
+        {
+          "label": "dret[0]",
+          "value": 2452004.663219142
+        },
+        {
+          "label": "dret[1]",
+          "value": 2452004.66634414
+        },
+        {
+          "label": "dret[2]",
+          "value": 2452004.6704876567
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_helio_cross",
+      "worksheetName": "SW_SWE_HELIO_CROSS",
+      "command": false,
+      "inputs": [
+        4,
+        0.0,
+        2451545.0,
+        258,
+        1
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "jd_cross[0]",
+          "value": 2451545.897480729
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_helio_cross_ut",
+      "worksheetName": "SW_SWE_HELIO_CROSS_UT",
+      "command": false,
+      "inputs": [
+        4,
+        0.0,
+        2451545.0,
+        258,
+        1
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "jd_cross[0]",
+          "value": 2451545.8967419597
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_house_name",
+      "worksheetName": "SW_SWE_HOUSE_NAME",
+      "command": false,
+      "inputs": [
+        "P"
+      ],
+      "nativeReturn": "Placidus",
+      "warning": "",
+      "fields": [
+        {
+          "label": "Name",
+          "value": "Placidus"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_house_pos",
+      "worksheetName": "SW_SWE_HOUSE_POS",
+      "command": false,
+      "inputs": [
+        280.0,
+        52.52,
+        23.4392911,
+        "P",
+        [
+          280.0,
+          1.0
+        ]
+      ],
+      "nativeReturn": 10.041203783688626,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 10.041203783688626
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_houses",
+      "worksheetName": "SW_SWE_HOUSES",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        52.52,
+        13.405,
+        "P"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "cusps[1]",
+          "value": 51.6259492638294
+        },
+        {
+          "label": "cusps[2]",
+          "value": 77.1587646487922
+        },
+        {
+          "label": "cusps[3]",
+          "value": 94.84910558693834
+        },
+        {
+          "label": "cusps[4]",
+          "value": 112.08980616662677
+        },
+        {
+          "label": "cusps[5]",
+          "value": 133.71403246352259
+        },
+        {
+          "label": "cusps[6]",
+          "value": 169.30445031401007
+        },
+        {
+          "label": "cusps[7]",
+          "value": 231.6259492638294
+        },
+        {
+          "label": "cusps[8]",
+          "value": 257.1587646487922
+        },
+        {
+          "label": "cusps[9]",
+          "value": 274.8491055869383
+        },
+        {
+          "label": "cusps[10]",
+          "value": 292.0898061666268
+        },
+        {
+          "label": "cusps[11]",
+          "value": 313.7140324635226
+        },
+        {
+          "label": "cusps[12]",
+          "value": 349.30445031401007
+        },
+        {
+          "label": "ascmc[0]",
+          "value": 51.6259492638294
+        },
+        {
+          "label": "ascmc[1]",
+          "value": 292.0898061666268
+        },
+        {
+          "label": "ascmc[2]",
+          "value": 293.86207243802596
+        },
+        {
+          "label": "ascmc[3]",
+          "value": 199.47356462990453
+        },
+        {
+          "label": "ascmc[4]",
+          "value": 25.73992083482461
+        },
+        {
+          "label": "ascmc[5]",
+          "value": 16.59061734362251
+        },
+        {
+          "label": "ascmc[6]",
+          "value": 37.14177910316135
+        },
+        {
+          "label": "ascmc[7]",
+          "value": 196.59061734362254
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_houses_armc",
+      "worksheetName": "SW_SWE_HOUSES_ARMC",
+      "command": false,
+      "inputs": [
+        280.0,
+        52.52,
+        23.4392911,
+        "P",
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "cusps[1]",
+          "value": 24.28954211088609
+        },
+        {
+          "label": "cusps[2]",
+          "value": 61.53464147695829
+        },
+        {
+          "label": "cusps[3]",
+          "value": 82.0340145696068
+        },
+        {
+          "label": "cusps[4]",
+          "value": 99.18951368551222
+        },
+        {
+          "label": "cusps[5]",
+          "value": 118.15381465887765
+        },
+        {
+          "label": "cusps[6]",
+          "value": 146.32961067398446
+        },
+        {
+          "label": "cusps[7]",
+          "value": 204.2895421108861
+        },
+        {
+          "label": "cusps[8]",
+          "value": 241.53464147695829
+        },
+        {
+          "label": "cusps[9]",
+          "value": 262.0340145696068
+        },
+        {
+          "label": "cusps[10]",
+          "value": 279.1895136855122
+        },
+        {
+          "label": "cusps[11]",
+          "value": 298.15381465887765
+        },
+        {
+          "label": "cusps[12]",
+          "value": 326.32961067398446
+        },
+        {
+          "label": "ascmc[0]",
+          "value": 24.28954211088609
+        },
+        {
+          "label": "ascmc[1]",
+          "value": 279.1895136855122
+        },
+        {
+          "label": "ascmc[2]",
+          "value": 280
+        },
+        {
+          "label": "ascmc[3]",
+          "value": 188.1764858543276
+        },
+        {
+          "label": "ascmc[4]",
+          "value": 10.87878944418576
+        },
+        {
+          "label": "ascmc[5]",
+          "value": 6.9607192212403675
+        },
+        {
+          "label": "ascmc[6]",
+          "value": 16.1785086625531
+        },
+        {
+          "label": "ascmc[7]",
+          "value": 186.96071922124037
+        },
+        {
+          "label": "ascmc[8]",
+          "value": 0
+        },
+        {
+          "label": "ascmc[9]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_houses_armc_ex2",
+      "worksheetName": "SW_SWE_HOUSES_ARMC_EX2",
+      "command": false,
+      "inputs": [
+        280.0,
+        52.52,
+        23.4392911,
+        "P",
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "cusps[1]",
+          "value": 24.28954211088609
+        },
+        {
+          "label": "cusps[2]",
+          "value": 61.53464147695829
+        },
+        {
+          "label": "cusps[3]",
+          "value": 82.0340145696068
+        },
+        {
+          "label": "cusps[4]",
+          "value": 99.18951368551222
+        },
+        {
+          "label": "cusps[5]",
+          "value": 118.15381465887765
+        },
+        {
+          "label": "cusps[6]",
+          "value": 146.32961067398446
+        },
+        {
+          "label": "cusps[7]",
+          "value": 204.2895421108861
+        },
+        {
+          "label": "cusps[8]",
+          "value": 241.53464147695829
+        },
+        {
+          "label": "cusps[9]",
+          "value": 262.0340145696068
+        },
+        {
+          "label": "cusps[10]",
+          "value": 279.1895136855122
+        },
+        {
+          "label": "cusps[11]",
+          "value": 298.15381465887765
+        },
+        {
+          "label": "cusps[12]",
+          "value": 326.32961067398446
+        },
+        {
+          "label": "ascmc[0]",
+          "value": 24.28954211088609
+        },
+        {
+          "label": "ascmc[1]",
+          "value": 279.1895136855122
+        },
+        {
+          "label": "ascmc[2]",
+          "value": 280
+        },
+        {
+          "label": "ascmc[3]",
+          "value": 188.1764858543276
+        },
+        {
+          "label": "ascmc[4]",
+          "value": 10.87878944418576
+        },
+        {
+          "label": "ascmc[5]",
+          "value": 6.9607192212403675
+        },
+        {
+          "label": "ascmc[6]",
+          "value": 16.1785086625531
+        },
+        {
+          "label": "ascmc[7]",
+          "value": 186.96071922124037
+        },
+        {
+          "label": "ascmc[8]",
+          "value": 0
+        },
+        {
+          "label": "ascmc[9]",
+          "value": 0
+        },
+        {
+          "label": "cusp_speed[1]",
+          "value": 823.6268335936225
+        },
+        {
+          "label": "cusp_speed[2]",
+          "value": 436.21717711308867
+        },
+        {
+          "label": "cusp_speed[3]",
+          "value": 342.8696512675862
+        },
+        {
+          "label": "cusp_speed[4]",
+          "value": 332.7856154835184
+        },
+        {
+          "label": "cusp_speed[5]",
+          "value": 383.47408080715087
+        },
+        {
+          "label": "cusp_speed[6]",
+          "value": 559.4247340978998
+        },
+        {
+          "label": "cusp_speed[7]",
+          "value": 823.6268335936225
+        },
+        {
+          "label": "cusp_speed[8]",
+          "value": 436.21717711308867
+        },
+        {
+          "label": "cusp_speed[9]",
+          "value": 342.8696512675862
+        },
+        {
+          "label": "cusp_speed[10]",
+          "value": 332.7856154835184
+        },
+        {
+          "label": "cusp_speed[11]",
+          "value": 383.47408080715087
+        },
+        {
+          "label": "cusp_speed[12]",
+          "value": 559.4247340978998
+        },
+        {
+          "label": "ascmc_speed[0]",
+          "value": 823.6268335936225
+        },
+        {
+          "label": "ascmc_speed[1]",
+          "value": 332.7856154835184
+        },
+        {
+          "label": "ascmc_speed[2]",
+          "value": 360.98564733498665
+        },
+        {
+          "label": "ascmc_speed[3]",
+          "value": 294.9050979978373
+        },
+        {
+          "label": "ascmc_speed[4]",
+          "value": 391.23504417438585
+        },
+        {
+          "label": "ascmc_speed[5]",
+          "value": 251.1395847257629
+        },
+        {
+          "label": "ascmc_speed[6]",
+          "value": 573.55013908215
+        },
+        {
+          "label": "ascmc_speed[7]",
+          "value": 251.1395847257629
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_houses_ex",
+      "worksheetName": "SW_SWE_HOUSES_EX",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258,
+        52.52,
+        13.405,
+        "P"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "cusps[1]",
+          "value": 51.6259492638294
+        },
+        {
+          "label": "cusps[2]",
+          "value": 77.1587646487922
+        },
+        {
+          "label": "cusps[3]",
+          "value": 94.84910558693834
+        },
+        {
+          "label": "cusps[4]",
+          "value": 112.08980616662677
+        },
+        {
+          "label": "cusps[5]",
+          "value": 133.71403246352259
+        },
+        {
+          "label": "cusps[6]",
+          "value": 169.30445031401007
+        },
+        {
+          "label": "cusps[7]",
+          "value": 231.6259492638294
+        },
+        {
+          "label": "cusps[8]",
+          "value": 257.1587646487922
+        },
+        {
+          "label": "cusps[9]",
+          "value": 274.8491055869383
+        },
+        {
+          "label": "cusps[10]",
+          "value": 292.0898061666268
+        },
+        {
+          "label": "cusps[11]",
+          "value": 313.7140324635226
+        },
+        {
+          "label": "cusps[12]",
+          "value": 349.30445031401007
+        },
+        {
+          "label": "ascmc[0]",
+          "value": 51.6259492638294
+        },
+        {
+          "label": "ascmc[1]",
+          "value": 292.0898061666268
+        },
+        {
+          "label": "ascmc[2]",
+          "value": 293.86207243802596
+        },
+        {
+          "label": "ascmc[3]",
+          "value": 199.47356462990453
+        },
+        {
+          "label": "ascmc[4]",
+          "value": 25.73992083482461
+        },
+        {
+          "label": "ascmc[5]",
+          "value": 16.59061734362251
+        },
+        {
+          "label": "ascmc[6]",
+          "value": 37.14177910316135
+        },
+        {
+          "label": "ascmc[7]",
+          "value": 196.59061734362254
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_houses_ex2",
+      "worksheetName": "SW_SWE_HOUSES_EX2",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258,
+        52.52,
+        13.405,
+        "P"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "cusps[1]",
+          "value": 51.6259492638294
+        },
+        {
+          "label": "cusps[2]",
+          "value": 77.1587646487922
+        },
+        {
+          "label": "cusps[3]",
+          "value": 94.84910558693834
+        },
+        {
+          "label": "cusps[4]",
+          "value": 112.08980616662677
+        },
+        {
+          "label": "cusps[5]",
+          "value": 133.71403246352259
+        },
+        {
+          "label": "cusps[6]",
+          "value": 169.30445031401007
+        },
+        {
+          "label": "cusps[7]",
+          "value": 231.6259492638294
+        },
+        {
+          "label": "cusps[8]",
+          "value": 257.1587646487922
+        },
+        {
+          "label": "cusps[9]",
+          "value": 274.8491055869383
+        },
+        {
+          "label": "cusps[10]",
+          "value": 292.0898061666268
+        },
+        {
+          "label": "cusps[11]",
+          "value": 313.7140324635226
+        },
+        {
+          "label": "cusps[12]",
+          "value": 349.30445031401007
+        },
+        {
+          "label": "ascmc[0]",
+          "value": 51.6259492638294
+        },
+        {
+          "label": "ascmc[1]",
+          "value": 292.0898061666268
+        },
+        {
+          "label": "ascmc[2]",
+          "value": 293.86207243802596
+        },
+        {
+          "label": "ascmc[3]",
+          "value": 199.47356462990453
+        },
+        {
+          "label": "ascmc[4]",
+          "value": 25.73992083482461
+        },
+        {
+          "label": "ascmc[5]",
+          "value": 16.59061734362251
+        },
+        {
+          "label": "ascmc[6]",
+          "value": 37.14177910316135
+        },
+        {
+          "label": "ascmc[7]",
+          "value": 196.59061734362254
+        },
+        {
+          "label": "cusp_speed[1]",
+          "value": 600.7310302690574
+        },
+        {
+          "label": "cusp_speed[2]",
+          "value": 371.96237394504067
+        },
+        {
+          "label": "cusp_speed[3]",
+          "value": 325.5654772299777
+        },
+        {
+          "label": "cusp_speed[4]",
+          "value": 340.00474982516266
+        },
+        {
+          "label": "cusp_speed[5]",
+          "value": 419.95667210139214
+        },
+        {
+          "label": "cusp_speed[6]",
+          "value": 623.5736046285765
+        },
+        {
+          "label": "cusp_speed[7]",
+          "value": 600.7310302690574
+        },
+        {
+          "label": "cusp_speed[8]",
+          "value": 371.96237394504067
+        },
+        {
+          "label": "cusp_speed[9]",
+          "value": 325.5654772299777
+        },
+        {
+          "label": "cusp_speed[10]",
+          "value": 340.00474982516266
+        },
+        {
+          "label": "cusp_speed[11]",
+          "value": 419.95667210139214
+        },
+        {
+          "label": "cusp_speed[12]",
+          "value": 623.5736046285765
+        },
+        {
+          "label": "ascmc_speed[0]",
+          "value": 600.7310302690574
+        },
+        {
+          "label": "ascmc_speed[1]",
+          "value": 340.00474982516266
+        },
+        {
+          "label": "ascmc_speed[2]",
+          "value": 360.98564733498665
+        },
+        {
+          "label": "ascmc_speed[3]",
+          "value": 293.30025425137796
+        },
+        {
+          "label": "ascmc_speed[4]",
+          "value": 381.7078565319029
+        },
+        {
+          "label": "ascmc_speed[5]",
+          "value": 250.31498479522975
+        },
+        {
+          "label": "ascmc_speed[6]",
+          "value": 513.5229761642405
+        },
+        {
+          "label": "ascmc_speed[7]",
+          "value": 250.31498479522975
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_jdet_to_utc",
+      "worksheetName": "SW_SWE_JDET_TO_UTC",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        1
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "iyear[0]",
+          "value": 2000
+        },
+        {
+          "label": "imonth[0]",
+          "value": 1
+        },
+        {
+          "label": "iday[0]",
+          "value": 1
+        },
+        {
+          "label": "ihour[0]",
+          "value": 11
+        },
+        {
+          "label": "imin[0]",
+          "value": 58
+        },
+        {
+          "label": "dsec[0]",
+          "value": 55.815998911857605
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_jdut1_to_utc",
+      "worksheetName": "SW_SWE_JDUT1_TO_UTC",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        1
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "iyear[0]",
+          "value": 2000
+        },
+        {
+          "label": "imonth[0]",
+          "value": 1
+        },
+        {
+          "label": "iday[0]",
+          "value": 1
+        },
+        {
+          "label": "ihour[0]",
+          "value": 11
+        },
+        {
+          "label": "imin[0]",
+          "value": 59
+        },
+        {
+          "label": "dsec[0]",
+          "value": 59.64490234851837
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_julday",
+      "worksheetName": "SW_SWE_JULDAY",
+      "command": false,
+      "inputs": [
+        2000,
+        1,
+        1,
+        12.0,
+        1
+      ],
+      "nativeReturn": 2451545,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451545
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lat_to_lmt",
+      "worksheetName": "SW_SWE_LAT_TO_LMT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        13.405
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tjd_lmt[0]",
+          "value": 2451545.002269891
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lmt_to_lat",
+      "worksheetName": "SW_SWE_LMT_TO_LAT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        13.405
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tjd_lat[0]",
+          "value": 2451544.9977308577
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lun_eclipse_how",
+      "worksheetName": "SW_SWE_LUN_ECLIPSE_HOW",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2,
+        [
+          13.405,
+          52.52,
+          34.0
+        ]
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "attr[0]",
+          "value": 0
+        },
+        {
+          "label": "attr[1]",
+          "value": -95.25237952864032
+        },
+        {
+          "label": "attr[2]",
+          "value": 0
+        },
+        {
+          "label": "attr[3]",
+          "value": 0
+        },
+        {
+          "label": "attr[4]",
+          "value": 68.66983121397999
+        },
+        {
+          "label": "attr[5]",
+          "value": 1.4102988528067042
+        },
+        {
+          "label": "attr[6]",
+          "value": 1.7369140021314706
+        },
+        {
+          "label": "attr[7]",
+          "value": 0
+        },
+        {
+          "label": "attr[8]",
+          "value": 0
+        },
+        {
+          "label": "attr[9]",
+          "value": -99999999
+        },
+        {
+          "label": "attr[10]",
+          "value": -99999999
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lun_eclipse_when",
+      "worksheetName": "SW_SWE_LUN_ECLIPSE_WHEN",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2,
+        0,
+        0
+      ],
+      "nativeReturn": 4,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2451564.696872931
+        },
+        {
+          "label": "tret[1]",
+          "value": 0
+        },
+        {
+          "label": "tret[2]",
+          "value": 2451564.6262461217
+        },
+        {
+          "label": "tret[3]",
+          "value": 2451564.767500516
+        },
+        {
+          "label": "tret[4]",
+          "value": 2451564.6701270784
+        },
+        {
+          "label": "tret[5]",
+          "value": 2451564.723625305
+        },
+        {
+          "label": "tret[6]",
+          "value": 2451564.5863797613
+        },
+        {
+          "label": "tret[7]",
+          "value": 2451564.8074182565
+        },
+        {
+          "label": "tret[8]",
+          "value": 0
+        },
+        {
+          "label": "tret[9]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lun_eclipse_when_loc",
+      "worksheetName": "SW_SWE_LUN_ECLIPSE_WHEN_LOC",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        0
+      ],
+      "nativeReturn": 16260,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2451564.696872931
+        },
+        {
+          "label": "tret[1]",
+          "value": 0
+        },
+        {
+          "label": "tret[2]",
+          "value": 2451564.6262461217
+        },
+        {
+          "label": "tret[3]",
+          "value": 2451564.767500516
+        },
+        {
+          "label": "tret[4]",
+          "value": 2451564.6701270784
+        },
+        {
+          "label": "tret[5]",
+          "value": 2451564.723625305
+        },
+        {
+          "label": "tret[6]",
+          "value": 2451564.5863797613
+        },
+        {
+          "label": "tret[7]",
+          "value": 0
+        },
+        {
+          "label": "tret[8]",
+          "value": 0
+        },
+        {
+          "label": "tret[9]",
+          "value": 2451564.7975024777
+        },
+        {
+          "label": "attr[0]",
+          "value": 1.3248740190252482
+        },
+        {
+          "label": "attr[1]",
+          "value": 2.3058269414269534
+        },
+        {
+          "label": "attr[2]",
+          "value": 0
+        },
+        {
+          "label": "attr[3]",
+          "value": 0
+        },
+        {
+          "label": "attr[4]",
+          "value": 95.88915755293203
+        },
+        {
+          "label": "attr[5]",
+          "value": 19.6826135434889
+        },
+        {
+          "label": "attr[6]",
+          "value": 19.727656512181067
+        },
+        {
+          "label": "attr[7]",
+          "value": 0.29952764194447923
+        },
+        {
+          "label": "attr[8]",
+          "value": 1.3248740190252482
+        },
+        {
+          "label": "attr[9]",
+          "value": 124
+        },
+        {
+          "label": "attr[10]",
+          "value": 48
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lun_occult_when_glob",
+      "worksheetName": "SW_SWE_LUN_OCCULT_WHEN_GLOB",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        3,
+        "",
+        2,
+        0,
+        0
+      ],
+      "nativeReturn": 5,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2451607.5448423615
+        },
+        {
+          "label": "tret[1]",
+          "value": 2451607.532320886
+        },
+        {
+          "label": "tret[2]",
+          "value": 2451607.456523388
+        },
+        {
+          "label": "tret[3]",
+          "value": 2451607.633379051
+        },
+        {
+          "label": "tret[4]",
+          "value": 2451607.4568525036
+        },
+        {
+          "label": "tret[5]",
+          "value": 2451607.6330504967
+        },
+        {
+          "label": "tret[6]",
+          "value": 2451607.4848460774
+        },
+        {
+          "label": "tret[7]",
+          "value": 2451607.6050253436
+        },
+        {
+          "label": "tret[8]",
+          "value": 0
+        },
+        {
+          "label": "tret[9]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lun_occult_when_loc",
+      "worksheetName": "SW_SWE_LUN_OCCULT_WHEN_LOC",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        3,
+        "",
+        2,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        0
+      ],
+      "nativeReturn": 32644,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2453147.0019211257
+        },
+        {
+          "label": "tret[1]",
+          "value": 2453146.9745009257
+        },
+        {
+          "label": "tret[2]",
+          "value": 2453146.9761199863
+        },
+        {
+          "label": "tret[3]",
+          "value": 2453147.028177265
+        },
+        {
+          "label": "tret[4]",
+          "value": 2453147.029856229
+        },
+        {
+          "label": "tret[5]",
+          "value": 0
+        },
+        {
+          "label": "tret[6]",
+          "value": 0
+        },
+        {
+          "label": "tret[7]",
+          "value": 0
+        },
+        {
+          "label": "tret[8]",
+          "value": 0
+        },
+        {
+          "label": "tret[9]",
+          "value": 0
+        },
+        {
+          "label": "attr[0]",
+          "value": 13.315195798104014
+        },
+        {
+          "label": "attr[1]",
+          "value": 35.908109054070806
+        },
+        {
+          "label": "attr[2]",
+          "value": 1289.392295839042
+        },
+        {
+          "label": "attr[3]",
+          "value": -3406.7766980387646
+        },
+        {
+          "label": "attr[4]",
+          "value": 336.42583629332887
+        },
+        {
+          "label": "attr[5]",
+          "value": 62.73507275922189
+        },
+        {
+          "label": "attr[6]",
+          "value": 62.74339407175372
+        },
+        {
+          "label": "attr[7]",
+          "value": 0.07115336074672744
+        },
+        {
+          "label": "attr[8]",
+          "value": 0
+        },
+        {
+          "label": "attr[9]",
+          "value": 0
+        },
+        {
+          "label": "attr[10]",
+          "value": 0
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_lun_occult_where",
+      "worksheetName": "SW_SWE_LUN_OCCULT_WHERE",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        3,
+        "",
+        2
+      ],
+      "nativeReturn": 0,
+      "warning": "no solar eclipse at tjd = 2451545.000000",
+      "fields": [
+        {
+          "label": "geopos[0]",
+          "value": -123.26504946402963
+        },
+        {
+          "label": "geopos[1]",
+          "value": 20.602804666321987
+        },
+        {
+          "label": "attr[0]",
+          "value": -4258.305556680826
+        },
+        {
+          "label": "attr[1]",
+          "value": 122.06307856976663
+        },
+        {
+          "label": "attr[2]",
+          "value": 1
+        },
+        {
+          "label": "attr[3]",
+          "value": -3456.920247972836
+        },
+        {
+          "label": "attr[4]",
+          "value": 289.79337195497595
+        },
+        {
+          "label": "attr[5]",
+          "value": 0.08126084393439094
+        },
+        {
+          "label": "attr[6]",
+          "value": 0.5528774228070172
+        },
+        {
+          "label": "attr[7]",
+          "value": 17.603439773372628
+        },
+        {
+          "label": "attr[8]",
+          "value": 0
+        },
+        {
+          "label": "attr[9]",
+          "value": 0
+        },
+        {
+          "label": "attr[10]",
+          "value": 0
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_mooncross",
+      "worksheetName": "SW_SWE_MOONCROSS",
+      "command": false,
+      "inputs": [
+        0.0,
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2451556.2843313944,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451556.2843313944
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_mooncross_node",
+      "worksheetName": "SW_SWE_MOONCROSS_NODE",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2451551.7577673392,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451551.7577673392
+        },
+        {
+          "label": "xlon[0]",
+          "value": 303.65329227190887
+        },
+        {
+          "label": "xlat[0]",
+          "value": -1.7134770044819655e-09
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_mooncross_node_ut",
+      "worksheetName": "SW_SWE_MOONCROSS_NODE_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2451551.757028514,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451551.757028514
+        },
+        {
+          "label": "xlon[0]",
+          "value": 303.65329227190887
+        },
+        {
+          "label": "xlat[0]",
+          "value": -1.7134770044819655e-09
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_mooncross_ut",
+      "worksheetName": "SW_SWE_MOONCROSS_UT",
+      "command": false,
+      "inputs": [
+        0.0,
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2451556.283592526,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451556.283592526
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_nod_aps",
+      "worksheetName": "SW_SWE_NOD_APS",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258,
+        0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xnasc[0]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[1]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[2]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[3]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[4]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[5]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[0]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[1]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[2]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[3]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[4]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[5]",
+          "value": 0
+        },
+        {
+          "label": "xperi[0]",
+          "value": 282.9334804412087
+        },
+        {
+          "label": "xperi[1]",
+          "value": -3.153748991978176e-08
+        },
+        {
+          "label": "xperi[2]",
+          "value": 0.9832923809906251
+        },
+        {
+          "label": "xperi[3]",
+          "value": 4.9063585158180274e-05
+        },
+        {
+          "label": "xperi[4]",
+          "value": 5.556558991827287e-06
+        },
+        {
+          "label": "xperi[5]",
+          "value": 9.643804070059787e-10
+        },
+        {
+          "label": "xaphe[0]",
+          "value": 102.93347578399911
+        },
+        {
+          "label": "xaphe[1]",
+          "value": -6.184345760991037e-08
+        },
+        {
+          "label": "xaphe[2]",
+          "value": 1.0167096071705977
+        },
+        {
+          "label": "xaphe[3]",
+          "value": 4.904480551347611e-05
+        },
+        {
+          "label": "xaphe[4]",
+          "value": -5.5563689910368855e-06
+        },
+        {
+          "label": "xaphe[5]",
+          "value": -1.0121639956172462e-09
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_nod_aps_ut",
+      "worksheetName": "SW_SWE_NOD_APS_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258,
+        0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "xnasc[0]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[1]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[2]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[3]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[4]",
+          "value": 0
+        },
+        {
+          "label": "xnasc[5]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[0]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[1]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[2]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[3]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[4]",
+          "value": 0
+        },
+        {
+          "label": "xndsc[5]",
+          "value": 0
+        },
+        {
+          "label": "xperi[0]",
+          "value": 282.93348047745377
+        },
+        {
+          "label": "xperi[1]",
+          "value": -3.153760825756037e-08
+        },
+        {
+          "label": "xperi[2]",
+          "value": 0.9832923809914755
+        },
+        {
+          "label": "xperi[3]",
+          "value": 4.9064427053967516e-05
+        },
+        {
+          "label": "xperi[4]",
+          "value": 5.56235830915091e-06
+        },
+        {
+          "label": "xperi[5]",
+          "value": 1.1531126860170246e-09
+        },
+        {
+          "label": "xaphe[0]",
+          "value": 102.93347582023395
+        },
+        {
+          "label": "xaphe[1]",
+          "value": -6.184364227312983e-08
+        },
+        {
+          "label": "xaphe[2]",
+          "value": 1.0167096071697743
+        },
+        {
+          "label": "xaphe[3]",
+          "value": 4.905260630668388e-05
+        },
+        {
+          "label": "xaphe[4]",
+          "value": -5.5684062021752725e-06
+        },
+        {
+          "label": "xaphe[5]",
+          "value": -1.0977388782710316e-09
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_orbit_max_min_true_distance",
+      "worksheetName": "SW_SWE_ORBIT_MAX_MIN_TRUE_DISTANCE",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "dmax[0]",
+          "value": 1.0166991859798402
+        },
+        {
+          "label": "dmin[0]",
+          "value": 0.9832941245197732
+        },
+        {
+          "label": "dtrue[0]",
+          "value": 0.9833099756655623
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_pheno",
+      "worksheetName": "SW_SWE_PHENO",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258
+      ],
+      "nativeReturn": 2,
+      "warning": "",
+      "fields": [
+        {
+          "label": "attr[0]",
+          "value": 0
+        },
+        {
+          "label": "attr[1]",
+          "value": 0
+        },
+        {
+          "label": "attr[2]",
+          "value": 0
+        },
+        {
+          "label": "attr[3]",
+          "value": 0.5421754308887596
+        },
+        {
+          "label": "attr[4]",
+          "value": -26.89650905443042
+        },
+        {
+          "label": "attr[5]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_pheno_ut",
+      "worksheetName": "SW_SWE_PHENO_UT",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        258
+      ],
+      "nativeReturn": 2,
+      "warning": "",
+      "fields": [
+        {
+          "label": "attr[0]",
+          "value": 0
+        },
+        {
+          "label": "attr[1]",
+          "value": 0
+        },
+        {
+          "label": "attr[2]",
+          "value": 0
+        },
+        {
+          "label": "attr[3]",
+          "value": 0.5421754338836308
+        },
+        {
+          "label": "attr[4]",
+          "value": -26.89650906642521
+        },
+        {
+          "label": "attr[5]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_rad_midp",
+      "worksheetName": "SW_SWE_RAD_MIDP",
+      "command": false,
+      "inputs": [
+        350.0,
+        10.0
+      ],
+      "nativeReturn": 4.070811398971594,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 4.070811398971594
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_radnorm",
+      "worksheetName": "SW_SWE_RADNORM",
+      "command": false,
+      "inputs": [
+        12.345
+      ],
+      "nativeReturn": 6.061814692820414,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 6.061814692820414
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_refrac",
+      "worksheetName": "SW_SWE_REFRAC",
+      "command": false,
+      "inputs": [
+        5.0,
+        1013.25,
+        15.0,
+        0
+      ],
+      "nativeReturn": 5.158946036463957,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 5.158946036463957
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_refrac_extended",
+      "worksheetName": "SW_SWE_REFRAC_EXTENDED",
+      "command": false,
+      "inputs": [
+        5.0,
+        34.0,
+        1013.25,
+        15.0,
+        0.0065,
+        0
+      ],
+      "nativeReturn": 5.158045874297383,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 5.158045874297383
+        },
+        {
+          "label": "dret[0]",
+          "value": 5
+        },
+        {
+          "label": "dret[1]",
+          "value": 5.158045874297383
+        },
+        {
+          "label": "dret[2]",
+          "value": 0.15804587429738354
+        },
+        {
+          "label": "dret[3]",
+          "value": -0.16197078953767513
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_revjul",
+      "worksheetName": "SW_SWE_REVJUL",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        1
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "jyear[0]",
+          "value": 2000
+        },
+        {
+          "label": "jmon[0]",
+          "value": 1
+        },
+        {
+          "label": "jday[0]",
+          "value": 1
+        },
+        {
+          "label": "jut[0]",
+          "value": 12
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_rise_trans",
+      "worksheetName": "SW_SWE_RISE_TRANS",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        "",
+        2,
+        1,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        1013.25,
+        15.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2451545.8036265676
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_rise_trans_true_hor",
+      "worksheetName": "SW_SWE_RISE_TRANS_TRUE_HOR",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        0,
+        "",
+        2,
+        1,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        1013.25,
+        15.0,
+        0.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2451545.8036266183
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_astro_models",
+      "worksheetName": "SW_CMD_SET_ASTRO_MODELS",
+      "command": true,
+      "inputs": [
+        "0,0,0,0,0,0,0,0",
+        258
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_delta_t_userdef",
+      "worksheetName": "SW_CMD_SET_DELTA_T_USERDEF",
+      "command": true,
+      "inputs": [
+        -1e-10
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_ephe_path",
+      "worksheetName": "SW_CMD_SET_EPHE_PATH",
+      "command": true,
+      "inputs": [
+        "@DATA@"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_interpolate_nut",
+      "worksheetName": "SW_CMD_SET_INTERPOLATE_NUT",
+      "command": true,
+      "inputs": [
+        0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_jpl_file",
+      "worksheetName": "SW_CMD_SET_JPL_FILE",
+      "command": true,
+      "inputs": [
+        "de431.eph"
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_lapse_rate",
+      "worksheetName": "SW_CMD_SET_LAPSE_RATE",
+      "command": true,
+      "inputs": [
+        0.0065
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_sid_mode",
+      "worksheetName": "SW_CMD_SET_SID_MODE",
+      "command": true,
+      "inputs": [
+        1,
+        2451545.0,
+        24.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_tid_acc",
+      "worksheetName": "SW_CMD_SET_TID_ACC",
+      "command": true,
+      "inputs": [
+        999999.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_set_topo",
+      "worksheetName": "SW_CMD_SET_TOPO",
+      "command": true,
+      "inputs": [
+        13.405,
+        52.52,
+        34.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_sidtime",
+      "worksheetName": "SW_SWE_SIDTIME",
+      "command": false,
+      "inputs": [
+        2451545.0
+      ],
+      "nativeReturn": 18.697138162535065,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 18.697138162535065
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_sidtime0",
+      "worksheetName": "SW_SWE_SIDTIME0",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        23.4392911,
+        0.0
+      ],
+      "nativeReturn": 18.69737486770511,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 18.69737486770511
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_sol_eclipse_how",
+      "worksheetName": "SW_SWE_SOL_ECLIPSE_HOW",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2,
+        [
+          13.405,
+          52.52,
+          34.0
+        ]
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "attr[0]",
+          "value": 0
+        },
+        {
+          "label": "attr[1]",
+          "value": 0
+        },
+        {
+          "label": "attr[2]",
+          "value": 0
+        },
+        {
+          "label": "attr[3]",
+          "value": 0
+        },
+        {
+          "label": "attr[4]",
+          "value": 11.907208455380896
+        },
+        {
+          "label": "attr[5]",
+          "value": 13.650685854894084
+        },
+        {
+          "label": "attr[6]",
+          "value": 13.715852073797736
+        },
+        {
+          "label": "attr[7]",
+          "value": 57.43381907923547
+        },
+        {
+          "label": "attr[8]",
+          "value": 0
+        },
+        {
+          "label": "attr[9]",
+          "value": 0
+        },
+        {
+          "label": "attr[10]",
+          "value": 0
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_sol_eclipse_when_glob",
+      "worksheetName": "SW_SWE_SOL_ECLIPSE_WHEN_GLOB",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2,
+        0,
+        0
+      ],
+      "nativeReturn": 18,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2451580.03423814
+        },
+        {
+          "label": "tret[1]",
+          "value": 2451580.0137743033
+        },
+        {
+          "label": "tret[2]",
+          "value": 2451579.9556805287
+        },
+        {
+          "label": "tret[3]",
+          "value": 2451580.113071598
+        },
+        {
+          "label": "tret[4]",
+          "value": 0
+        },
+        {
+          "label": "tret[5]",
+          "value": 0
+        },
+        {
+          "label": "tret[6]",
+          "value": 0
+        },
+        {
+          "label": "tret[7]",
+          "value": 0
+        },
+        {
+          "label": "tret[8]",
+          "value": 0
+        },
+        {
+          "label": "tret[9]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_sol_eclipse_when_loc",
+      "worksheetName": "SW_SWE_SOL_ECLIPSE_WHEN_LOC",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        0
+      ],
+      "nativeReturn": 4498,
+      "warning": "",
+      "fields": [
+        {
+          "label": "tret[0]",
+          "value": 2452790.6446852977
+        },
+        {
+          "label": "tret[1]",
+          "value": 2452790.605883471
+        },
+        {
+          "label": "tret[2]",
+          "value": 0
+        },
+        {
+          "label": "tret[3]",
+          "value": 0
+        },
+        {
+          "label": "tret[4]",
+          "value": 2452790.685630227
+        },
+        {
+          "label": "tret[5]",
+          "value": 2452790.621523884
+        },
+        {
+          "label": "tret[6]",
+          "value": 0
+        },
+        {
+          "label": "tret[7]",
+          "value": 0
+        },
+        {
+          "label": "tret[8]",
+          "value": 0
+        },
+        {
+          "label": "tret[9]",
+          "value": 0
+        },
+        {
+          "label": "attr[0]",
+          "value": 0.8690598458464999
+        },
+        {
+          "label": "attr[1]",
+          "value": 0.9393157571407954
+        },
+        {
+          "label": "attr[2]",
+          "value": 0.8114580324959217
+        },
+        {
+          "label": "attr[3]",
+          "value": 229.1260990026534
+        },
+        {
+          "label": "attr[4]",
+          "value": 238.26721126276652
+        },
+        {
+          "label": "attr[5]",
+          "value": 3.810457634195515
+        },
+        {
+          "label": "attr[6]",
+          "value": 4.006168275268358
+        },
+        {
+          "label": "attr[7]",
+          "value": 0.05289966794831013
+        },
+        {
+          "label": "attr[8]",
+          "value": 0.8690598458464999
+        },
+        {
+          "label": "attr[9]",
+          "value": 147
+        },
+        {
+          "label": "attr[10]",
+          "value": 22
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_sol_eclipse_where",
+      "worksheetName": "SW_SWE_SOL_ECLIPSE_WHERE",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        2
+      ],
+      "nativeReturn": 0,
+      "warning": "no solar eclipse at tjd = 2451545.000000",
+      "fields": [
+        {
+          "label": "geopos[0]",
+          "value": -88.38715637746884
+        },
+        {
+          "label": "geopos[1]",
+          "value": 1.5138449494982782
+        },
+        {
+          "label": "attr[0]",
+          "value": -103.61955128946516
+        },
+        {
+          "label": "attr[1]",
+          "value": 0.9252139088995267
+        },
+        {
+          "label": "attr[2]",
+          "value": 1
+        },
+        {
+          "label": "attr[3]",
+          "value": -1423.1871279400175
+        },
+        {
+          "label": "attr[4]",
+          "value": 293.0448728605155
+        },
+        {
+          "label": "attr[5]",
+          "value": 0.13344470379037832
+        },
+        {
+          "label": "attr[6]",
+          "value": 0.5978617098859779
+        },
+        {
+          "label": "attr[7]",
+          "value": 56.70188269273593
+        },
+        {
+          "label": "attr[8]",
+          "value": -103.61955128946516
+        },
+        {
+          "label": "attr[9]",
+          "value": -99999999
+        },
+        {
+          "label": "attr[10]",
+          "value": -99999999
+        },
+        {
+          "label": "attr[11]",
+          "value": 0
+        },
+        {
+          "label": "attr[12]",
+          "value": 0
+        },
+        {
+          "label": "attr[13]",
+          "value": 0
+        },
+        {
+          "label": "attr[14]",
+          "value": 0
+        },
+        {
+          "label": "attr[15]",
+          "value": 0
+        },
+        {
+          "label": "attr[16]",
+          "value": 0
+        },
+        {
+          "label": "attr[17]",
+          "value": 0
+        },
+        {
+          "label": "attr[18]",
+          "value": 0
+        },
+        {
+          "label": "attr[19]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_solcross",
+      "worksheetName": "SW_SWE_SOLCROSS",
+      "command": false,
+      "inputs": [
+        0.0,
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2451623.8168813307,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451623.8168813307
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_solcross_ut",
+      "worksheetName": "SW_SWE_SOLCROSS_UT",
+      "command": false,
+      "inputs": [
+        0.0,
+        2451545.0,
+        258
+      ],
+      "nativeReturn": 2451623.8161418387,
+      "warning": "",
+      "fields": [
+        {
+          "label": "Result",
+          "value": 2451623.8161418387
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_split_deg",
+      "worksheetName": "SW_SWE_SPLIT_DEG",
+      "command": false,
+      "inputs": [
+        123.456,
+        0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "ideg[0]",
+          "value": 123
+        },
+        {
+          "label": "imin[0]",
+          "value": 27
+        },
+        {
+          "label": "isec[0]",
+          "value": 21
+        },
+        {
+          "label": "dsecfr[0]",
+          "value": 0.6000000000110113
+        },
+        {
+          "label": "isgn[0]",
+          "value": 1
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_time_equ",
+      "worksheetName": "SW_SWE_TIME_EQU",
+      "command": false,
+      "inputs": [
+        2451545.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "te[0]",
+          "value": -0.002281425392105676
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_topo_arcus_visionis",
+      "worksheetName": "SW_SWE_TOPO_ARCUS_VISIONIS",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        [
+          1013.25,
+          15.0,
+          40.0,
+          0.0
+        ],
+        [
+          36.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        0,
+        0.0,
+        90.0,
+        5.0,
+        100.0,
+        110.0,
+        -10.0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "datm[0]",
+          "value": 1013.25
+        },
+        {
+          "label": "datm[1]",
+          "value": 15
+        },
+        {
+          "label": "datm[2]",
+          "value": 40
+        },
+        {
+          "label": "datm[3]",
+          "value": 0
+        },
+        {
+          "label": "dobs[0]",
+          "value": 36
+        },
+        {
+          "label": "dobs[1]",
+          "value": 1
+        },
+        {
+          "label": "dobs[2]",
+          "value": 1
+        },
+        {
+          "label": "dobs[3]",
+          "value": 1
+        },
+        {
+          "label": "dobs[4]",
+          "value": 0
+        },
+        {
+          "label": "dobs[5]",
+          "value": 0
+        },
+        {
+          "label": "dret[0]",
+          "value": 13.842430114746094
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_utc_time_zone",
+      "worksheetName": "SW_SWE_UTC_TIME_ZONE",
+      "command": false,
+      "inputs": [
+        2000,
+        1,
+        1,
+        12,
+        0,
+        0.0,
+        5.5
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "iyear_out[0]",
+          "value": 2000
+        },
+        {
+          "label": "imonth_out[0]",
+          "value": 1
+        },
+        {
+          "label": "iday_out[0]",
+          "value": 1
+        },
+        {
+          "label": "ihour_out[0]",
+          "value": 6
+        },
+        {
+          "label": "imin_out[0]",
+          "value": 30
+        },
+        {
+          "label": "dsec_out[0]",
+          "value": 0
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_utc_to_jd",
+      "worksheetName": "SW_SWE_UTC_TO_JD",
+      "command": false,
+      "inputs": [
+        2000,
+        1,
+        1,
+        12,
+        0,
+        0.0,
+        1
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "dret[0]",
+          "value": 2451545.0007428704
+        },
+        {
+          "label": "dret[1]",
+          "value": 2451545.00000411
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_version",
+      "worksheetName": "SW_SWE_VERSION",
+      "command": false,
+      "inputs": [],
+      "nativeReturn": "2.10.03",
+      "warning": "",
+      "fields": [
+        {
+          "label": "arg1",
+          "value": "2.10.03"
+        }
+      ],
+      "bufferGuards": "passed"
+    },
+    {
+      "name": "swe_vis_limit_mag",
+      "worksheetName": "SW_SWE_VIS_LIMIT_MAG",
+      "command": false,
+      "inputs": [
+        2451545.0,
+        [
+          13.405,
+          52.52,
+          34.0
+        ],
+        [
+          1013.25,
+          15.0,
+          40.0,
+          0.0
+        ],
+        [
+          36.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "venus",
+        0
+      ],
+      "nativeReturn": 0,
+      "warning": "",
+      "fields": [
+        {
+          "label": "datm[0]",
+          "value": 1013.25
+        },
+        {
+          "label": "datm[1]",
+          "value": 15
+        },
+        {
+          "label": "datm[2]",
+          "value": 40
+        },
+        {
+          "label": "datm[3]",
+          "value": 0
+        },
+        {
+          "label": "dobs[0]",
+          "value": 36
+        },
+        {
+          "label": "dobs[1]",
+          "value": 1
+        },
+        {
+          "label": "dobs[2]",
+          "value": 1
+        },
+        {
+          "label": "dobs[3]",
+          "value": 1
+        },
+        {
+          "label": "dobs[4]",
+          "value": 0
+        },
+        {
+          "label": "dobs[5]",
+          "value": 0
+        },
+        {
+          "label": "dret[0]",
+          "value": -7.879910813620834
+        },
+        {
+          "label": "dret[1]",
+          "value": 5.0713518876497234
+        },
+        {
+          "label": "dret[2]",
+          "value": 230.355979922355
+        },
+        {
+          "label": "dret[3]",
+          "value": 13.651200796847816
+        },
+        {
+          "label": "dret[4]",
+          "value": 191.8972055564522
+        },
+        {
+          "label": "dret[5]",
+          "value": 1.4105387568758951
+        },
+        {
+          "label": "dret[6]",
+          "value": 248.6655806197163
+        },
+        {
+          "label": "dret[7]",
+          "value": -4.066115281199664
+        }
+      ],
+      "bufferGuards": "passed"
+    }
+  ]
+}

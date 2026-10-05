@@ -210,6 +210,11 @@ def generate(dll_path: Path) -> tuple[str, str]:
         "' Long represents 32-bit C integers/AS_BOOL, not pointer-sized integers.",
         "' Windows x64 uses the unified Microsoft x64 calling convention.", "",
     ]
+    evidence_path = ROOT / "verification/current-api.json"
+    evidence = json.loads(evidence_path.read_text()) if evidence_path.exists() else {}
+    sources = evidence.get("vbaSources", {})
+    evidence_current = set(sources) == {p.relative_to(ROOT).as_posix() for p in (ROOT / "src/vba").glob("*.bas")} and all((ROOT / path).exists() and sha256((ROOT / path).read_bytes()) == digest for path, digest in sources.items())
+    verified = set(evidence.get("verifiedFunctions", [])) if evidence_current else set()
     entries = []
     for export in exports:
         item = functions[export["name"]]
@@ -221,6 +226,21 @@ def generate(dll_path: Path) -> tuple[str, str]:
             "units": None if item["returns"]["kind"] == "Sub" else "pending",
             "ownership": "pending; never free the returned C string pointer" if item["returns"]["vbaType"] == "LongPtr" else None,
         }
+        from api_contracts import describe
+        reviewed = describe(item)
+        item.update(worksheetWrapped=not reviewed["command"], worksheetName=reviewed["worksheetName"],
+                    commandWrapped=reviewed["command"], family=reviewed["family"],
+                    status="windows_fixture_verified" if item["name"] in verified else "safe_interface_implemented_runtime_pending", runtimeVerified=item["name"] in verified, resultKind=reviewed["resultKind"],
+                    exampleInputs=[p["example"] for p in reviewed["parameters"] if p["direction"] != "out"],
+                    semanticSource=reviewed["reference"], requiredFiles=reviewed["requiredFiles"], runtimeEvidence="verification/current-api.json" if item["name"] in verified else None)
+        for parameter, semantic in zip(item["parameters"], reviewed["parameters"]):
+            parameter["contract"] = {"status": "reviewed", "direction": semantic["direction"],
+                "units": semantic["units"], "capacity": {"minimumElements": semantic["capacity"],
+                "visibleElements": semantic["visible"], "elementType": parameter["vbaType"]} if parameter["pointer"] else None}
+            if semantic["string"]:
+                parameter["contract"].update(encoding="Windows ANSI; lossless conversion required", includesTerminator=True)
+        item["returns"]["contract"] = {"status": "reviewed", "convention": reviewed["resultKind"],
+            "ownership": "borrowed or caller-buffer alias; never freed; bounded copy" if item["returns"]["vbaType"] == "LongPtr" else None}
         entries.append(item)
         if item["experimental"]:
             lines.append("' EXPERIMENTAL / upstream internal: " + item["experimentalNote"])
@@ -240,19 +260,19 @@ def generate(dll_path: Path) -> tuple[str, str]:
 
     catalogue = {
         "schemaVersion": 1,
-        "checkpoint": "Raw native declarations and static ABI coverage; worksheet API implementation remains incomplete.",
+        "checkpoint": "Native ABI plus reviewed safe interfaces; runtime evidence is recorded separately.",
         "engine": {
             "releaseTag": RELEASE_TAG, "sourceCommit": COMMIT,
             "releaseUrl": f"{UPSTREAM}/releases/tag/{RELEASE_TAG}",
             "sourceVersion": version_match[1],
-            "runtimeVersion": None, "runtimeVersionStatus": "not_executed_on_windows_excel",
-            "latestSourceBuildStatus": "pending_windows_msvc_build",
+            "runtimeVersion": evidence.get("engine", {}).get("runtimeVersion") if verified else None, "runtimeVersionStatus": "executed_on_recorded_windows_excel" if verified else "not_executed_for_current_sources",
+            "latestSourceBuildStatus": "passed_recorded_windows_msvc_build" if verified else "see_source_build_evidence",
             "dllName": DLL_NAME,
             "binary": {"path": dll_path.resolve().relative_to(ROOT).as_posix(), "role": "upstream_prebuilt_export_inspection_reference", "latestSourceBuildVerified": False, "sha256": sha256(data), "sizeBytes": len(data), "machine": "AMD64", "peFormat": "PE32+", "exportCount": len(exports)},
         },
         "source": {"files": source_files, "engineSourceManifest": {"path": "vendor/swisseph/source/provenance.json", "sha256": sha256((engine_source_path / "provenance.json").read_bytes())}, "documentationUrl": DOCUMENTATION, "licenseNotice": "Preserved upstream dual-license notices; selected project license is recorded separately by the project."},
         "abi": {"target": "Windows x64 Excel VBA7", "callingConvention": "Microsoft x64 unified ABI", "integerBits": 32, "pointerBits": 64, "doubleBits": 64, "charBits": 8, "charPointerParameters": "ByRef Byte", "numericPointerParameters": "ByRef matching Long or Double", "charPointerReturns": "LongPtr", "voidReturns": "Sub", "nullPointerPolicy": "Raw ByRef buffer declarations expect valid storage; optional null-pointer use needs a separately reviewed declaration/wrapper."},
-        "summary": {"nativeDeclared": len(entries), "runtimeVerified": 0, "worksheetWrapped": 0, "experimental": len(EXPERIMENTAL), "headerPrototypesNotExported": [], "exportsWithoutHeaderPrototype": []},
+        "summary": {"nativeDeclared": len(entries), "runtimeVerified": len(verified), "worksheetWrapped": sum(e["worksheetWrapped"] for e in entries), "commandWrapped": sum(e["commandWrapped"] for e in entries), "experimental": len(EXPERIMENTAL), "headerPrototypesNotExported": [], "exportsWithoutHeaderPrototype": []},
         "functions": entries,
     }
     return "\n".join(lines), json.dumps(catalogue, indent=2, ensure_ascii=True) + "\n"

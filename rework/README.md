@@ -2,7 +2,7 @@
 
 Development checkpoint for a modern Swiss Ephemeris toolkit in 64-bit Microsoft 365 Excel on Windows. The original workbook, VBA and `ephem/` files remain the legacy reference.
 
-**Status: Windows Excel execution tests passed; manual full-project compile, full API and public release remain pending.** Version `0.1.0-dev.3` fixes workbook construction and regional-format evidence handling. The fresh x64 DLL has all 106 exports, and the initial worksheet helpers pass all 18 integration checks. All 25 extended checks pass and cover numerical parity, fresh-session reopening, paths, failure diagnostics, recalculation and state isolation. See [verification evidence](verification/2026-10-05/README.md).
+**Status: full API development package; public-release acceptance deferred.** Version `0.1.0-dev.4` provides 95 worksheet functions and 11 VBA commands covering all 106 exports, plus convenient UTC-offset, house and date-series helpers. Editable examples, independent Windows C comparisons, explicit full-project compilation and error/state regressions are recorded in [verification evidence](verification/2026-10-06/README.md).
 
 The source targets the latest official Swiss Ephemeris release checked on 2026-10-01: [v2.10.3bfinal](https://github.com/aloistr/swisseph/releases/tag/v2.10.3bfinal), commit `f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0`. Its C source version remains `2.10.03`. Its published Windows DLL is identical to the old repository DLL, so the Windows gate first builds an x64 engine from the pinned latest source. `runtimeVersion` alone cannot identify this upstream release.
 
@@ -11,7 +11,7 @@ Read these files in order:
 1. [PLAN.md](PLAN.md): complete agreed V1 specification and the latest-engine amendment.
 2. [docs/CHECKPOINT.md](docs/CHECKPOINT.md): implemented and pending work, checks and the stop boundary.
 3. [docs/WINDOWS-TESTING.md](docs/WINDOWS-TESTING.md): Windows build, compilation and integration procedure.
-4. [docs/API.md](docs/API.md): seven initial formulas and native inventory.
+4. [docs/API.md](docs/API.md): function conventions, options and helpers; [API-REFERENCE.md](docs/API-REFERENCE.md) lists all 106 interfaces.
 5. [ROADMAP.md](ROADMAP.md): compatibility, platform, astrology and data-pack work.
 
 ## Prepare on macOS or Windows
@@ -33,13 +33,13 @@ The final command creates `rework/dist/SWExcel-<VERSION>/` and a source-checkpoi
 |---|---|
 | `src/vba/` | Authoritative native bindings, loader, calculation layer, worksheet functions and smoke checks |
 | `api/catalog.json` | All 106 exports with ABI metadata and explicit semantic/runtime completion status |
-| `workbook/seed.json` | Guided workbook presentation and initial formulas |
+| `workbook/seed.json` | Guided presentation; api-examples.json supplies every native worksheet example |
 | `tools/` | Binding generation, source packaging and Windows engine/workbook builds |
 | `vendor/swisseph/` | Pinned upstream header, C source and notices |
 | `vendor/engine/` | Published binaries used for static inspection/reference, with archive provenance |
 | `vendor/ephe/` | Pinned text catalogs |
 | `package-manifest.json` | Source asset paths, provenance, coverage and SHA-256 hashes |
-| `tests/` | Static ABI and packaging checks; these do not prove Excel integration |
+| `tests/` | Static ABI/package checks plus Windows full-API and regression scripts |
 
 The V1 binary data set is exactly `sepl_18.se1`, `semo_18.se1` and `seas_18.se1`; text catalogs are `sefstars.txt`, `seasnam.txt` and `seorbel.txt`. No Eros file is included. Supporting-file sizes are recorded exactly in the manifest; `seasnam.txt` is approximately 16 MB.
 

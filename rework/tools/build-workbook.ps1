@@ -152,9 +152,9 @@ function Catalog-Rows($Catalog) {
     foreach ($entry in $functions) {
         $wrapper = 'Pending'
         $status = [string](Get-Property $entry 'status' 'native_inventory_only')
-        if (Get-Property $entry 'worksheetWrapped' $false) {
+        if ((Get-Property $entry 'worksheetWrapped' $false) -or (Get-Property $entry 'commandWrapped' $false)) {
             $wrapper = [string](Get-Property $entry 'worksheetName' 'See checkpoint documentation')
-            $status = 'Checkpoint wrapper; Windows verification pending'
+            $status = 'Safe worksheet interface; see full API evidence'
         }
         if (Get-Property $entry 'experimental' $false) { $status += '; upstream experimental' }
         # The native catalog is not a claim that all worksheet wrappers exist.
@@ -243,13 +243,9 @@ function Render-Sheet($Sheet, $Spec, $Book, $Excel) {
             $explanation.Merge()
             $explanation.RowHeight = 60
         }
-        foreach ($item in @(Get-Property $Spec 'formulas' @())) {
-            if ([string]$item.formula -notmatch '^=SW') { throw "Unexpected seed formula: $($item.formula)" }
-            $cell = $Sheet.Range([string]$item.cell); $ranges.Add($cell)
-            try {
-                $cell.NumberFormat = $generalNumberFormat
-                $cell.Formula2 = [string]$item.formula
-            } catch { throw "Cannot write formula at $($Sheet.Name)!$($item.cell): $($_.Exception.Message)" }
+        if (Get-Property $Spec 'examples' $null) {
+            $inputs = $Sheet.Range('B5:B' + $used.Rows.Count); $ranges.Add($inputs)
+            $inputs.Interior.Color = Get-Colour $seed.style.input
         }
         foreach ($item in @(Get-Property $Spec 'names' @())) {
             $escapedSheet = $Sheet.Name.Replace("'", "''")
@@ -284,6 +280,8 @@ $workbookPath = Join-Path $packageRoot $OutputWorkbook
 if (Test-Path -LiteralPath $workbookPath) { throw "Refusing to overwrite $workbookPath. Choose a new output filename or preserve the existing generated package first." }
 $version = [IO.File]::ReadAllText((Join-Path $sourceRoot 'VERSION')).Trim()
 $seed = Get-Content -LiteralPath (Join-Path $sourceRoot 'workbook/seed.json') -Raw | ConvertFrom-Json
+$apiExamples = Get-Content -LiteralPath (Join-Path $sourceRoot 'workbook/api-examples.json') -Raw | ConvertFrom-Json
+$seed.sheets = @($seed.sheets | Where-Object { $_.name -notin @($apiExamples.sheets.name) }) + @($apiExamples.sheets)
 $catalog = Get-Content -LiteralPath (Join-Path $sourceRoot 'api/catalog.json') -Raw | ConvertFrom-Json
 $manifest = Get-Content -LiteralPath (Join-Path $packageRoot 'package-manifest.json') -Raw | ConvertFrom-Json
 $runtimeVersion = [string](Get-Property $manifest.engine 'runtimeVersion' '')
@@ -316,7 +314,7 @@ $report = [ordered]@{
     engine = [ordered]@{ expectedPath = $enginePath; sha256 = $engineProof.dllSha256; expectedRuntimeVersion = $runtimeVersion; sourceBuild = $engineProof }
     buildStatus = 'started'; sourceParityStatus = 'pending'; sourceParity = @()
     integrationStatus = 'not_run'; integrationSummary = $null; integrationChecks = @(); environment = @{}
-    compilationStatus = 'not_verified'; coverage = 'First checkpoint only; full API worksheet and runtime acceptance pending.'
+    compilationStatus = 'not_verified'; coverage = 'This report covers 18 integration smoke checks. Full API and regression results are separate evidence files.'
     evidenceDirectory = 'evidence/' + $runId
 }
 $excel = $null; $book = $null; $sheets = $null; $components = $null; $saved = $false; $failure = $null
@@ -362,6 +360,40 @@ try {
         } finally { Release-ComObject $component }
     }
     $report.sourceParityStatus = 'passed'
+    # Bind UDF formulas only after VBA import: writing unknown function calls
+    # earlier can retain incorrect range-argument bindings across full rebuilds.
+    foreach ($spec in $seed.sheets) {
+        $sheet = $sheets.Item([string]$spec.name)
+        try {
+            $general = [string]$sheet.Range('Z1').NumberFormat
+            foreach ($item in @(Get-Property $spec 'formulas' @())) {
+                if ([string]$item.formula -notmatch '^=SW') { throw "Unexpected formula: $($item.formula)" }
+                $cell = $sheet.Range([string]$item.cell)
+                try { $cell.NumberFormat = $general; $cell.Formula2 = [string]$item.formula }
+                finally { Release-ComObject $cell }
+            }
+            foreach ($address in @(Get-Property $spec 'inputRanges' @())) {
+                $input = $sheet.Range([string]$address)
+                try { $input.Interior.Color = Get-Colour $seed.style.input }
+                finally { Release-ComObject $input }
+            }
+        } finally { Release-ComObject $sheet }
+    }
+    $catalogSheet = $sheets.Item('Function Catalog')
+    try {
+        $row = 5
+        foreach ($entry in $catalog.functions) {
+            $exampleSheet = @($apiExamples.sheets | Where-Object name -eq $entry.family)[0]
+            $example = @($exampleSheet.examples | Where-Object name -eq $entry.name)
+            if ($example.Count) {
+                $anchor = $catalogSheet.Range('D' + $row)
+                try { [void]$catalogSheet.Hyperlinks.Add($anchor, '', "'" + $entry.family + "'!" + $example[0].cell) }
+                finally { Release-ComObject $anchor }
+            }
+            $row++
+        }
+    } finally { Release-ComObject $catalogSheet }
+
     $welcome = $sheets.Item('Welcome')
     try { [void]$welcome.Activate(); [void]$welcome.Range('A1').Select() } finally { Release-ComObject $welcome }
     [void]$book.SaveAs($workbookPath, 52) # xlOpenXMLWorkbookMacroEnabled
@@ -392,6 +424,12 @@ try {
             throw "Windows integration failed: $summary. Workbook and evidence are retained."
         }
         $report.integrationStatus = 'passed_first_checkpoint_only'
+    }
+    $excel.CalculateFullRebuild()
+    foreach ($spec in $seed.sheets) {
+        $sheet = $sheets.Item([string]$spec.name)
+        try { [void]$sheet.UsedRange.Rows.AutoFit() }
+        finally { Release-ComObject $sheet }
     }
     $welcome = $sheets.Item('Welcome')
     try { [void]$welcome.Activate(); [void]$welcome.Range('A1').Select() } finally { Release-ComObject $welcome }

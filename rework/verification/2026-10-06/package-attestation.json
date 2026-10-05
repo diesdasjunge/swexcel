@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0-dev.4",
+  "time": "2026-10-05T22:33:16.5179011Z",
+  "workbook": "SWExcel.xlsm",
+  "workbookSha256": "143db5ff992ef373647b3deb9dd13cd32f0c3024ae1f62ee0a5c580fc12c65c9",
+  "engineSha256": "16a7eedf061f5133a999a72ef87105f3af75fb0efd92532e6a94736191f51736",
+  "sourceParity": 17,
+  "compiled": true,
+  "nativeInterfacesPassed": 106,
+  "apiRegressionPassed": 136,
+  "smokePassed": 18,
+  "desktopPassed": 25,
+  "publicReleaseAcceptance": "deferred",
+  "AccessVBOM": 0,
+  "VBAWarnings": 2
+}

@@ -69,3 +69,7 @@ Implement only until real testing via Parallels is needed, then pause and report
 ## Latest-engine amendment
 
 The user requested the latest Swiss Ephemeris version during implementation. The latest official release is `v2.10.3bfinal`; its source still declares runtime version `2.10.03`. The published Windows archive DLL is byte-identical to the original repository DLL. Therefore build a fresh x64 DLL and matching swetest from the pinned latest source at the Windows gate, retain source/compiler/export/hash evidence, and distinguish release/source identity from the runtime version string. Published prebuilts in the checkpoint are inspection references, not proof of a latest-source build.
+
+## Authorized continuation, 2026-10-05/06
+
+The user lifted the pre-Parallels stop, requested full API implementation, and authorized scripted Excel compilation/builds with temporary VBA-project access restored afterward. The earlier stop section is historical. Version 0.1.0-dev.4 implements the full API/workbook scope; see verification/2026-10-06/README.md for executed evidence and limits. Public-release download/onboarding acceptance is explicitly deferred; compatibility and optional data-pack phases remain on ROADMAP.md.

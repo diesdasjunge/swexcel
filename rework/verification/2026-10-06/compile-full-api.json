@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-05T22:22:25.3794282Z",
+  "workbook": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\SWExcel.xlsm",
+  "result": "passed",
+  "enabledBefore": true,
+  "enabledAfter": false,
+  "error": null,
+  "command": "Compi&le VBAProject"
+}

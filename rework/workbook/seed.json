@@ -14,116 +14,848 @@
     {
       "name": "Welcome",
       "title": "Swiss Ephemeris for Excel",
-      "description": "Windows 64-bit Excel for Microsoft 365. Development checkpoint @VERSION@: seven calculation/name/calendar helpers and three diagnostics; full native API coverage remains pending.",
-      "headers": ["Start here", "What to do", "Checkpoint status"],
-      "rows": [
-        ["1. Keep the package together", "Extract the complete download to a local folder. Keep SWExcel.xlsm beside runtime, docs and evidence.", "Required"],
-        ["2. Trust the source", "Read the Windows testing guide. Downloaded macros may be blocked; only unblock this workbook after trusting its source.", "User action"],
-        ["3. Check Setup", "The engine path is relative to this workbook. No fixed C:\\ installation path is needed.", "Review"],
-        ["4. Try Integration", "Scalar and array examples show the first integration checkpoint. The check table remains PENDING until explicitly executed on Windows Excel.", "Pending Windows test"],
-        ["5. Explore the catalog", "Function Catalog inventories the pinned native API. Inventory is not a claim of implemented worksheet coverage.", "Native inventory"],
-        ["6. Check the evidence", "evidence/build.json records generation and source parity. Integration results are recorded only by an explicit test run.", "Evidence-bound"],
-        ["Public release", "This development workbook is not a completed, validated public release.", "Pending"],
-        ["Roadmap", "Full API workbook examples first; Excel 2024 next; older Excel later. Mac/web and an astrology workspace are deferred.", "Deferred features"]
+      "description": "Windows 64-bit Microsoft 365 Excel. Development version @VERSION@: all 106 native exports have safe interfaces, with 95 worksheet functions and 11 VBA commands. Public-release onboarding is deferred.",
+      "headers": [
+        "Start here",
+        "What to do",
+        "Checkpoint status"
       ],
-      "widths": [28, 95, 24]
+      "rows": [
+        [
+          "1. Keep the package together",
+          "Extract the complete download to a local folder. Keep SWExcel.xlsm beside runtime, docs and evidence.",
+          "Required"
+        ],
+        [
+          "2. Trust the source",
+          "Read the Windows testing guide. Downloaded macros may be blocked; only unblock this workbook after trusting its source.",
+          "User action"
+        ],
+        [
+          "3. Check Setup",
+          "The engine path is relative to this workbook. No fixed C:\\ installation path is needed.",
+          "Review"
+        ],
+        [
+          "4. Try Recipes",
+          "Start with UTC, house cusps, date-series and explicit sidereal/topocentric examples. Family sheets provide editable inputs for every worksheet function.",
+          "Ready to calculate"
+        ],
+        [
+          "5. Explore the catalog",
+          "Function Catalog maps all 106 exports to a worksheet function or VBA command. API-REFERENCE.md documents parameter order and indexed output meanings.",
+          "106 interfaces"
+        ],
+        [
+          "6. Check the evidence",
+          "evidence/build.json records generation and source parity. Integration results are recorded only by an explicit test run.",
+          "Evidence-bound"
+        ],
+        [
+          "Public release",
+          "This development workbook is not a completed, validated public release.",
+          "Deferred"
+        ],
+        [
+          "Roadmap",
+          "Excel 2024, older Excel, Mac/web, named time zones and an astrology workspace are deferred.",
+          "Deferred features"
+        ]
+      ],
+      "widths": [
+        28,
+        95,
+        24
+      ]
     },
     {
       "name": "Setup",
       "title": "Package setup",
       "description": "Metadata comes from this package. Move the complete package together; actual runtime paths are shown on Diagnostics.",
-      "headers": ["Setting", "Value", "Meaning"],
-      "rows": [
-        ["Supported host", "Windows 64-bit / Excel Microsoft 365", "Excel 2024 and older Excel are separate roadmap stages."],
-        ["Workbook version", "@VERSION@", "Development checkpoint; not public release acceptance."],
-        ["Engine release", "@ENGINE_RELEASE@", "Pinned upstream release recorded in package-manifest.json."],
-        ["Expected runtime version", "@ENGINE_RUNTIME_VERSION@", "Integration compares SW_VERSION() with this value."],
-        ["Relative engine file", "@ENGINE_FILE@", "The loader resolves this path from the workbook folder."],
-        ["Relative ephemeris data", "runtime/ephe", "Local data files remain beside the workbook package."],
-        ["Default calculation flags", 258, "Swiss Ephemeris (2) plus speed (256); actual flags and warnings are returned in detail output."],
-        ["Time input", "Julian day, UT", "Convert calendar date/time explicitly with SW_JULDAY; timezone conversion is not implied."],
-        ["Longitude convention", "East positive, degrees", "Observer longitude is an explicit optional argument."],
-        ["Latitude convention", "North positive, degrees", "Observer latitude is an explicit optional argument."],
-        ["Altitude convention", "Metres", "Observer altitude defaults to 0 metres."],
-        ["Developer build permission", "Trust access to the VBA project object model", "Needed to import source during the Windows build; normal workbook use does not require it."]
+      "headers": [
+        "Setting",
+        "Value",
+        "Meaning"
       ],
-      "widths": [30, 63, 90]
+      "rows": [
+        [
+          "Supported host",
+          "Windows 64-bit / Excel Microsoft 365",
+          "Excel 2024 and older Excel are separate roadmap stages."
+        ],
+        [
+          "Workbook version",
+          "@VERSION@",
+          "Development checkpoint; not public release acceptance."
+        ],
+        [
+          "Engine release",
+          "@ENGINE_RELEASE@",
+          "Pinned upstream release recorded in package-manifest.json."
+        ],
+        [
+          "Expected runtime version",
+          "@ENGINE_RUNTIME_VERSION@",
+          "Integration compares SW_VERSION() with this value."
+        ],
+        [
+          "Relative engine file",
+          "@ENGINE_FILE@",
+          "The loader resolves this path from the workbook folder."
+        ],
+        [
+          "Relative ephemeris data",
+          "runtime/ephe",
+          "Local data files remain beside the workbook package."
+        ],
+        [
+          "Default calculation flags",
+          258,
+          "Swiss Ephemeris (2) plus speed (256); actual flags and warnings are returned in detail output."
+        ],
+        [
+          "Time input",
+          "UTC, UT1 or TT as named",
+          "SW_UTC_JD handles Gregorian civil times with fractional UTC offsets; native functions retain their explicit time scale."
+        ],
+        [
+          "Longitude convention",
+          "East positive, degrees",
+          "Observer longitude is an explicit optional argument."
+        ],
+        [
+          "Latitude convention",
+          "North positive, degrees",
+          "Observer latitude is an explicit optional argument."
+        ],
+        [
+          "Altitude convention",
+          "Metres",
+          "Observer altitude defaults to 0 metres."
+        ],
+        [
+          "Developer build permission",
+          "Trust access to the VBA project object model",
+          "Needed to import source during the Windows build; normal workbook use does not require it."
+        ]
+      ],
+      "widths": [
+        30,
+        63,
+        90
+      ]
+    },
+    {
+      "name": "Recipes",
+      "title": "Start with useful calculations",
+      "description": "Green cells are editable inputs. Numeric outputs keep full precision. TT and UT1 are different time scales; offsets are hours east of UTC and do not infer DST.",
+      "headers": [
+        "Input / output",
+        "Value",
+        "Meaning"
+      ],
+      "widths": [
+        35,
+        28,
+        27,
+        27,
+        27,
+        27,
+        27,
+        40
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "Local Gregorian date/time"
+        },
+        {
+          "cell": "A8",
+          "value": "Year"
+        },
+        {
+          "cell": "B8",
+          "value": 2000
+        },
+        {
+          "cell": "A9",
+          "value": "Month"
+        },
+        {
+          "cell": "B9",
+          "value": 1
+        },
+        {
+          "cell": "A10",
+          "value": "Day"
+        },
+        {
+          "cell": "B10",
+          "value": 1
+        },
+        {
+          "cell": "A11",
+          "value": "Hour"
+        },
+        {
+          "cell": "B11",
+          "value": 17
+        },
+        {
+          "cell": "A12",
+          "value": "Minute"
+        },
+        {
+          "cell": "B12",
+          "value": 30
+        },
+        {
+          "cell": "A13",
+          "value": "Second"
+        },
+        {
+          "cell": "B13",
+          "value": 0
+        },
+        {
+          "cell": "A14",
+          "value": "UTC offset hours east"
+        },
+        {
+          "cell": "B14",
+          "value": 5.5
+        },
+        {
+          "cell": "A16",
+          "value": "TT JD / UT1 JD"
+        },
+        {
+          "cell": "A20",
+          "value": "Daily Sun positions"
+        },
+        {
+          "cell": "A22",
+          "value": "Start JD UT1"
+        },
+        {
+          "cell": "B22",
+          "value": 2451545
+        },
+        {
+          "cell": "A23",
+          "value": "Step days"
+        },
+        {
+          "cell": "B23",
+          "value": 1
+        },
+        {
+          "cell": "A24",
+          "value": "Number of rows"
+        },
+        {
+          "cell": "B24",
+          "value": 5
+        },
+        {
+          "cell": "A25",
+          "value": "Body ID"
+        },
+        {
+          "cell": "B25",
+          "value": 0
+        },
+        {
+          "cell": "A27",
+          "value": "JD UT1"
+        },
+        {
+          "cell": "B27",
+          "value": "Longitude deg"
+        },
+        {
+          "cell": "C27",
+          "value": "Latitude deg"
+        },
+        {
+          "cell": "D27",
+          "value": "Distance AU"
+        },
+        {
+          "cell": "E27",
+          "value": "Longitude deg/day"
+        },
+        {
+          "cell": "F27",
+          "value": "Latitude deg/day"
+        },
+        {
+          "cell": "G27",
+          "value": "Distance AU/day"
+        },
+        {
+          "cell": "A36",
+          "value": "Houses at J2000; system P"
+        },
+        {
+          "cell": "A38",
+          "value": "Latitude north"
+        },
+        {
+          "cell": "B38",
+          "value": 52.52
+        },
+        {
+          "cell": "A39",
+          "value": "Longitude east"
+        },
+        {
+          "cell": "B39",
+          "value": 13.405
+        },
+        {
+          "cell": "A40",
+          "value": "System"
+        },
+        {
+          "cell": "B40",
+          "value": "P"
+        },
+        {
+          "cell": "A43",
+          "value": "Cusps 1..12 spill right"
+        },
+        {
+          "cell": "A47",
+          "value": "Sidereal Sun (Lahiri)"
+        },
+        {
+          "cell": "A51",
+          "value": "Topocentric Moon"
+        },
+        {
+          "cell": "A55",
+          "value": "Options are in Options!A5:B10"
+        },
+        {
+          "cell": "A57",
+          "value": "Raw JPL files and Eros are not bundled. Missing-data/fallback status is explicit in detail output."
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "B16",
+          "formula": "=SW_UTC_JD(B8,B9,B10,B11,B12,B13,B14)"
+        },
+        {
+          "cell": "A28",
+          "formula": "=SW_POSITIONS(B22,B23,B24,B25)"
+        },
+        {
+          "cell": "B43",
+          "formula": "=SW_HOUSES(B22,B38,B39,B40)"
+        },
+        {
+          "cell": "B48",
+          "formula": "=SW_SWE_CALC_UT(B22,0,65794,Options!A5:B10)"
+        },
+        {
+          "cell": "B52",
+          "formula": "=SW_SWE_CALC_UT(B22,1,33026,Options!A5:B10)"
+        }
+      ],
+      "inputRanges": [
+        "B8:B14",
+        "B22:B25",
+        "B38:B40"
+      ]
     },
     {
       "name": "Function Catalog",
-      "title": "Pinned native API inventory",
-      "description": "Every catalog symbol is listed. Full API wrappers, formula examples and acceptance tests are later work; inventory alone does not establish availability.",
-      "headers": ["Native symbol", "C prototype", "Family", "Worksheet wrapper", "Checkpoint status"],
+      "title": "Complete native API interfaces",
+      "description": "95 worksheet functions and 11 VBA commands map all 106 pinned exports. Runtime evidence covers the documented fixtures; it is not proof of every possible flag, body or date.",
+      "headers": [
+        "Native symbol",
+        "C prototype",
+        "Family",
+        "Worksheet function / VBA command",
+        "Evidence scope"
+      ],
       "source": "catalog",
-      "widths": [34, 112, 28, 30, 34]
+      "widths": [
+        34,
+        112,
+        28,
+        30,
+        34
+      ]
     },
     {
       "name": "Bodies",
       "title": "Body identifiers",
       "description": "A small reference list for checkpoint examples. This list does not establish complete body or data-file coverage.",
-      "headers": ["ID", "Body", "Notes"],
-      "rows": [[0, "Sun", "Checkpoint name and position example"], [1, "Moon", "Examples pending"], [2, "Mercury", "Examples pending"], [3, "Venus", "Examples pending"], [4, "Mars", "Examples pending"], [5, "Jupiter", "Examples pending"], [6, "Saturn", "Examples pending"], [7, "Uranus", "Examples pending"], [8, "Neptune", "Examples pending"], [9, "Pluto", "Examples pending"], [10, "Mean node", "Examples pending"], [11, "True node", "Examples pending"], [12, "Mean lunar apogee", "Examples pending"], [13, "Osculating lunar apogee", "Examples pending"], [14, "Earth", "Examples pending"], [15, "Chiron", "Availability depends on bundled data"]],
-      "widths": [12, 30, 85]
+      "headers": [
+        "ID",
+        "Body",
+        "Notes"
+      ],
+      "rows": [
+        [
+          0,
+          "Sun",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          1,
+          "Moon",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          2,
+          "Mercury",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          3,
+          "Venus",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          4,
+          "Mars",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          5,
+          "Jupiter",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          6,
+          "Saturn",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          7,
+          "Uranus",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          8,
+          "Neptune",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          9,
+          "Pluto",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          10,
+          "Mean node",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          11,
+          "True node",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          12,
+          "Mean lunar apogee",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          13,
+          "Osculating lunar apogee",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          14,
+          "Earth",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          15,
+          "Chiron",
+          "Use this ID in Positions or Recipes; flags and required data depend on the body."
+        ],
+        [
+          16,
+          "Pholus",
+          "Bundled seas_18.se1"
+        ],
+        [
+          17,
+          "Ceres",
+          "Bundled seas_18.se1"
+        ],
+        [
+          18,
+          "Pallas",
+          "Bundled seas_18.se1"
+        ],
+        [
+          19,
+          "Juno",
+          "Bundled seas_18.se1"
+        ],
+        [
+          20,
+          "Vesta",
+          "Bundled seas_18.se1"
+        ],
+        [
+          10433,
+          "Eros",
+          "Not bundled: obtain ast0/se00433.se1 from the upstream asteroid archive."
+        ]
+      ],
+      "widths": [
+        12,
+        30,
+        85
+      ]
     },
     {
       "name": "Options",
       "title": "Explicit calculation options",
-      "description": "Pass options through formula arguments. Worksheet formulas do not rely on a mutable global settings sheet.",
-      "headers": ["Option", "Checkpoint value", "Meaning"],
-      "rows": [["Swiss Ephemeris flag", 2, "Request Swiss data; detail output records actual flags and fallback warnings."], ["Speed flag", 256, "Include longitudinal, latitudinal and distance speeds."], ["Default combined flags", 258, "2 + 256"], ["Sidereal mode", 0, "Relevant when sidereal flags are requested; pass explicitly."], ["Observer", "Omitted", "For topocentric requests, explicitly pass longitude east, latitude north and altitude metres."], ["Error handling", "Excel error or detail diagnostics", "A failure is not a successful zero result."], ["Timezones", "Pending", "Checkpoint functions accept UT and explicit calendar parameters; no location/timezone inference."]],
-      "widths": [29, 34, 105]
+      "description": "Recipes passes A5:B10 explicitly. Editing this sheet alone does not alter other formulas. Omitted options reset to defaults on every call; full option keys are documented in docs/API.md.",
+      "headers": [
+        "Option",
+        "Editable value",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "longitude",
+          13.405,
+          "Degrees east; used with topocentric flags."
+        ],
+        [
+          "latitude",
+          52.52,
+          "Degrees north."
+        ],
+        [
+          "altitude",
+          34,
+          "Metres above sea level."
+        ],
+        [
+          "sidereal_mode",
+          1,
+          "Lahiri; used with sidereal flags."
+        ],
+        [
+          "sidereal_epoch",
+          2451545,
+          "Reference JD TT for user-defined sidereal mode 255."
+        ],
+        [
+          "ayanamsa_epoch",
+          24,
+          "Degrees at reference epoch for mode 255."
+        ]
+      ],
+      "widths": [
+        29,
+        34,
+        105
+      ]
     },
     {
       "name": "Diagnostics",
       "title": "Runtime diagnostics",
       "description": "These formulas report the current runtime. Generation alone does not establish that the engine was loaded or calculations validated.",
-      "headers": ["Diagnostic", "Actual", "Meaning"],
-      "rows": [["Runtime status", "", "SW_RUNTIME_STATUS() initializes/checks the runtime; failures remain visible."], ["Verified engine path", "", "SW_ENGINE_PATH() returns the native module path verified by the runtime."], ["Ephemeris folder", "", "SW_DATA_PATH() returns the package data folder."], ["Engine runtime version", "", "Compare with Setup; test evidence records the actual value."], ["Windows acceptance", "PENDING", "Only explicit Windows integration execution creates a pass/fail report."]],
-      "formulas": [{"cell": "B5", "formula": "=SW_RUNTIME_STATUS()"}, {"cell": "B6", "formula": "=SW_ENGINE_PATH()"}, {"cell": "B7", "formula": "=SW_DATA_PATH()"}, {"cell": "B8", "formula": "=SW_VERSION()"}],
-      "widths": [29, 105, 100]
+      "headers": [
+        "Diagnostic",
+        "Actual",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "Runtime status",
+          "",
+          "SW_RUNTIME_STATUS() initializes/checks the runtime; failures remain visible."
+        ],
+        [
+          "Verified engine path",
+          "",
+          "SW_ENGINE_PATH() returns the native module path verified by the runtime."
+        ],
+        [
+          "Ephemeris folder",
+          "",
+          "SW_DATA_PATH() returns the package data folder."
+        ],
+        [
+          "Engine runtime version",
+          "",
+          "Compare with Setup; test evidence records the actual value."
+        ],
+        [
+          "Verification scope",
+          "See evidence files",
+          "Build smoke checks, full API comparison and edge cases are separate reports. Public-release onboarding remains deferred."
+        ]
+      ],
+      "formulas": [
+        {
+          "cell": "B5",
+          "formula": "=SW_RUNTIME_STATUS()"
+        },
+        {
+          "cell": "B6",
+          "formula": "=SW_ENGINE_PATH()"
+        },
+        {
+          "cell": "B7",
+          "formula": "=SW_DATA_PATH()"
+        },
+        {
+          "cell": "B8",
+          "formula": "=SW_VERSION()"
+        }
+      ],
+      "widths": [
+        29,
+        105,
+        100
+      ]
     },
     {
       "name": "Integration",
       "title": "First Windows integration checkpoint",
       "description": "Only SW_RunIntegrationChecks or build-workbook.ps1 -RunIntegration records smoke results. All 106 native API entries are outside this first checkpoint's acceptance scope.",
-      "headers": ["Check", "Expected", "Actual", "Result", "Notes"],
-      "rows": [["Windows smoke checks", "Explicit execution", "Not run", "PENDING", "Generated examples and source parity are not compiled/runtime validation."]],
-      "cells": [{"cell": "A25", "value": "Scalar examples (edit inputs in formulas; inspect expected results)"}, {"cell": "A27", "value": "J2000 Julian day"}, {"cell": "A28", "value": "Normalize -1 degrees"}, {"cell": "A29", "value": "Engine version"}, {"cell": "A30", "value": "Body 0 name"}, {"cell": "A31", "value": "Sun longitude at J2000"}, {"cell": "D27", "value": "Expected 2451545"}, {"cell": "D28", "value": "Expected 359"}, {"cell": "D29", "value": "Expected Setup!B8"}, {"cell": "D30", "value": "Expected Sun"}, {"cell": "D31", "value": "Compare with first CALC_UT output"}, {"cell": "A34", "value": "CALC_UT: one row, six Double values"}, {"cell": "B35", "value": "Longitude"}, {"cell": "C35", "value": "Latitude"}, {"cell": "D35", "value": "Distance"}, {"cell": "E35", "value": "Long. speed"}, {"cell": "F35", "value": "Lat. speed"}, {"cell": "G35", "value": "Dist. speed"}, {"cell": "A38", "value": "POSITION_DETAIL: field / value / unit output with flags, paths and warnings"}, {"cell": "A62", "value": "Intentional #SPILL! example: C63 blocks the six-column output. Clear C63 to see it spill."}, {"cell": "C63", "value": "Intentional blockage"}],
-      "formulas": [{"cell": "B27", "formula": "=SW_JULDAY(2000,1,1,12)"}, {"cell": "B28", "formula": "=SW_DEGNORM(-1)"}, {"cell": "B29", "formula": "=SW_VERSION()"}, {"cell": "B30", "formula": "=SW_BODY_NAME(0)"}, {"cell": "B31", "formula": "=SW_LONGITUDE(2451545,0)"}, {"cell": "B36", "formula": "=SW_CALC_UT(2451545,0)"}, {"cell": "B40", "formula": "=SW_POSITION_DETAIL(2451545,0)"}, {"cell": "B63", "formula": "=SW_CALC_UT(2451545,0)"}],
-      "names": [{"name": "SW_CHECK_JULDAY", "cell": "B27"}, {"name": "SW_CHECK_DEGNORM", "cell": "B28"}, {"name": "SW_CHECK_VERSION", "cell": "B29"}, {"name": "SW_CHECK_BODY_NAME", "cell": "B30"}, {"name": "SW_CHECK_LONGITUDE", "cell": "B31"}, {"name": "SW_CHECK_CALC", "cell": "B36"}, {"name": "SW_CHECK_DETAIL", "cell": "B40"}, {"name": "SW_CHECK_BLOCKED_SPILL", "cell": "B63"}],
-      "widths": [48, 30, 36, 34, 33, 25, 28, 65]
-    },
-    {
-      "name": "Positions",
-      "title": "Position examples - pending",
-      "description": "Placeholder for full API calculation examples after the first Windows loader/formula checkpoint passes.",
-      "headers": ["Planned example", "Status", "Completion gate"],
-      "rows": [["Geocentric / heliocentric / topocentric", "PENDING", "Documented wrappers, data and numerical tests"], ["Tropical / sidereal", "PENDING", "Explicit options and state isolation tests"], ["Batched body/time-series output", "PENDING", "Formula layout and recalculation/performance tests"]],
-      "widths": [55, 20, 100]
-    },
-    {
-      "name": "Houses",
-      "title": "House examples - pending",
-      "description": "Placeholder. No completed house-system worksheet interface is claimed by this checkpoint.",
-      "headers": ["Planned example", "Status", "Completion gate"],
-      "rows": [["House cusps and auxiliary angles", "PENDING", "Correct array sizes, location conventions and reference tests"], ["House system comparisons", "PENDING", "Documented system codes and edge-case handling"]],
-      "widths": [55, 20, 100]
-    },
-    {
-      "name": "Events",
-      "title": "Event examples - pending",
-      "description": "Placeholder for native event families after their individual wrappers and acceptance cases are implemented.",
-      "headers": ["Planned example", "Status", "Completion gate"],
-      "rows": [["Rise/set and transits", "PENDING", "Native status, observer and atmospheric option tests"], ["Eclipses, occultations and heliacal events", "PENDING", "Full result-layout and numerical reference tests"]],
-      "widths": [55, 20, 100]
+      "headers": [
+        "Check",
+        "Expected",
+        "Actual",
+        "Result",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Windows smoke checks",
+          "Explicit execution",
+          "Not run",
+          "PENDING",
+          "Generated examples and source parity are not compiled/runtime validation."
+        ]
+      ],
+      "cells": [
+        {
+          "cell": "A25",
+          "value": "Scalar examples (edit inputs in formulas; inspect expected results)"
+        },
+        {
+          "cell": "A27",
+          "value": "J2000 Julian day"
+        },
+        {
+          "cell": "A28",
+          "value": "Normalize -1 degrees"
+        },
+        {
+          "cell": "A29",
+          "value": "Engine version"
+        },
+        {
+          "cell": "A30",
+          "value": "Body 0 name"
+        },
+        {
+          "cell": "A31",
+          "value": "Sun longitude at J2000"
+        },
+        {
+          "cell": "D27",
+          "value": "Expected 2451545"
+        },
+        {
+          "cell": "D28",
+          "value": "Expected 359"
+        },
+        {
+          "cell": "D29",
+          "value": "Expected Setup!B8"
+        },
+        {
+          "cell": "D30",
+          "value": "Expected Sun"
+        },
+        {
+          "cell": "D31",
+          "value": "Compare with first CALC_UT output"
+        },
+        {
+          "cell": "A34",
+          "value": "CALC_UT: one row, six Double values"
+        },
+        {
+          "cell": "B35",
+          "value": "Longitude"
+        },
+        {
+          "cell": "C35",
+          "value": "Latitude"
+        },
+        {
+          "cell": "D35",
+          "value": "Distance"
+        },
+        {
+          "cell": "E35",
+          "value": "Long. speed"
+        },
+        {
+          "cell": "F35",
+          "value": "Lat. speed"
+        },
+        {
+          "cell": "G35",
+          "value": "Dist. speed"
+        },
+        {
+          "cell": "A38",
+          "value": "POSITION_DETAIL: field / value / unit output with flags, paths and warnings"
+        },
+        {
+          "cell": "A62",
+          "value": "Intentional #SPILL! example: C63 blocks the six-column output. Clear C63 to see it spill."
+        },
+        {
+          "cell": "C63",
+          "value": "Intentional blockage"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "B27",
+          "formula": "=SW_JULDAY(2000,1,1,12)"
+        },
+        {
+          "cell": "B28",
+          "formula": "=SW_DEGNORM(-1)"
+        },
+        {
+          "cell": "B29",
+          "formula": "=SW_VERSION()"
+        },
+        {
+          "cell": "B30",
+          "formula": "=SW_BODY_NAME(0)"
+        },
+        {
+          "cell": "B31",
+          "formula": "=SW_LONGITUDE(2451545,0)"
+        },
+        {
+          "cell": "B36",
+          "formula": "=SW_CALC_UT(2451545,0)"
+        },
+        {
+          "cell": "B40",
+          "formula": "=SW_POSITION_DETAIL(2451545,0)"
+        },
+        {
+          "cell": "B63",
+          "formula": "=SW_CALC_UT(2451545,0)"
+        }
+      ],
+      "names": [
+        {
+          "name": "SW_CHECK_JULDAY",
+          "cell": "B27"
+        },
+        {
+          "name": "SW_CHECK_DEGNORM",
+          "cell": "B28"
+        },
+        {
+          "name": "SW_CHECK_VERSION",
+          "cell": "B29"
+        },
+        {
+          "name": "SW_CHECK_BODY_NAME",
+          "cell": "B30"
+        },
+        {
+          "name": "SW_CHECK_LONGITUDE",
+          "cell": "B31"
+        },
+        {
+          "name": "SW_CHECK_CALC",
+          "cell": "B36"
+        },
+        {
+          "name": "SW_CHECK_DETAIL",
+          "cell": "B40"
+        },
+        {
+          "name": "SW_CHECK_BLOCKED_SPILL",
+          "cell": "B63"
+        }
+      ],
+      "widths": [
+        48,
+        30,
+        36,
+        34,
+        33,
+        25,
+        28,
+        65
+      ]
     },
     {
       "name": "Roadmap",
       "title": "Delivery roadmap",
       "description": "Windows Excel 365 workbook delivery first. This sheet records intended work, not completion.",
-      "headers": ["Stage", "Scope", "Status"],
-      "rows": [["First checkpoint", "Portable native loader, seven calculation/name/calendar helpers plus three diagnostics, source parity, Windows smoke evidence", "PENDING WINDOWS ACCEPTANCE"], ["v1", "Windows 64-bit Excel 365 downloadable workbook with the full pinned Swiss Ephemeris API, formula documentation and examples", "PLANNED"], ["v2", "Excel 2024 compatibility and acceptance", "DEFERRED"], ["v3", "Older Excel compatibility and acceptance", "DEFERRED"], ["Later", "Hosted Mac/web add-in", "DEFERRED"], ["Later", "Full astrology workspace", "DEFERRED"]],
-      "widths": [27, 112, 34]
+      "headers": [
+        "Stage",
+        "Scope",
+        "Status"
+      ],
+      "rows": [
+        [
+          "First checkpoint",
+          "Portable native loader, seven calculation/name/calendar helpers plus three diagnostics, source parity, Windows smoke evidence",
+          "Passed; see evidence"
+        ],
+        [
+          "v1",
+          "Windows 64-bit Excel 365 downloadable workbook with the full pinned Swiss Ephemeris API, formula documentation and examples",
+          "Full API implemented; public-release acceptance deferred"
+        ],
+        [
+          "v2",
+          "Excel 2024 compatibility and acceptance",
+          "DEFERRED"
+        ],
+        [
+          "v3",
+          "Older Excel compatibility and acceptance",
+          "DEFERRED"
+        ],
+        [
+          "Later",
+          "Hosted Mac/web add-in",
+          "DEFERRED"
+        ],
+        [
+          "Later",
+          "Full astrology workspace",
+          "DEFERRED"
+        ]
+      ],
+      "widths": [
+        27,
+        112,
+        34
+      ]
     }
   ]
 }

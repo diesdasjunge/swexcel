@@ -138,7 +138,7 @@ Finish:
         mReport.Range("G15").Value2 = "Smoke summary"
         mReport.Range("H15").Value2 = SW_RunIntegrationChecks
         mReport.Range("G16").Value2 = "Coverage"
-        mReport.Range("H16").Value2 = "First integration checkpoint only; full API acceptance pending."
+        mReport.Range("H16").Value2 = "18 smoke checks only; full API comparison is recorded separately."
         mReport.Range("E5:E23").WrapText = True
         mReport.Range("A5:E23").Rows.AutoFit
     End If

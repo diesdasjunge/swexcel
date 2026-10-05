@@ -42,12 +42,12 @@ Public Function SWCalculateUT(ByVal julianDayUT As Double, ByVal body As Long, B
     result.InputFlags = flags
     result.SiderealMode = siderealMode
     result.AltitudeMetres = altitudeMetres
-    If body < 0 Then SWRaise "The integration position helpers accept body IDs 0 and above. Ecliptic/nutation output will have its own wrapper."
+    If body < 0 Then SWRaise "This convenience helper accepts body IDs 0 and above; use SW_SWE_CALC_UT for ecliptic/nutation output."
     If flags < 0 Then SWRaise "Flags must be nonnegative."
     model = flags And 7
     If model <> 0 And model <> 1 And model <> 2 And model <> 4 Then SWRaise "Select one ephemeris model."
-    If (flags And SW_FLAG_JPL) <> 0 Then SWRaise "Raw JPL files and the JPL configuration wrapper are not included at this checkpoint."
-    If siderealMode < 0 Or siderealMode > 46 Then SWRaise "Select a built-in sidereal mode from 0 to 46; custom epochs are planned after integration testing."
+    If (flags And SW_FLAG_JPL) <> 0 Then SWRaise "Use SW_SWE_CALC_UT with the jpl_file option for external raw JPL files."
+    If siderealMode < 0 Or siderealMode > 46 Then SWRaise "Use a built-in mode 0..46 here; SW_SWE_CALC_UT accepts custom epochs through options."
     If (flags And SW_FLAG_TOPOCENTRIC) <> 0 Then
         If IsMissing(longitudeEast) Or IsMissing(latitudeNorth) Then SWRaise "Topocentric calculations require observer longitude and latitude."
         If IsError(longitudeEast) Or IsError(latitudeNorth) Then SWRaise "Observer coordinates contain an Excel error."

@@ -22,7 +22,7 @@ From the repository root, prepare the package using the project Python command:
 python3 rework/tools/prepare.py
 ```
 
-For this checkpoint `VERSION` is `0.1.0-dev.3`, so the prepared folder is `rework/dist/SWExcel-0.1.0-dev.3`. The prepared package is source and runtime assets, not a Windows-built `.xlsm`.
+For this checkpoint `VERSION` is `0.1.0-dev.4`, so the prepared folder is `rework/dist/SWExcel-0.1.0-dev.4`. The prepared package is source and runtime assets, not a Windows-built `.xlsm`.
 
 On Windows, open the **x64 Native Tools Command Prompt for Visual Studio** with the C++ build tools installed. Change to the **prepared package folder**, start PowerShell from that prompt so it inherits the compiler environment, and build the pinned DLL before building the workbook:
 
@@ -104,7 +104,7 @@ Signed VBA with an already trusted publisher is another deployment path; signatu
 - Saved workbook plus normalized source parity: generation/import verified; full compilation and runtime acceptance unverified.
 - Explicit smoke summary with zero failures: first checkpoint passed on the recorded Windows Excel host.
 - Manual compile, fresh-session reopening, relocation, collision and downloaded-archive acceptance: separately recorded checks.
-- Full API examples/tests, public release, Excel 2024, older Excel, Mac/web and the full astrology workspace: pending or deferred.
+- Full API interfaces/examples/tests: see the current full-API reports. Public-release onboarding, Excel 2024, older Excel, Mac/web and the full astrology workspace are deferred.
 
 After closing Excel and writing its reports, the workbook builder refreshes `package-files.json` with hashes and sizes of the complete current package, including workbook, engine build artifacts and evidence; the inventory excludes itself. `package-manifest.json` retains provenance for the initially staged published reference DLL. For the fresh Windows build, `runtime/engine/build-provenance.json` and the current file inventory record the authoritative DLL hash. A current inventory is integrity evidence, not public-release acceptance.
 
@@ -112,3 +112,11 @@ After closing Excel and writing its reports, the workbook builder refreshes `pac
 
 Run `tests/test-vba-normalization.ps1` on Windows for the builder parity regression.
 After building the workbook, run `tests/test-excel-acceptance.ps1 -PackageDirectory . -Workbook SWExcel.xlsm -OutputDirectory C:\SWExcel\acceptance-new-run` with a new output directory. This opens dedicated Excel instances, uses disposable runtime/workbook copies for failure and relocation tests, and preserves a JSON report. It also creates a peer workbook in the package for same-package state isolation. General formatting is read from a blank Excel cell, so non-English installation formats are supported. VBE compile and downloaded-archive onboarding remain separate gates.
+
+## Full API development verification
+
+After granting VBA-project access for a developer build, run `tools/compile-workbook.ps1 -Workbook <absolute XLSM> -Report <JSON>`. It invokes Excel VBE command 578, checks that compilation becomes disabled, then saves. It never changes Trust Center settings. The current automated session temporarily enables AccessVBOM only under the user's explicit authorization and restores the previous value in `finally`; ordinary users do not need this setting.
+
+Generate `build/native-api-probe.c` with `python tools/generate_native_probe.py`. Compile it as x64 C with MSVC and `vendor/swisseph` on the include path. Run the resulting executable with three arguments: absolute package DLL, ephemeris directory, and output JSON. This typed C caller checks all 106 exports and buffer canaries. Use that Windows JSON with `tests/test-full-api.ps1 -PackageDirectory <path> -Workbook SWExcel.xlsm -Reference <JSON> -Report <JSON>`; it checks native returns, outputs, and actual command entry points. `tests/test-api-regression.ps1` exercises helper/calendar/state/error cases and all 95 live worksheet examples. Run the original desktop acceptance suite as well.
+
+The separate macOS reference runner is useful for cross-platform comparison; platform differences in the pinned engine's fixed-star radial speeds must not be hidden by widening all numerical tolerances. Windows VBA comparisons use the same Windows DLL through an independent C caller.

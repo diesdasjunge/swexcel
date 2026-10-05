@@ -1,0 +1,1 @@
+c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd  SWExcel-0.1.0-dev.4-windows-development.zip

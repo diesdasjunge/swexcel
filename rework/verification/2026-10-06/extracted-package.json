@@ -1,0 +1,9 @@
+{
+  "publicReleaseAcceptance": "deferred",
+  "filesVerified": 192,
+  "archiveSha256": "c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd",
+  "workbookSha256": "143db5ff992ef373647b3deb9dd13cd32f0c3024ae1f62ee0a5c580fc12c65c9",
+  "smoke": "PASS=18;FAIL=0",
+  "siderealSun": 256.51569618387066,
+  "topocentricMoon": 223.0386977997815
+}

@@ -1,0 +1,6698 @@
+{
+  "sheets": [
+    {
+      "name": "Utilities",
+      "title": "Utilities API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_AZALT"
+        },
+        {
+          "cell": "A8",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B8",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C8",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A9",
+          "value": "calc_flag"
+        },
+        {
+          "cell": "B9",
+          "value": 0
+        },
+        {
+          "cell": "C9",
+          "value": "coordinate/refraction mode code"
+        },
+        {
+          "cell": "A10",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B10",
+          "value": 13.405
+        },
+        {
+          "cell": "C10",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A11",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B11",
+          "value": 52.52
+        },
+        {
+          "cell": "C11",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A12",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B12",
+          "value": 34.0
+        },
+        {
+          "cell": "C12",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A13",
+          "value": "atpress"
+        },
+        {
+          "cell": "B13",
+          "value": 1013.25
+        },
+        {
+          "cell": "C13",
+          "value": "hPa (0 estimates pressure)"
+        },
+        {
+          "cell": "A14",
+          "value": "attemp"
+        },
+        {
+          "cell": "B14",
+          "value": 15.0
+        },
+        {
+          "cell": "C14",
+          "value": "degrees Celsius"
+        },
+        {
+          "cell": "A15",
+          "value": "xin[0]"
+        },
+        {
+          "cell": "B15",
+          "value": 280.0
+        },
+        {
+          "cell": "C15",
+          "value": "coordinates selected by calc_flag, degrees; optional radius"
+        },
+        {
+          "cell": "A16",
+          "value": "xin[1]"
+        },
+        {
+          "cell": "B16",
+          "value": 1.0
+        },
+        {
+          "cell": "C16",
+          "value": "coordinates selected by calc_flag, degrees; optional radius"
+        },
+        {
+          "cell": "A17",
+          "value": "xin[2]"
+        },
+        {
+          "cell": "B17",
+          "value": 1.0
+        },
+        {
+          "cell": "C17",
+          "value": "coordinates selected by calc_flag, degrees; optional radius"
+        },
+        {
+          "cell": "A109",
+          "value": "SW_SWE_AZALT_REV"
+        },
+        {
+          "cell": "A111",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B111",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C111",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A112",
+          "value": "calc_flag"
+        },
+        {
+          "cell": "B112",
+          "value": 0
+        },
+        {
+          "cell": "C112",
+          "value": "coordinate/refraction mode code"
+        },
+        {
+          "cell": "A113",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B113",
+          "value": 13.405
+        },
+        {
+          "cell": "C113",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A114",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B114",
+          "value": 52.52
+        },
+        {
+          "cell": "C114",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A115",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B115",
+          "value": 34.0
+        },
+        {
+          "cell": "C115",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A116",
+          "value": "xin[0]"
+        },
+        {
+          "cell": "B116",
+          "value": 90.0
+        },
+        {
+          "cell": "C116",
+          "value": "coordinates selected by calc_flag, degrees; optional radius"
+        },
+        {
+          "cell": "A117",
+          "value": "xin[1]"
+        },
+        {
+          "cell": "B117",
+          "value": 15.0
+        },
+        {
+          "cell": "C117",
+          "value": "coordinates selected by calc_flag, degrees; optional radius"
+        },
+        {
+          "cell": "A211",
+          "value": "SW_SWE_COTRANS"
+        },
+        {
+          "cell": "A213",
+          "value": "xpo[0]"
+        },
+        {
+          "cell": "B213",
+          "value": 280.0
+        },
+        {
+          "cell": "C213",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A214",
+          "value": "xpo[1]"
+        },
+        {
+          "cell": "B214",
+          "value": 1.0
+        },
+        {
+          "cell": "C214",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A215",
+          "value": "xpo[2]"
+        },
+        {
+          "cell": "B215",
+          "value": 1.0
+        },
+        {
+          "cell": "C215",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A216",
+          "value": "eps"
+        },
+        {
+          "cell": "B216",
+          "value": 23.4392911
+        },
+        {
+          "cell": "C216",
+          "value": "degrees"
+        },
+        {
+          "cell": "A314",
+          "value": "SW_SWE_COTRANS_SP"
+        },
+        {
+          "cell": "A316",
+          "value": "xpo[0]"
+        },
+        {
+          "cell": "B316",
+          "value": 280.0
+        },
+        {
+          "cell": "C316",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A317",
+          "value": "xpo[1]"
+        },
+        {
+          "cell": "B317",
+          "value": 1.0
+        },
+        {
+          "cell": "C317",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A318",
+          "value": "xpo[2]"
+        },
+        {
+          "cell": "B318",
+          "value": 1.0
+        },
+        {
+          "cell": "C318",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A319",
+          "value": "xpo[3]"
+        },
+        {
+          "cell": "B319",
+          "value": 1.0
+        },
+        {
+          "cell": "C319",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A320",
+          "value": "xpo[4]"
+        },
+        {
+          "cell": "B320",
+          "value": 0.0
+        },
+        {
+          "cell": "C320",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A321",
+          "value": "xpo[5]"
+        },
+        {
+          "cell": "B321",
+          "value": 0.0
+        },
+        {
+          "cell": "C321",
+          "value": "longitude/latitude degrees; radius; optional matching daily speeds"
+        },
+        {
+          "cell": "A322",
+          "value": "eps"
+        },
+        {
+          "cell": "B322",
+          "value": 23.4392911
+        },
+        {
+          "cell": "C322",
+          "value": "degrees"
+        },
+        {
+          "cell": "A420",
+          "value": "SW_SWE_CS2DEGSTR"
+        },
+        {
+          "cell": "A422",
+          "value": "t"
+        },
+        {
+          "cell": "B422",
+          "value": 1234567
+        },
+        {
+          "cell": "C422",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A521",
+          "value": "SW_SWE_CS2LONLATSTR"
+        },
+        {
+          "cell": "A523",
+          "value": "t"
+        },
+        {
+          "cell": "B523",
+          "value": 1234567
+        },
+        {
+          "cell": "C523",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A524",
+          "value": "pchar"
+        },
+        {
+          "cell": "B524",
+          "value": "N"
+        },
+        {
+          "cell": "C524",
+          "value": "positive hemisphere character"
+        },
+        {
+          "cell": "A525",
+          "value": "mchar"
+        },
+        {
+          "cell": "B525",
+          "value": "S"
+        },
+        {
+          "cell": "C525",
+          "value": "negative hemisphere character"
+        },
+        {
+          "cell": "A622",
+          "value": "SW_SWE_CSNORM"
+        },
+        {
+          "cell": "A624",
+          "value": "p"
+        },
+        {
+          "cell": "B624",
+          "value": -360000
+        },
+        {
+          "cell": "C624",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A722",
+          "value": "SW_SWE_CSROUNDSEC"
+        },
+        {
+          "cell": "A724",
+          "value": "x"
+        },
+        {
+          "cell": "B724",
+          "value": 1234567
+        },
+        {
+          "cell": "C724",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A822",
+          "value": "SW_SWE_D2L"
+        },
+        {
+          "cell": "A824",
+          "value": "x"
+        },
+        {
+          "cell": "B824",
+          "value": 12.345
+        },
+        {
+          "cell": "C824",
+          "value": "degrees"
+        },
+        {
+          "cell": "A922",
+          "value": "SW_SWE_DEG_MIDP"
+        },
+        {
+          "cell": "A924",
+          "value": "x1"
+        },
+        {
+          "cell": "B924",
+          "value": 350.0
+        },
+        {
+          "cell": "C924",
+          "value": "degrees"
+        },
+        {
+          "cell": "A925",
+          "value": "x0"
+        },
+        {
+          "cell": "B925",
+          "value": 10.0
+        },
+        {
+          "cell": "C925",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1022",
+          "value": "SW_SWE_DEGNORM"
+        },
+        {
+          "cell": "A1024",
+          "value": "x"
+        },
+        {
+          "cell": "B1024",
+          "value": 12.345
+        },
+        {
+          "cell": "C1024",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1122",
+          "value": "SW_SWE_DIFCS2N"
+        },
+        {
+          "cell": "A1124",
+          "value": "p1"
+        },
+        {
+          "cell": "B1124",
+          "value": 129600000
+        },
+        {
+          "cell": "C1124",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A1125",
+          "value": "p2"
+        },
+        {
+          "cell": "B1125",
+          "value": 360000
+        },
+        {
+          "cell": "C1125",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A1222",
+          "value": "SW_SWE_DIFCSN"
+        },
+        {
+          "cell": "A1224",
+          "value": "p1"
+        },
+        {
+          "cell": "B1224",
+          "value": 129600000
+        },
+        {
+          "cell": "C1224",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A1225",
+          "value": "p2"
+        },
+        {
+          "cell": "B1225",
+          "value": 360000
+        },
+        {
+          "cell": "C1225",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A1322",
+          "value": "SW_SWE_DIFDEG2N"
+        },
+        {
+          "cell": "A1324",
+          "value": "p1"
+        },
+        {
+          "cell": "B1324",
+          "value": 350.0
+        },
+        {
+          "cell": "C1324",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1325",
+          "value": "p2"
+        },
+        {
+          "cell": "B1325",
+          "value": 10.0
+        },
+        {
+          "cell": "C1325",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1422",
+          "value": "SW_SWE_DIFDEGN"
+        },
+        {
+          "cell": "A1424",
+          "value": "p1"
+        },
+        {
+          "cell": "B1424",
+          "value": 350.0
+        },
+        {
+          "cell": "C1424",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1425",
+          "value": "p2"
+        },
+        {
+          "cell": "B1425",
+          "value": 10.0
+        },
+        {
+          "cell": "C1425",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1522",
+          "value": "SW_SWE_DIFRAD2N"
+        },
+        {
+          "cell": "A1524",
+          "value": "p1"
+        },
+        {
+          "cell": "B1524",
+          "value": 3.0
+        },
+        {
+          "cell": "C1524",
+          "value": "radians"
+        },
+        {
+          "cell": "A1525",
+          "value": "p2"
+        },
+        {
+          "cell": "B1525",
+          "value": -3.0
+        },
+        {
+          "cell": "C1525",
+          "value": "radians"
+        },
+        {
+          "cell": "A1622",
+          "value": "SW_SWE_GET_ASTRO_MODELS"
+        },
+        {
+          "cell": "A1624",
+          "value": "samod"
+        },
+        {
+          "cell": "B1624",
+          "value": "0,0,0,0,0,0,0,0"
+        },
+        {
+          "cell": "C1624",
+          "value": "experimental astronomical model/version specification"
+        },
+        {
+          "cell": "A1625",
+          "value": "iflag"
+        },
+        {
+          "cell": "B1625",
+          "value": 258
+        },
+        {
+          "cell": "C1625",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1723",
+          "value": "SW_SWE_GET_LIBRARY_PATH"
+        },
+        {
+          "cell": "A1824",
+          "value": "SW_SWE_RAD_MIDP"
+        },
+        {
+          "cell": "A1826",
+          "value": "x1"
+        },
+        {
+          "cell": "B1826",
+          "value": 350.0
+        },
+        {
+          "cell": "C1826",
+          "value": "radians"
+        },
+        {
+          "cell": "A1827",
+          "value": "x0"
+        },
+        {
+          "cell": "B1827",
+          "value": 10.0
+        },
+        {
+          "cell": "C1827",
+          "value": "radians"
+        },
+        {
+          "cell": "A1924",
+          "value": "SW_SWE_RADNORM"
+        },
+        {
+          "cell": "A1926",
+          "value": "x"
+        },
+        {
+          "cell": "B1926",
+          "value": 12.345
+        },
+        {
+          "cell": "C1926",
+          "value": "radians"
+        },
+        {
+          "cell": "A2024",
+          "value": "SW_SWE_REFRAC"
+        },
+        {
+          "cell": "A2026",
+          "value": "inalt"
+        },
+        {
+          "cell": "B2026",
+          "value": 5.0
+        },
+        {
+          "cell": "C2026",
+          "value": "altitude degrees"
+        },
+        {
+          "cell": "A2027",
+          "value": "atpress"
+        },
+        {
+          "cell": "B2027",
+          "value": 1013.25
+        },
+        {
+          "cell": "C2027",
+          "value": "hPa (0 estimates pressure)"
+        },
+        {
+          "cell": "A2028",
+          "value": "attemp"
+        },
+        {
+          "cell": "B2028",
+          "value": 15.0
+        },
+        {
+          "cell": "C2028",
+          "value": "degrees Celsius"
+        },
+        {
+          "cell": "A2029",
+          "value": "calc_flag"
+        },
+        {
+          "cell": "B2029",
+          "value": 0
+        },
+        {
+          "cell": "C2029",
+          "value": "coordinate/refraction mode code"
+        },
+        {
+          "cell": "A2124",
+          "value": "SW_SWE_REFRAC_EXTENDED"
+        },
+        {
+          "cell": "A2126",
+          "value": "inalt"
+        },
+        {
+          "cell": "B2126",
+          "value": 5.0
+        },
+        {
+          "cell": "C2126",
+          "value": "altitude degrees"
+        },
+        {
+          "cell": "A2127",
+          "value": "geoalt"
+        },
+        {
+          "cell": "B2127",
+          "value": 34.0
+        },
+        {
+          "cell": "C2127",
+          "value": "metres"
+        },
+        {
+          "cell": "A2128",
+          "value": "atpress"
+        },
+        {
+          "cell": "B2128",
+          "value": 1013.25
+        },
+        {
+          "cell": "C2128",
+          "value": "hPa (0 estimates pressure)"
+        },
+        {
+          "cell": "A2129",
+          "value": "attemp"
+        },
+        {
+          "cell": "B2129",
+          "value": 15.0
+        },
+        {
+          "cell": "C2129",
+          "value": "degrees Celsius"
+        },
+        {
+          "cell": "A2130",
+          "value": "lapse_rate"
+        },
+        {
+          "cell": "B2130",
+          "value": 0.0065
+        },
+        {
+          "cell": "C2130",
+          "value": "kelvin/metre"
+        },
+        {
+          "cell": "A2131",
+          "value": "calc_flag"
+        },
+        {
+          "cell": "B2131",
+          "value": 0
+        },
+        {
+          "cell": "C2131",
+          "value": "coordinate/refraction mode code"
+        },
+        {
+          "cell": "A2228",
+          "value": "SW_SWE_SPLIT_DEG"
+        },
+        {
+          "cell": "A2230",
+          "value": "ddeg"
+        },
+        {
+          "cell": "B2230",
+          "value": 123.456
+        },
+        {
+          "cell": "C2230",
+          "value": "degrees"
+        },
+        {
+          "cell": "A2231",
+          "value": "roundflag"
+        },
+        {
+          "cell": "B2231",
+          "value": 0
+        },
+        {
+          "cell": "C2231",
+          "value": "split-degree bit mask"
+        },
+        {
+          "cell": "A2333",
+          "value": "SW_SWE_VERSION"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_AZALT(B8,B9,B10:B12,B13,B14,B15:B17,,TRUE)"
+        },
+        {
+          "cell": "D109",
+          "formula": "=SW_SWE_AZALT_REV(B111,B112,B113:B115,B116:B117,,TRUE)"
+        },
+        {
+          "cell": "D211",
+          "formula": "=SW_SWE_COTRANS(B213:B215,B216,,TRUE)"
+        },
+        {
+          "cell": "D314",
+          "formula": "=SW_SWE_COTRANS_SP(B316:B321,B322,,TRUE)"
+        },
+        {
+          "cell": "D420",
+          "formula": "=SW_SWE_CS2DEGSTR(B422,,TRUE)"
+        },
+        {
+          "cell": "D521",
+          "formula": "=SW_SWE_CS2LONLATSTR(B523,B524,B525,,TRUE)"
+        },
+        {
+          "cell": "D622",
+          "formula": "=SW_SWE_CSNORM(B624,,TRUE)"
+        },
+        {
+          "cell": "D722",
+          "formula": "=SW_SWE_CSROUNDSEC(B724,,TRUE)"
+        },
+        {
+          "cell": "D822",
+          "formula": "=SW_SWE_D2L(B824,,TRUE)"
+        },
+        {
+          "cell": "D922",
+          "formula": "=SW_SWE_DEG_MIDP(B924,B925,,TRUE)"
+        },
+        {
+          "cell": "D1022",
+          "formula": "=SW_SWE_DEGNORM(B1024,,TRUE)"
+        },
+        {
+          "cell": "D1122",
+          "formula": "=SW_SWE_DIFCS2N(B1124,B1125,,TRUE)"
+        },
+        {
+          "cell": "D1222",
+          "formula": "=SW_SWE_DIFCSN(B1224,B1225,,TRUE)"
+        },
+        {
+          "cell": "D1322",
+          "formula": "=SW_SWE_DIFDEG2N(B1324,B1325,,TRUE)"
+        },
+        {
+          "cell": "D1422",
+          "formula": "=SW_SWE_DIFDEGN(B1424,B1425,,TRUE)"
+        },
+        {
+          "cell": "D1522",
+          "formula": "=SW_SWE_DIFRAD2N(B1524,B1525,,TRUE)"
+        },
+        {
+          "cell": "D1622",
+          "formula": "=SW_SWE_GET_ASTRO_MODELS(B1624,B1625,,TRUE)"
+        },
+        {
+          "cell": "D1723",
+          "formula": "=SW_SWE_GET_LIBRARY_PATH(,TRUE)"
+        },
+        {
+          "cell": "D1824",
+          "formula": "=SW_SWE_RAD_MIDP(B1826,B1827,,TRUE)"
+        },
+        {
+          "cell": "D1924",
+          "formula": "=SW_SWE_RADNORM(B1926,,TRUE)"
+        },
+        {
+          "cell": "D2024",
+          "formula": "=SW_SWE_REFRAC(B2026,B2027,B2028,B2029,,TRUE)"
+        },
+        {
+          "cell": "D2124",
+          "formula": "=SW_SWE_REFRAC_EXTENDED(B2126,B2127,B2128,B2129,B2130,B2131,,TRUE)"
+        },
+        {
+          "cell": "D2228",
+          "formula": "=SW_SWE_SPLIT_DEG(B2230,B2231,,TRUE)"
+        },
+        {
+          "cell": "D2333",
+          "formula": "=SW_SWE_VERSION(,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_azalt",
+          "cell": "D6",
+          "formula": "=SW_SWE_AZALT(B8,B9,B10:B12,B13,B14,B15:B17,,TRUE)"
+        },
+        {
+          "name": "swe_azalt_rev",
+          "cell": "D109",
+          "formula": "=SW_SWE_AZALT_REV(B111,B112,B113:B115,B116:B117,,TRUE)"
+        },
+        {
+          "name": "swe_cotrans",
+          "cell": "D211",
+          "formula": "=SW_SWE_COTRANS(B213:B215,B216,,TRUE)"
+        },
+        {
+          "name": "swe_cotrans_sp",
+          "cell": "D314",
+          "formula": "=SW_SWE_COTRANS_SP(B316:B321,B322,,TRUE)"
+        },
+        {
+          "name": "swe_cs2degstr",
+          "cell": "D420",
+          "formula": "=SW_SWE_CS2DEGSTR(B422,,TRUE)"
+        },
+        {
+          "name": "swe_cs2lonlatstr",
+          "cell": "D521",
+          "formula": "=SW_SWE_CS2LONLATSTR(B523,B524,B525,,TRUE)"
+        },
+        {
+          "name": "swe_csnorm",
+          "cell": "D622",
+          "formula": "=SW_SWE_CSNORM(B624,,TRUE)"
+        },
+        {
+          "name": "swe_csroundsec",
+          "cell": "D722",
+          "formula": "=SW_SWE_CSROUNDSEC(B724,,TRUE)"
+        },
+        {
+          "name": "swe_d2l",
+          "cell": "D822",
+          "formula": "=SW_SWE_D2L(B824,,TRUE)"
+        },
+        {
+          "name": "swe_deg_midp",
+          "cell": "D922",
+          "formula": "=SW_SWE_DEG_MIDP(B924,B925,,TRUE)"
+        },
+        {
+          "name": "swe_degnorm",
+          "cell": "D1022",
+          "formula": "=SW_SWE_DEGNORM(B1024,,TRUE)"
+        },
+        {
+          "name": "swe_difcs2n",
+          "cell": "D1122",
+          "formula": "=SW_SWE_DIFCS2N(B1124,B1125,,TRUE)"
+        },
+        {
+          "name": "swe_difcsn",
+          "cell": "D1222",
+          "formula": "=SW_SWE_DIFCSN(B1224,B1225,,TRUE)"
+        },
+        {
+          "name": "swe_difdeg2n",
+          "cell": "D1322",
+          "formula": "=SW_SWE_DIFDEG2N(B1324,B1325,,TRUE)"
+        },
+        {
+          "name": "swe_difdegn",
+          "cell": "D1422",
+          "formula": "=SW_SWE_DIFDEGN(B1424,B1425,,TRUE)"
+        },
+        {
+          "name": "swe_difrad2n",
+          "cell": "D1522",
+          "formula": "=SW_SWE_DIFRAD2N(B1524,B1525,,TRUE)"
+        },
+        {
+          "name": "swe_get_astro_models",
+          "cell": "D1622",
+          "formula": "=SW_SWE_GET_ASTRO_MODELS(B1624,B1625,,TRUE)"
+        },
+        {
+          "name": "swe_get_library_path",
+          "cell": "D1723",
+          "formula": "=SW_SWE_GET_LIBRARY_PATH(,TRUE)"
+        },
+        {
+          "name": "swe_rad_midp",
+          "cell": "D1824",
+          "formula": "=SW_SWE_RAD_MIDP(B1826,B1827,,TRUE)"
+        },
+        {
+          "name": "swe_radnorm",
+          "cell": "D1924",
+          "formula": "=SW_SWE_RADNORM(B1926,,TRUE)"
+        },
+        {
+          "name": "swe_refrac",
+          "cell": "D2024",
+          "formula": "=SW_SWE_REFRAC(B2026,B2027,B2028,B2029,,TRUE)"
+        },
+        {
+          "name": "swe_refrac_extended",
+          "cell": "D2124",
+          "formula": "=SW_SWE_REFRAC_EXTENDED(B2126,B2127,B2128,B2129,B2130,B2131,,TRUE)"
+        },
+        {
+          "name": "swe_split_deg",
+          "cell": "D2228",
+          "formula": "=SW_SWE_SPLIT_DEG(B2230,B2231,,TRUE)"
+        },
+        {
+          "name": "swe_version",
+          "cell": "D2333",
+          "formula": "=SW_SWE_VERSION(,TRUE)"
+        }
+      ]
+    },
+    {
+      "name": "Positions",
+      "title": "Positions API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_CALC"
+        },
+        {
+          "cell": "A8",
+          "value": "tjd"
+        },
+        {
+          "cell": "B8",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C8",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A9",
+          "value": "ipl"
+        },
+        {
+          "cell": "B9",
+          "value": 0
+        },
+        {
+          "cell": "C9",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A10",
+          "value": "iflag"
+        },
+        {
+          "cell": "B10",
+          "value": 258
+        },
+        {
+          "cell": "C10",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A112",
+          "value": "SW_SWE_CALC_PCTR"
+        },
+        {
+          "cell": "A114",
+          "value": "tjd"
+        },
+        {
+          "cell": "B114",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C114",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A115",
+          "value": "ipl"
+        },
+        {
+          "cell": "B115",
+          "value": 0
+        },
+        {
+          "cell": "C115",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A116",
+          "value": "iplctr"
+        },
+        {
+          "cell": "B116",
+          "value": 4
+        },
+        {
+          "cell": "C116",
+          "value": "Swiss centre body ID"
+        },
+        {
+          "cell": "A117",
+          "value": "iflag"
+        },
+        {
+          "cell": "B117",
+          "value": 258
+        },
+        {
+          "cell": "C117",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A218",
+          "value": "SW_SWE_CALC_UT"
+        },
+        {
+          "cell": "A220",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B220",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C220",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A221",
+          "value": "ipl"
+        },
+        {
+          "cell": "B221",
+          "value": 0
+        },
+        {
+          "cell": "C221",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A222",
+          "value": "iflag"
+        },
+        {
+          "cell": "B222",
+          "value": 258
+        },
+        {
+          "cell": "C222",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A324",
+          "value": "SW_SWE_GET_AYANAMSA"
+        },
+        {
+          "cell": "A326",
+          "value": "tjd_et"
+        },
+        {
+          "cell": "B326",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C326",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A424",
+          "value": "SW_SWE_GET_AYANAMSA_EX"
+        },
+        {
+          "cell": "A426",
+          "value": "tjd_et"
+        },
+        {
+          "cell": "B426",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C426",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A427",
+          "value": "iflag"
+        },
+        {
+          "cell": "B427",
+          "value": 258
+        },
+        {
+          "cell": "C427",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A525",
+          "value": "SW_SWE_GET_AYANAMSA_EX_UT"
+        },
+        {
+          "cell": "A527",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B527",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C527",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A528",
+          "value": "iflag"
+        },
+        {
+          "cell": "B528",
+          "value": 258
+        },
+        {
+          "cell": "C528",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A626",
+          "value": "SW_SWE_GET_AYANAMSA_NAME"
+        },
+        {
+          "cell": "A628",
+          "value": "isidmode"
+        },
+        {
+          "cell": "B628",
+          "value": 1
+        },
+        {
+          "cell": "C628",
+          "value": "built-in sidereal ID 0..46"
+        },
+        {
+          "cell": "A726",
+          "value": "SW_SWE_GET_AYANAMSA_UT"
+        },
+        {
+          "cell": "A728",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B728",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C728",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A826",
+          "value": "SW_SWE_GET_ORBITAL_ELEMENTS"
+        },
+        {
+          "cell": "A828",
+          "value": "tjd_et"
+        },
+        {
+          "cell": "B828",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C828",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A829",
+          "value": "ipl"
+        },
+        {
+          "cell": "B829",
+          "value": 4
+        },
+        {
+          "cell": "C829",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A830",
+          "value": "iflag"
+        },
+        {
+          "cell": "B830",
+          "value": 258
+        },
+        {
+          "cell": "C830",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A943",
+          "value": "SW_SWE_GET_PLANET_NAME"
+        },
+        {
+          "cell": "A945",
+          "value": "ipl"
+        },
+        {
+          "cell": "B945",
+          "value": 0
+        },
+        {
+          "cell": "C945",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1044",
+          "value": "SW_SWE_NOD_APS"
+        },
+        {
+          "cell": "A1046",
+          "value": "tjd_et"
+        },
+        {
+          "cell": "B1046",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1046",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A1047",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1047",
+          "value": 0
+        },
+        {
+          "cell": "C1047",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1048",
+          "value": "iflag"
+        },
+        {
+          "cell": "B1048",
+          "value": 258
+        },
+        {
+          "cell": "C1048",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1049",
+          "value": "method"
+        },
+        {
+          "cell": "B1049",
+          "value": 0
+        },
+        {
+          "cell": "C1049",
+          "value": "node/apsis method bit mask"
+        },
+        {
+          "cell": "A1168",
+          "value": "SW_SWE_NOD_APS_UT"
+        },
+        {
+          "cell": "A1170",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B1170",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1170",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1171",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1171",
+          "value": 0
+        },
+        {
+          "cell": "C1171",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1172",
+          "value": "iflag"
+        },
+        {
+          "cell": "B1172",
+          "value": 258
+        },
+        {
+          "cell": "C1172",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1173",
+          "value": "method"
+        },
+        {
+          "cell": "B1173",
+          "value": 0
+        },
+        {
+          "cell": "C1173",
+          "value": "node/apsis method bit mask"
+        },
+        {
+          "cell": "A1292",
+          "value": "SW_SWE_ORBIT_MAX_MIN_TRUE_DISTANCE"
+        },
+        {
+          "cell": "A1294",
+          "value": "tjd_et"
+        },
+        {
+          "cell": "B1294",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1294",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A1295",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1295",
+          "value": 0
+        },
+        {
+          "cell": "C1295",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1296",
+          "value": "iflag"
+        },
+        {
+          "cell": "B1296",
+          "value": 258
+        },
+        {
+          "cell": "C1296",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1395",
+          "value": "SW_SWE_PHENO"
+        },
+        {
+          "cell": "A1397",
+          "value": "tjd"
+        },
+        {
+          "cell": "B1397",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1397",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A1398",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1398",
+          "value": 0
+        },
+        {
+          "cell": "C1398",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1399",
+          "value": "iflag"
+        },
+        {
+          "cell": "B1399",
+          "value": 258
+        },
+        {
+          "cell": "C1399",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1501",
+          "value": "SW_SWE_PHENO_UT"
+        },
+        {
+          "cell": "A1503",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B1503",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1503",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1504",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1504",
+          "value": 0
+        },
+        {
+          "cell": "C1504",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1505",
+          "value": "iflag"
+        },
+        {
+          "cell": "B1505",
+          "value": 258
+        },
+        {
+          "cell": "C1505",
+          "value": "Swiss flag bit mask"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_CALC(B8,B9,B10,,TRUE)"
+        },
+        {
+          "cell": "D112",
+          "formula": "=SW_SWE_CALC_PCTR(B114,B115,B116,B117,,TRUE)"
+        },
+        {
+          "cell": "D218",
+          "formula": "=SW_SWE_CALC_UT(B220,B221,B222,,TRUE)"
+        },
+        {
+          "cell": "D324",
+          "formula": "=SW_SWE_GET_AYANAMSA(B326,,TRUE)"
+        },
+        {
+          "cell": "D424",
+          "formula": "=SW_SWE_GET_AYANAMSA_EX(B426,B427,,TRUE)"
+        },
+        {
+          "cell": "D525",
+          "formula": "=SW_SWE_GET_AYANAMSA_EX_UT(B527,B528,,TRUE)"
+        },
+        {
+          "cell": "D626",
+          "formula": "=SW_SWE_GET_AYANAMSA_NAME(B628,,TRUE)"
+        },
+        {
+          "cell": "D726",
+          "formula": "=SW_SWE_GET_AYANAMSA_UT(B728,,TRUE)"
+        },
+        {
+          "cell": "D826",
+          "formula": "=SW_SWE_GET_ORBITAL_ELEMENTS(B828,B829,B830,,TRUE)"
+        },
+        {
+          "cell": "D943",
+          "formula": "=SW_SWE_GET_PLANET_NAME(B945,,TRUE)"
+        },
+        {
+          "cell": "D1044",
+          "formula": "=SW_SWE_NOD_APS(B1046,B1047,B1048,B1049,,TRUE)"
+        },
+        {
+          "cell": "D1168",
+          "formula": "=SW_SWE_NOD_APS_UT(B1170,B1171,B1172,B1173,,TRUE)"
+        },
+        {
+          "cell": "D1292",
+          "formula": "=SW_SWE_ORBIT_MAX_MIN_TRUE_DISTANCE(B1294,B1295,B1296,,TRUE)"
+        },
+        {
+          "cell": "D1395",
+          "formula": "=SW_SWE_PHENO(B1397,B1398,B1399,,TRUE)"
+        },
+        {
+          "cell": "D1501",
+          "formula": "=SW_SWE_PHENO_UT(B1503,B1504,B1505,,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_calc",
+          "cell": "D6",
+          "formula": "=SW_SWE_CALC(B8,B9,B10,,TRUE)"
+        },
+        {
+          "name": "swe_calc_pctr",
+          "cell": "D112",
+          "formula": "=SW_SWE_CALC_PCTR(B114,B115,B116,B117,,TRUE)"
+        },
+        {
+          "name": "swe_calc_ut",
+          "cell": "D218",
+          "formula": "=SW_SWE_CALC_UT(B220,B221,B222,,TRUE)"
+        },
+        {
+          "name": "swe_get_ayanamsa",
+          "cell": "D324",
+          "formula": "=SW_SWE_GET_AYANAMSA(B326,,TRUE)"
+        },
+        {
+          "name": "swe_get_ayanamsa_ex",
+          "cell": "D424",
+          "formula": "=SW_SWE_GET_AYANAMSA_EX(B426,B427,,TRUE)"
+        },
+        {
+          "name": "swe_get_ayanamsa_ex_ut",
+          "cell": "D525",
+          "formula": "=SW_SWE_GET_AYANAMSA_EX_UT(B527,B528,,TRUE)"
+        },
+        {
+          "name": "swe_get_ayanamsa_name",
+          "cell": "D626",
+          "formula": "=SW_SWE_GET_AYANAMSA_NAME(B628,,TRUE)"
+        },
+        {
+          "name": "swe_get_ayanamsa_ut",
+          "cell": "D726",
+          "formula": "=SW_SWE_GET_AYANAMSA_UT(B728,,TRUE)"
+        },
+        {
+          "name": "swe_get_orbital_elements",
+          "cell": "D826",
+          "formula": "=SW_SWE_GET_ORBITAL_ELEMENTS(B828,B829,B830,,TRUE)"
+        },
+        {
+          "name": "swe_get_planet_name",
+          "cell": "D943",
+          "formula": "=SW_SWE_GET_PLANET_NAME(B945,,TRUE)"
+        },
+        {
+          "name": "swe_nod_aps",
+          "cell": "D1044",
+          "formula": "=SW_SWE_NOD_APS(B1046,B1047,B1048,B1049,,TRUE)"
+        },
+        {
+          "name": "swe_nod_aps_ut",
+          "cell": "D1168",
+          "formula": "=SW_SWE_NOD_APS_UT(B1170,B1171,B1172,B1173,,TRUE)"
+        },
+        {
+          "name": "swe_orbit_max_min_true_distance",
+          "cell": "D1292",
+          "formula": "=SW_SWE_ORBIT_MAX_MIN_TRUE_DISTANCE(B1294,B1295,B1296,,TRUE)"
+        },
+        {
+          "name": "swe_pheno",
+          "cell": "D1395",
+          "formula": "=SW_SWE_PHENO(B1397,B1398,B1399,,TRUE)"
+        },
+        {
+          "name": "swe_pheno_ut",
+          "cell": "D1501",
+          "formula": "=SW_SWE_PHENO_UT(B1503,B1504,B1505,,TRUE)"
+        }
+      ]
+    },
+    {
+      "name": "Configuration",
+      "title": "Configuration API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_CMD_CLOSE"
+        },
+        {
+          "cell": "D6",
+          "value": "VBA command: SW_CMD_CLOSE()"
+        },
+        {
+          "cell": "D7",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A106",
+          "value": "SW_CMD_GET_CURRENT_FILE_DATA"
+        },
+        {
+          "cell": "A108",
+          "value": "ifno"
+        },
+        {
+          "cell": "B108",
+          "value": 0
+        },
+        {
+          "cell": "C108",
+          "value": "file slot 0..4"
+        },
+        {
+          "cell": "D106",
+          "value": "VBA command: SW_CMD_GET_CURRENT_FILE_DATA(ifno)"
+        },
+        {
+          "cell": "D107",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A209",
+          "value": "SW_CMD_SET_ASTRO_MODELS"
+        },
+        {
+          "cell": "A211",
+          "value": "samod"
+        },
+        {
+          "cell": "B211",
+          "value": "0,0,0,0,0,0,0,0"
+        },
+        {
+          "cell": "C211",
+          "value": "experimental astronomical model/version specification"
+        },
+        {
+          "cell": "A212",
+          "value": "iflag"
+        },
+        {
+          "cell": "B212",
+          "value": 258
+        },
+        {
+          "cell": "C212",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "D209",
+          "value": "VBA command: SW_CMD_SET_ASTRO_MODELS(samod, iflag)"
+        },
+        {
+          "cell": "D210",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A309",
+          "value": "SW_CMD_SET_DELTA_T_USERDEF"
+        },
+        {
+          "cell": "A311",
+          "value": "dt"
+        },
+        {
+          "cell": "B311",
+          "value": -1e-10
+        },
+        {
+          "cell": "C311",
+          "value": "days; automatic sentinel -1e-10"
+        },
+        {
+          "cell": "D309",
+          "value": "VBA command: SW_CMD_SET_DELTA_T_USERDEF(dt)"
+        },
+        {
+          "cell": "D310",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A409",
+          "value": "SW_CMD_SET_EPHE_PATH"
+        },
+        {
+          "cell": "A411",
+          "value": "path"
+        },
+        {
+          "cell": "B411",
+          "value": ""
+        },
+        {
+          "cell": "C411",
+          "value": "absolute directory or path list, Windows ANSI encoding"
+        },
+        {
+          "cell": "D409",
+          "value": "VBA command: SW_CMD_SET_EPHE_PATH(path)"
+        },
+        {
+          "cell": "D410",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A509",
+          "value": "SW_CMD_SET_INTERPOLATE_NUT"
+        },
+        {
+          "cell": "A511",
+          "value": "do_interpolate"
+        },
+        {
+          "cell": "B511",
+          "value": 0
+        },
+        {
+          "cell": "C511",
+          "value": "C boolean 0 or 1"
+        },
+        {
+          "cell": "D509",
+          "value": "VBA command: SW_CMD_SET_INTERPOLATE_NUT(do_interpolate)"
+        },
+        {
+          "cell": "D510",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A609",
+          "value": "SW_CMD_SET_JPL_FILE"
+        },
+        {
+          "cell": "A611",
+          "value": "fname"
+        },
+        {
+          "cell": "B611",
+          "value": "de431.eph"
+        },
+        {
+          "cell": "C611",
+          "value": "JPL filename relative to configured data path"
+        },
+        {
+          "cell": "D609",
+          "value": "VBA command: SW_CMD_SET_JPL_FILE(fname)"
+        },
+        {
+          "cell": "D610",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A709",
+          "value": "SW_CMD_SET_LAPSE_RATE"
+        },
+        {
+          "cell": "A711",
+          "value": "lapse_rate"
+        },
+        {
+          "cell": "B711",
+          "value": 0.0065
+        },
+        {
+          "cell": "C711",
+          "value": "kelvin/metre"
+        },
+        {
+          "cell": "D709",
+          "value": "VBA command: SW_CMD_SET_LAPSE_RATE(lapse_rate)"
+        },
+        {
+          "cell": "D710",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A809",
+          "value": "SW_CMD_SET_SID_MODE"
+        },
+        {
+          "cell": "A811",
+          "value": "sid_mode"
+        },
+        {
+          "cell": "B811",
+          "value": 1
+        },
+        {
+          "cell": "C811",
+          "value": "sidereal mode ID and modifier bits; 255 user defined"
+        },
+        {
+          "cell": "A812",
+          "value": "t0"
+        },
+        {
+          "cell": "B812",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C812",
+          "value": "reference Julian day TT unless sidereal modifier changes it"
+        },
+        {
+          "cell": "A813",
+          "value": "ayan_t0"
+        },
+        {
+          "cell": "B813",
+          "value": 24.0
+        },
+        {
+          "cell": "C813",
+          "value": "degrees"
+        },
+        {
+          "cell": "D809",
+          "value": "VBA command: SW_CMD_SET_SID_MODE(sid_mode, t0, ayan_t0)"
+        },
+        {
+          "cell": "D810",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A909",
+          "value": "SW_CMD_SET_TID_ACC"
+        },
+        {
+          "cell": "A911",
+          "value": "t_acc"
+        },
+        {
+          "cell": "B911",
+          "value": 999999.0
+        },
+        {
+          "cell": "C911",
+          "value": "arcseconds/century squared; automatic sentinel 999999"
+        },
+        {
+          "cell": "D909",
+          "value": "VBA command: SW_CMD_SET_TID_ACC(t_acc)"
+        },
+        {
+          "cell": "D910",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        },
+        {
+          "cell": "A1009",
+          "value": "SW_CMD_SET_TOPO"
+        },
+        {
+          "cell": "A1011",
+          "value": "geolon"
+        },
+        {
+          "cell": "B1011",
+          "value": 13.405
+        },
+        {
+          "cell": "C1011",
+          "value": "degrees east"
+        },
+        {
+          "cell": "A1012",
+          "value": "geolat"
+        },
+        {
+          "cell": "B1012",
+          "value": 52.52
+        },
+        {
+          "cell": "C1012",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A1013",
+          "value": "geoalt"
+        },
+        {
+          "cell": "B1013",
+          "value": 34.0
+        },
+        {
+          "cell": "C1013",
+          "value": "metres"
+        },
+        {
+          "cell": "D1009",
+          "value": "VBA command: SW_CMD_SET_TOPO(geolon, geolat, geoalt)"
+        },
+        {
+          "cell": "D1010",
+          "value": "Run from VBA; setters do not configure worksheet formulas. Use explicit options there."
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "B411",
+          "formula": "=SW_DATA_PATH()"
+        }
+      ],
+      "examples": []
+    },
+    {
+      "name": "Time",
+      "title": "Time API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_CS2TIMESTR"
+        },
+        {
+          "cell": "A8",
+          "value": "t"
+        },
+        {
+          "cell": "B8",
+          "value": 1234567
+        },
+        {
+          "cell": "C8",
+          "value": "centiseconds (1/360000 degree)"
+        },
+        {
+          "cell": "A9",
+          "value": "sep"
+        },
+        {
+          "cell": "B9",
+          "value": 58
+        },
+        {
+          "cell": "C9",
+          "value": "separator character code"
+        },
+        {
+          "cell": "A10",
+          "value": "suppressZero"
+        },
+        {
+          "cell": "B10",
+          "value": 0
+        },
+        {
+          "cell": "C10",
+          "value": "C boolean 0 or 1"
+        },
+        {
+          "cell": "A107",
+          "value": "SW_SWE_DATE_CONVERSION"
+        },
+        {
+          "cell": "A109",
+          "value": "y"
+        },
+        {
+          "cell": "B109",
+          "value": 2000
+        },
+        {
+          "cell": "C109",
+          "value": "astronomical year"
+        },
+        {
+          "cell": "A110",
+          "value": "m"
+        },
+        {
+          "cell": "B110",
+          "value": 1
+        },
+        {
+          "cell": "C110",
+          "value": "month 1..12"
+        },
+        {
+          "cell": "A111",
+          "value": "d"
+        },
+        {
+          "cell": "B111",
+          "value": 1
+        },
+        {
+          "cell": "C111",
+          "value": "day of month"
+        },
+        {
+          "cell": "A112",
+          "value": "utime"
+        },
+        {
+          "cell": "B112",
+          "value": 12.0
+        },
+        {
+          "cell": "C112",
+          "value": "decimal hours"
+        },
+        {
+          "cell": "A113",
+          "value": "c"
+        },
+        {
+          "cell": "B113",
+          "value": "g"
+        },
+        {
+          "cell": "C113",
+          "value": "g Gregorian or j Julian"
+        },
+        {
+          "cell": "A208",
+          "value": "SW_SWE_DAY_OF_WEEK"
+        },
+        {
+          "cell": "A210",
+          "value": "jd"
+        },
+        {
+          "cell": "B210",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C210",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A308",
+          "value": "SW_SWE_DELTAT"
+        },
+        {
+          "cell": "A310",
+          "value": "tjd"
+        },
+        {
+          "cell": "B310",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C310",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A408",
+          "value": "SW_SWE_DELTAT_EX"
+        },
+        {
+          "cell": "A410",
+          "value": "tjd"
+        },
+        {
+          "cell": "B410",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C410",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A411",
+          "value": "iflag"
+        },
+        {
+          "cell": "B411",
+          "value": 258
+        },
+        {
+          "cell": "C411",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A508",
+          "value": "SW_SWE_GET_TID_ACC"
+        },
+        {
+          "cell": "A608",
+          "value": "SW_SWE_JDET_TO_UTC"
+        },
+        {
+          "cell": "A610",
+          "value": "tjd_et"
+        },
+        {
+          "cell": "B610",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C610",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A611",
+          "value": "gregflag"
+        },
+        {
+          "cell": "B611",
+          "value": 1
+        },
+        {
+          "cell": "C611",
+          "value": "0 Julian, 1 Gregorian"
+        },
+        {
+          "cell": "A714",
+          "value": "SW_SWE_JDUT1_TO_UTC"
+        },
+        {
+          "cell": "A716",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B716",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C716",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A717",
+          "value": "gregflag"
+        },
+        {
+          "cell": "B717",
+          "value": 1
+        },
+        {
+          "cell": "C717",
+          "value": "0 Julian, 1 Gregorian"
+        },
+        {
+          "cell": "A820",
+          "value": "SW_SWE_JULDAY"
+        },
+        {
+          "cell": "A822",
+          "value": "year"
+        },
+        {
+          "cell": "B822",
+          "value": 2000
+        },
+        {
+          "cell": "C822",
+          "value": "astronomical year"
+        },
+        {
+          "cell": "A823",
+          "value": "month"
+        },
+        {
+          "cell": "B823",
+          "value": 1
+        },
+        {
+          "cell": "C823",
+          "value": "month 1..12"
+        },
+        {
+          "cell": "A824",
+          "value": "day"
+        },
+        {
+          "cell": "B824",
+          "value": 1
+        },
+        {
+          "cell": "C824",
+          "value": "day of month"
+        },
+        {
+          "cell": "A825",
+          "value": "hour"
+        },
+        {
+          "cell": "B825",
+          "value": 12.0
+        },
+        {
+          "cell": "C825",
+          "value": "decimal hours"
+        },
+        {
+          "cell": "A826",
+          "value": "gregflag"
+        },
+        {
+          "cell": "B826",
+          "value": 1
+        },
+        {
+          "cell": "C826",
+          "value": "0 Julian, 1 Gregorian"
+        },
+        {
+          "cell": "A920",
+          "value": "SW_SWE_LAT_TO_LMT"
+        },
+        {
+          "cell": "A922",
+          "value": "tjd_lat"
+        },
+        {
+          "cell": "B922",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C922",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A923",
+          "value": "geolon"
+        },
+        {
+          "cell": "B923",
+          "value": 13.405
+        },
+        {
+          "cell": "C923",
+          "value": "degrees east"
+        },
+        {
+          "cell": "A1021",
+          "value": "SW_SWE_LMT_TO_LAT"
+        },
+        {
+          "cell": "A1023",
+          "value": "tjd_lmt"
+        },
+        {
+          "cell": "B1023",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1023",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A1024",
+          "value": "geolon"
+        },
+        {
+          "cell": "B1024",
+          "value": 13.405
+        },
+        {
+          "cell": "C1024",
+          "value": "degrees east"
+        },
+        {
+          "cell": "A1122",
+          "value": "SW_SWE_REVJUL"
+        },
+        {
+          "cell": "A1124",
+          "value": "jd"
+        },
+        {
+          "cell": "B1124",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1124",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A1125",
+          "value": "gregflag"
+        },
+        {
+          "cell": "B1125",
+          "value": 1
+        },
+        {
+          "cell": "C1125",
+          "value": "0 Julian, 1 Gregorian"
+        },
+        {
+          "cell": "A1226",
+          "value": "SW_SWE_SIDTIME"
+        },
+        {
+          "cell": "A1228",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B1228",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1228",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1326",
+          "value": "SW_SWE_SIDTIME0"
+        },
+        {
+          "cell": "A1328",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B1328",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1328",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1329",
+          "value": "eps"
+        },
+        {
+          "cell": "B1329",
+          "value": 23.4392911
+        },
+        {
+          "cell": "C1329",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1330",
+          "value": "nut"
+        },
+        {
+          "cell": "B1330",
+          "value": 0.0
+        },
+        {
+          "cell": "C1330",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1426",
+          "value": "SW_SWE_TIME_EQU"
+        },
+        {
+          "cell": "A1428",
+          "value": "tjd"
+        },
+        {
+          "cell": "B1428",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1428",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1527",
+          "value": "SW_SWE_UTC_TIME_ZONE"
+        },
+        {
+          "cell": "A1529",
+          "value": "iyear"
+        },
+        {
+          "cell": "B1529",
+          "value": 2000
+        },
+        {
+          "cell": "C1529",
+          "value": "astronomical year"
+        },
+        {
+          "cell": "A1530",
+          "value": "imonth"
+        },
+        {
+          "cell": "B1530",
+          "value": 1
+        },
+        {
+          "cell": "C1530",
+          "value": "month 1..12"
+        },
+        {
+          "cell": "A1531",
+          "value": "iday"
+        },
+        {
+          "cell": "B1531",
+          "value": 1
+        },
+        {
+          "cell": "C1531",
+          "value": "day of month"
+        },
+        {
+          "cell": "A1532",
+          "value": "ihour"
+        },
+        {
+          "cell": "B1532",
+          "value": 12
+        },
+        {
+          "cell": "C1532",
+          "value": "hour 0..23"
+        },
+        {
+          "cell": "A1533",
+          "value": "imin"
+        },
+        {
+          "cell": "B1533",
+          "value": 0
+        },
+        {
+          "cell": "C1533",
+          "value": "minutes"
+        },
+        {
+          "cell": "A1534",
+          "value": "dsec"
+        },
+        {
+          "cell": "B1534",
+          "value": 0.0
+        },
+        {
+          "cell": "C1534",
+          "value": "seconds, leap second allowed where documented"
+        },
+        {
+          "cell": "A1535",
+          "value": "d_timezone"
+        },
+        {
+          "cell": "B1535",
+          "value": 5.5
+        },
+        {
+          "cell": "C1535",
+          "value": "hours east of UTC (fractional allowed)"
+        },
+        {
+          "cell": "A1633",
+          "value": "SW_SWE_UTC_TO_JD"
+        },
+        {
+          "cell": "A1635",
+          "value": "iyear"
+        },
+        {
+          "cell": "B1635",
+          "value": 2000
+        },
+        {
+          "cell": "C1635",
+          "value": "astronomical year"
+        },
+        {
+          "cell": "A1636",
+          "value": "imonth"
+        },
+        {
+          "cell": "B1636",
+          "value": 1
+        },
+        {
+          "cell": "C1636",
+          "value": "month 1..12"
+        },
+        {
+          "cell": "A1637",
+          "value": "iday"
+        },
+        {
+          "cell": "B1637",
+          "value": 1
+        },
+        {
+          "cell": "C1637",
+          "value": "day of month"
+        },
+        {
+          "cell": "A1638",
+          "value": "ihour"
+        },
+        {
+          "cell": "B1638",
+          "value": 12
+        },
+        {
+          "cell": "C1638",
+          "value": "hour 0..23"
+        },
+        {
+          "cell": "A1639",
+          "value": "imin"
+        },
+        {
+          "cell": "B1639",
+          "value": 0
+        },
+        {
+          "cell": "C1639",
+          "value": "minutes"
+        },
+        {
+          "cell": "A1640",
+          "value": "dsec"
+        },
+        {
+          "cell": "B1640",
+          "value": 0.0
+        },
+        {
+          "cell": "C1640",
+          "value": "seconds, leap second allowed where documented"
+        },
+        {
+          "cell": "A1641",
+          "value": "gregflag"
+        },
+        {
+          "cell": "B1641",
+          "value": 1
+        },
+        {
+          "cell": "C1641",
+          "value": "0 Julian, 1 Gregorian"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_CS2TIMESTR(B8,B9,B10,,TRUE)"
+        },
+        {
+          "cell": "D107",
+          "formula": "=SW_SWE_DATE_CONVERSION(B109,B110,B111,B112,B113,,TRUE)"
+        },
+        {
+          "cell": "D208",
+          "formula": "=SW_SWE_DAY_OF_WEEK(B210,,TRUE)"
+        },
+        {
+          "cell": "D308",
+          "formula": "=SW_SWE_DELTAT(B310,,TRUE)"
+        },
+        {
+          "cell": "D408",
+          "formula": "=SW_SWE_DELTAT_EX(B410,B411,,TRUE)"
+        },
+        {
+          "cell": "D508",
+          "formula": "=SW_SWE_GET_TID_ACC(,TRUE)"
+        },
+        {
+          "cell": "D608",
+          "formula": "=SW_SWE_JDET_TO_UTC(B610,B611,,TRUE)"
+        },
+        {
+          "cell": "D714",
+          "formula": "=SW_SWE_JDUT1_TO_UTC(B716,B717,,TRUE)"
+        },
+        {
+          "cell": "D820",
+          "formula": "=SW_SWE_JULDAY(B822,B823,B824,B825,B826,,TRUE)"
+        },
+        {
+          "cell": "D920",
+          "formula": "=SW_SWE_LAT_TO_LMT(B922,B923,,TRUE)"
+        },
+        {
+          "cell": "D1021",
+          "formula": "=SW_SWE_LMT_TO_LAT(B1023,B1024,,TRUE)"
+        },
+        {
+          "cell": "D1122",
+          "formula": "=SW_SWE_REVJUL(B1124,B1125,,TRUE)"
+        },
+        {
+          "cell": "D1226",
+          "formula": "=SW_SWE_SIDTIME(B1228,,TRUE)"
+        },
+        {
+          "cell": "D1326",
+          "formula": "=SW_SWE_SIDTIME0(B1328,B1329,B1330,,TRUE)"
+        },
+        {
+          "cell": "D1426",
+          "formula": "=SW_SWE_TIME_EQU(B1428,,TRUE)"
+        },
+        {
+          "cell": "D1527",
+          "formula": "=SW_SWE_UTC_TIME_ZONE(B1529,B1530,B1531,B1532,B1533,B1534,B1535,,TRUE)"
+        },
+        {
+          "cell": "D1633",
+          "formula": "=SW_SWE_UTC_TO_JD(B1635,B1636,B1637,B1638,B1639,B1640,B1641,,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_cs2timestr",
+          "cell": "D6",
+          "formula": "=SW_SWE_CS2TIMESTR(B8,B9,B10,,TRUE)"
+        },
+        {
+          "name": "swe_date_conversion",
+          "cell": "D107",
+          "formula": "=SW_SWE_DATE_CONVERSION(B109,B110,B111,B112,B113,,TRUE)"
+        },
+        {
+          "name": "swe_day_of_week",
+          "cell": "D208",
+          "formula": "=SW_SWE_DAY_OF_WEEK(B210,,TRUE)"
+        },
+        {
+          "name": "swe_deltat",
+          "cell": "D308",
+          "formula": "=SW_SWE_DELTAT(B310,,TRUE)"
+        },
+        {
+          "name": "swe_deltat_ex",
+          "cell": "D408",
+          "formula": "=SW_SWE_DELTAT_EX(B410,B411,,TRUE)"
+        },
+        {
+          "name": "swe_get_tid_acc",
+          "cell": "D508",
+          "formula": "=SW_SWE_GET_TID_ACC(,TRUE)"
+        },
+        {
+          "name": "swe_jdet_to_utc",
+          "cell": "D608",
+          "formula": "=SW_SWE_JDET_TO_UTC(B610,B611,,TRUE)"
+        },
+        {
+          "name": "swe_jdut1_to_utc",
+          "cell": "D714",
+          "formula": "=SW_SWE_JDUT1_TO_UTC(B716,B717,,TRUE)"
+        },
+        {
+          "name": "swe_julday",
+          "cell": "D820",
+          "formula": "=SW_SWE_JULDAY(B822,B823,B824,B825,B826,,TRUE)"
+        },
+        {
+          "name": "swe_lat_to_lmt",
+          "cell": "D920",
+          "formula": "=SW_SWE_LAT_TO_LMT(B922,B923,,TRUE)"
+        },
+        {
+          "name": "swe_lmt_to_lat",
+          "cell": "D1021",
+          "formula": "=SW_SWE_LMT_TO_LAT(B1023,B1024,,TRUE)"
+        },
+        {
+          "name": "swe_revjul",
+          "cell": "D1122",
+          "formula": "=SW_SWE_REVJUL(B1124,B1125,,TRUE)"
+        },
+        {
+          "name": "swe_sidtime",
+          "cell": "D1226",
+          "formula": "=SW_SWE_SIDTIME(B1228,,TRUE)"
+        },
+        {
+          "name": "swe_sidtime0",
+          "cell": "D1326",
+          "formula": "=SW_SWE_SIDTIME0(B1328,B1329,B1330,,TRUE)"
+        },
+        {
+          "name": "swe_time_equ",
+          "cell": "D1426",
+          "formula": "=SW_SWE_TIME_EQU(B1428,,TRUE)"
+        },
+        {
+          "name": "swe_utc_time_zone",
+          "cell": "D1527",
+          "formula": "=SW_SWE_UTC_TIME_ZONE(B1529,B1530,B1531,B1532,B1533,B1534,B1535,,TRUE)"
+        },
+        {
+          "name": "swe_utc_to_jd",
+          "cell": "D1633",
+          "formula": "=SW_SWE_UTC_TO_JD(B1635,B1636,B1637,B1638,B1639,B1640,B1641,,TRUE)"
+        }
+      ]
+    },
+    {
+      "name": "Stars",
+      "title": "Stars API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_FIXSTAR"
+        },
+        {
+          "cell": "A8",
+          "value": "star"
+        },
+        {
+          "cell": "B8",
+          "value": "Spica"
+        },
+        {
+          "cell": "C8",
+          "value": "star name or catalog index; canonical name is returned"
+        },
+        {
+          "cell": "A9",
+          "value": "tjd"
+        },
+        {
+          "cell": "B9",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C9",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A10",
+          "value": "iflag"
+        },
+        {
+          "cell": "B10",
+          "value": 258
+        },
+        {
+          "cell": "C10",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A113",
+          "value": "SW_SWE_FIXSTAR2"
+        },
+        {
+          "cell": "A115",
+          "value": "star"
+        },
+        {
+          "cell": "B115",
+          "value": "Spica"
+        },
+        {
+          "cell": "C115",
+          "value": "star name or catalog index; canonical name is returned"
+        },
+        {
+          "cell": "A116",
+          "value": "tjd"
+        },
+        {
+          "cell": "B116",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C116",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A117",
+          "value": "iflag"
+        },
+        {
+          "cell": "B117",
+          "value": 258
+        },
+        {
+          "cell": "C117",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A220",
+          "value": "SW_SWE_FIXSTAR2_MAG"
+        },
+        {
+          "cell": "A222",
+          "value": "star"
+        },
+        {
+          "cell": "B222",
+          "value": "Spica"
+        },
+        {
+          "cell": "C222",
+          "value": "star name or catalog index; canonical name is returned"
+        },
+        {
+          "cell": "A322",
+          "value": "SW_SWE_FIXSTAR2_UT"
+        },
+        {
+          "cell": "A324",
+          "value": "star"
+        },
+        {
+          "cell": "B324",
+          "value": "Spica"
+        },
+        {
+          "cell": "C324",
+          "value": "star name or catalog index; canonical name is returned"
+        },
+        {
+          "cell": "A325",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B325",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C325",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A326",
+          "value": "iflag"
+        },
+        {
+          "cell": "B326",
+          "value": 258
+        },
+        {
+          "cell": "C326",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A429",
+          "value": "SW_SWE_FIXSTAR_MAG"
+        },
+        {
+          "cell": "A431",
+          "value": "star"
+        },
+        {
+          "cell": "B431",
+          "value": "Spica"
+        },
+        {
+          "cell": "C431",
+          "value": "star name or catalog index; canonical name is returned"
+        },
+        {
+          "cell": "A531",
+          "value": "SW_SWE_FIXSTAR_UT"
+        },
+        {
+          "cell": "A533",
+          "value": "star"
+        },
+        {
+          "cell": "B533",
+          "value": "Spica"
+        },
+        {
+          "cell": "C533",
+          "value": "star name or catalog index; canonical name is returned"
+        },
+        {
+          "cell": "A534",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B534",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C534",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A535",
+          "value": "iflag"
+        },
+        {
+          "cell": "B535",
+          "value": 258
+        },
+        {
+          "cell": "C535",
+          "value": "Swiss flag bit mask"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_FIXSTAR(B8,B9,B10,,TRUE)"
+        },
+        {
+          "cell": "D113",
+          "formula": "=SW_SWE_FIXSTAR2(B115,B116,B117,,TRUE)"
+        },
+        {
+          "cell": "D220",
+          "formula": "=SW_SWE_FIXSTAR2_MAG(B222,,TRUE)"
+        },
+        {
+          "cell": "D322",
+          "formula": "=SW_SWE_FIXSTAR2_UT(B324,B325,B326,,TRUE)"
+        },
+        {
+          "cell": "D429",
+          "formula": "=SW_SWE_FIXSTAR_MAG(B431,,TRUE)"
+        },
+        {
+          "cell": "D531",
+          "formula": "=SW_SWE_FIXSTAR_UT(B533,B534,B535,,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_fixstar",
+          "cell": "D6",
+          "formula": "=SW_SWE_FIXSTAR(B8,B9,B10,,TRUE)"
+        },
+        {
+          "name": "swe_fixstar2",
+          "cell": "D113",
+          "formula": "=SW_SWE_FIXSTAR2(B115,B116,B117,,TRUE)"
+        },
+        {
+          "name": "swe_fixstar2_mag",
+          "cell": "D220",
+          "formula": "=SW_SWE_FIXSTAR2_MAG(B222,,TRUE)"
+        },
+        {
+          "name": "swe_fixstar2_ut",
+          "cell": "D322",
+          "formula": "=SW_SWE_FIXSTAR2_UT(B324,B325,B326,,TRUE)"
+        },
+        {
+          "name": "swe_fixstar_mag",
+          "cell": "D429",
+          "formula": "=SW_SWE_FIXSTAR_MAG(B431,,TRUE)"
+        },
+        {
+          "name": "swe_fixstar_ut",
+          "cell": "D531",
+          "formula": "=SW_SWE_FIXSTAR_UT(B533,B534,B535,,TRUE)"
+        }
+      ]
+    },
+    {
+      "name": "Houses",
+      "title": "Houses API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_GAUQUELIN_SECTOR"
+        },
+        {
+          "cell": "A8",
+          "value": "t_ut"
+        },
+        {
+          "cell": "B8",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C8",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A9",
+          "value": "ipl"
+        },
+        {
+          "cell": "B9",
+          "value": 0
+        },
+        {
+          "cell": "C9",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A10",
+          "value": "starname"
+        },
+        {
+          "cell": "B10",
+          "value": ""
+        },
+        {
+          "cell": "C10",
+          "value": "star name, or empty to use ipl"
+        },
+        {
+          "cell": "A11",
+          "value": "iflag"
+        },
+        {
+          "cell": "B11",
+          "value": 258
+        },
+        {
+          "cell": "C11",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A12",
+          "value": "imeth"
+        },
+        {
+          "cell": "B12",
+          "value": 0
+        },
+        {
+          "cell": "C12",
+          "value": "Gauquelin method 0..5"
+        },
+        {
+          "cell": "A13",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B13",
+          "value": 13.405
+        },
+        {
+          "cell": "C13",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A14",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B14",
+          "value": 52.52
+        },
+        {
+          "cell": "C14",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A15",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B15",
+          "value": 34.0
+        },
+        {
+          "cell": "C15",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A16",
+          "value": "atpress"
+        },
+        {
+          "cell": "B16",
+          "value": 1013.25
+        },
+        {
+          "cell": "C16",
+          "value": "hPa (0 estimates pressure)"
+        },
+        {
+          "cell": "A17",
+          "value": "attemp"
+        },
+        {
+          "cell": "B17",
+          "value": 15.0
+        },
+        {
+          "cell": "C17",
+          "value": "degrees Celsius"
+        },
+        {
+          "cell": "A107",
+          "value": "SW_SWE_HOUSE_NAME"
+        },
+        {
+          "cell": "A109",
+          "value": "hsys"
+        },
+        {
+          "cell": "B109",
+          "value": "P"
+        },
+        {
+          "cell": "C109",
+          "value": "one-character house system"
+        },
+        {
+          "cell": "A207",
+          "value": "SW_SWE_HOUSE_POS"
+        },
+        {
+          "cell": "A209",
+          "value": "armc"
+        },
+        {
+          "cell": "B209",
+          "value": 280.0
+        },
+        {
+          "cell": "C209",
+          "value": "degrees"
+        },
+        {
+          "cell": "A210",
+          "value": "geolat"
+        },
+        {
+          "cell": "B210",
+          "value": 52.52
+        },
+        {
+          "cell": "C210",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A211",
+          "value": "eps"
+        },
+        {
+          "cell": "B211",
+          "value": 23.4392911
+        },
+        {
+          "cell": "C211",
+          "value": "degrees"
+        },
+        {
+          "cell": "A212",
+          "value": "hsys"
+        },
+        {
+          "cell": "B212",
+          "value": "P"
+        },
+        {
+          "cell": "C212",
+          "value": "one-character house system"
+        },
+        {
+          "cell": "A213",
+          "value": "xpin[0]"
+        },
+        {
+          "cell": "B213",
+          "value": 280.0
+        },
+        {
+          "cell": "C213",
+          "value": "ecliptic longitude and latitude, degrees"
+        },
+        {
+          "cell": "A214",
+          "value": "xpin[1]"
+        },
+        {
+          "cell": "B214",
+          "value": 1.0
+        },
+        {
+          "cell": "C214",
+          "value": "ecliptic longitude and latitude, degrees"
+        },
+        {
+          "cell": "A307",
+          "value": "SW_SWE_HOUSES"
+        },
+        {
+          "cell": "A309",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B309",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C309",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A310",
+          "value": "geolat"
+        },
+        {
+          "cell": "B310",
+          "value": 52.52
+        },
+        {
+          "cell": "C310",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A311",
+          "value": "geolon"
+        },
+        {
+          "cell": "B311",
+          "value": 13.405
+        },
+        {
+          "cell": "C311",
+          "value": "degrees east"
+        },
+        {
+          "cell": "A312",
+          "value": "hsys"
+        },
+        {
+          "cell": "B312",
+          "value": "P"
+        },
+        {
+          "cell": "C312",
+          "value": "one-character house system"
+        },
+        {
+          "cell": "A427",
+          "value": "SW_SWE_HOUSES_ARMC"
+        },
+        {
+          "cell": "A429",
+          "value": "armc"
+        },
+        {
+          "cell": "B429",
+          "value": 280.0
+        },
+        {
+          "cell": "C429",
+          "value": "degrees"
+        },
+        {
+          "cell": "A430",
+          "value": "geolat"
+        },
+        {
+          "cell": "B430",
+          "value": 52.52
+        },
+        {
+          "cell": "C430",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A431",
+          "value": "eps"
+        },
+        {
+          "cell": "B431",
+          "value": 23.4392911
+        },
+        {
+          "cell": "C431",
+          "value": "degrees"
+        },
+        {
+          "cell": "A432",
+          "value": "hsys"
+        },
+        {
+          "cell": "B432",
+          "value": "P"
+        },
+        {
+          "cell": "C432",
+          "value": "one-character house system"
+        },
+        {
+          "cell": "A433",
+          "value": "ascmc[0]"
+        },
+        {
+          "cell": "B433",
+          "value": 0.0
+        },
+        {
+          "cell": "C433",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A434",
+          "value": "ascmc[1]"
+        },
+        {
+          "cell": "B434",
+          "value": 0.0
+        },
+        {
+          "cell": "C434",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A435",
+          "value": "ascmc[2]"
+        },
+        {
+          "cell": "B435",
+          "value": 0.0
+        },
+        {
+          "cell": "C435",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A436",
+          "value": "ascmc[3]"
+        },
+        {
+          "cell": "B436",
+          "value": 0.0
+        },
+        {
+          "cell": "C436",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A437",
+          "value": "ascmc[4]"
+        },
+        {
+          "cell": "B437",
+          "value": 0.0
+        },
+        {
+          "cell": "C437",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A438",
+          "value": "ascmc[5]"
+        },
+        {
+          "cell": "B438",
+          "value": 0.0
+        },
+        {
+          "cell": "C438",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A439",
+          "value": "ascmc[6]"
+        },
+        {
+          "cell": "B439",
+          "value": 0.0
+        },
+        {
+          "cell": "C439",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A440",
+          "value": "ascmc[7]"
+        },
+        {
+          "cell": "B440",
+          "value": 0.0
+        },
+        {
+          "cell": "C440",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A441",
+          "value": "ascmc[8]"
+        },
+        {
+          "cell": "B441",
+          "value": 0.0
+        },
+        {
+          "cell": "C441",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A442",
+          "value": "ascmc[9]"
+        },
+        {
+          "cell": "B442",
+          "value": 0.0
+        },
+        {
+          "cell": "C442",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A549",
+          "value": "SW_SWE_HOUSES_ARMC_EX2"
+        },
+        {
+          "cell": "A551",
+          "value": "armc"
+        },
+        {
+          "cell": "B551",
+          "value": 280.0
+        },
+        {
+          "cell": "C551",
+          "value": "degrees"
+        },
+        {
+          "cell": "A552",
+          "value": "geolat"
+        },
+        {
+          "cell": "B552",
+          "value": 52.52
+        },
+        {
+          "cell": "C552",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A553",
+          "value": "eps"
+        },
+        {
+          "cell": "B553",
+          "value": 23.4392911
+        },
+        {
+          "cell": "C553",
+          "value": "degrees"
+        },
+        {
+          "cell": "A554",
+          "value": "hsys"
+        },
+        {
+          "cell": "B554",
+          "value": "P"
+        },
+        {
+          "cell": "C554",
+          "value": "one-character house system"
+        },
+        {
+          "cell": "A555",
+          "value": "ascmc[0]"
+        },
+        {
+          "cell": "B555",
+          "value": 0.0
+        },
+        {
+          "cell": "C555",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A556",
+          "value": "ascmc[1]"
+        },
+        {
+          "cell": "B556",
+          "value": 0.0
+        },
+        {
+          "cell": "C556",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A557",
+          "value": "ascmc[2]"
+        },
+        {
+          "cell": "B557",
+          "value": 0.0
+        },
+        {
+          "cell": "C557",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A558",
+          "value": "ascmc[3]"
+        },
+        {
+          "cell": "B558",
+          "value": 0.0
+        },
+        {
+          "cell": "C558",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A559",
+          "value": "ascmc[4]"
+        },
+        {
+          "cell": "B559",
+          "value": 0.0
+        },
+        {
+          "cell": "C559",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A560",
+          "value": "ascmc[5]"
+        },
+        {
+          "cell": "B560",
+          "value": 0.0
+        },
+        {
+          "cell": "C560",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A561",
+          "value": "ascmc[6]"
+        },
+        {
+          "cell": "B561",
+          "value": 0.0
+        },
+        {
+          "cell": "C561",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A562",
+          "value": "ascmc[7]"
+        },
+        {
+          "cell": "B562",
+          "value": 0.0
+        },
+        {
+          "cell": "C562",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A563",
+          "value": "ascmc[8]"
+        },
+        {
+          "cell": "B563",
+          "value": 0.0
+        },
+        {
+          "cell": "C563",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A564",
+          "value": "ascmc[9]"
+        },
+        {
+          "cell": "B564",
+          "value": 0.0
+        },
+        {
+          "cell": "C564",
+          "value": "degrees (radians with SEFLG_RADIANS)"
+        },
+        {
+          "cell": "A691",
+          "value": "SW_SWE_HOUSES_EX"
+        },
+        {
+          "cell": "A693",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B693",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C693",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A694",
+          "value": "iflag"
+        },
+        {
+          "cell": "B694",
+          "value": 258
+        },
+        {
+          "cell": "C694",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A695",
+          "value": "geolat"
+        },
+        {
+          "cell": "B695",
+          "value": 52.52
+        },
+        {
+          "cell": "C695",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A696",
+          "value": "geolon"
+        },
+        {
+          "cell": "B696",
+          "value": 13.405
+        },
+        {
+          "cell": "C696",
+          "value": "degrees east"
+        },
+        {
+          "cell": "A697",
+          "value": "hsys"
+        },
+        {
+          "cell": "B697",
+          "value": "P"
+        },
+        {
+          "cell": "C697",
+          "value": "one-character house system"
+        },
+        {
+          "cell": "A811",
+          "value": "SW_SWE_HOUSES_EX2"
+        },
+        {
+          "cell": "A813",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B813",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C813",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A814",
+          "value": "iflag"
+        },
+        {
+          "cell": "B814",
+          "value": 258
+        },
+        {
+          "cell": "C814",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A815",
+          "value": "geolat"
+        },
+        {
+          "cell": "B815",
+          "value": 52.52
+        },
+        {
+          "cell": "C815",
+          "value": "degrees north"
+        },
+        {
+          "cell": "A816",
+          "value": "geolon"
+        },
+        {
+          "cell": "B816",
+          "value": 13.405
+        },
+        {
+          "cell": "C816",
+          "value": "degrees east"
+        },
+        {
+          "cell": "A817",
+          "value": "hsys"
+        },
+        {
+          "cell": "B817",
+          "value": "P"
+        },
+        {
+          "cell": "C817",
+          "value": "one-character house system"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_GAUQUELIN_SECTOR(B8,B9,B10,B11,B12,B13:B15,B16,B17,,TRUE)"
+        },
+        {
+          "cell": "D107",
+          "formula": "=SW_SWE_HOUSE_NAME(B109,,TRUE)"
+        },
+        {
+          "cell": "D207",
+          "formula": "=SW_SWE_HOUSE_POS(B209,B210,B211,B212,B213:B214,,TRUE)"
+        },
+        {
+          "cell": "D307",
+          "formula": "=SW_SWE_HOUSES(B309,B310,B311,B312,,TRUE)"
+        },
+        {
+          "cell": "D427",
+          "formula": "=SW_SWE_HOUSES_ARMC(B429,B430,B431,B432,B433:B442,,TRUE)"
+        },
+        {
+          "cell": "D549",
+          "formula": "=SW_SWE_HOUSES_ARMC_EX2(B551,B552,B553,B554,B555:B564,,TRUE)"
+        },
+        {
+          "cell": "D691",
+          "formula": "=SW_SWE_HOUSES_EX(B693,B694,B695,B696,B697,,TRUE)"
+        },
+        {
+          "cell": "D811",
+          "formula": "=SW_SWE_HOUSES_EX2(B813,B814,B815,B816,B817,,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_gauquelin_sector",
+          "cell": "D6",
+          "formula": "=SW_SWE_GAUQUELIN_SECTOR(B8,B9,B10,B11,B12,B13:B15,B16,B17,,TRUE)"
+        },
+        {
+          "name": "swe_house_name",
+          "cell": "D107",
+          "formula": "=SW_SWE_HOUSE_NAME(B109,,TRUE)"
+        },
+        {
+          "name": "swe_house_pos",
+          "cell": "D207",
+          "formula": "=SW_SWE_HOUSE_POS(B209,B210,B211,B212,B213:B214,,TRUE)"
+        },
+        {
+          "name": "swe_houses",
+          "cell": "D307",
+          "formula": "=SW_SWE_HOUSES(B309,B310,B311,B312,,TRUE)"
+        },
+        {
+          "name": "swe_houses_armc",
+          "cell": "D427",
+          "formula": "=SW_SWE_HOUSES_ARMC(B429,B430,B431,B432,B433:B442,,TRUE)"
+        },
+        {
+          "name": "swe_houses_armc_ex2",
+          "cell": "D549",
+          "formula": "=SW_SWE_HOUSES_ARMC_EX2(B551,B552,B553,B554,B555:B564,,TRUE)"
+        },
+        {
+          "name": "swe_houses_ex",
+          "cell": "D691",
+          "formula": "=SW_SWE_HOUSES_EX(B693,B694,B695,B696,B697,,TRUE)"
+        },
+        {
+          "name": "swe_houses_ex2",
+          "cell": "D811",
+          "formula": "=SW_SWE_HOUSES_EX2(B813,B814,B815,B816,B817,,TRUE)"
+        }
+      ]
+    },
+    {
+      "name": "Heliacal",
+      "title": "Heliacal API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_HELIACAL_ANGLE"
+        },
+        {
+          "cell": "A8",
+          "value": "tjdut"
+        },
+        {
+          "cell": "B8",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C8",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A9",
+          "value": "dgeo[0]"
+        },
+        {
+          "cell": "B9",
+          "value": 13.405
+        },
+        {
+          "cell": "C9",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A10",
+          "value": "dgeo[1]"
+        },
+        {
+          "cell": "B10",
+          "value": 52.52
+        },
+        {
+          "cell": "C10",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A11",
+          "value": "dgeo[2]"
+        },
+        {
+          "cell": "B11",
+          "value": 34.0
+        },
+        {
+          "cell": "C11",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A12",
+          "value": "datm[0]"
+        },
+        {
+          "cell": "B12",
+          "value": 1013.25
+        },
+        {
+          "cell": "C12",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A13",
+          "value": "datm[1]"
+        },
+        {
+          "cell": "B13",
+          "value": 15.0
+        },
+        {
+          "cell": "C13",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A14",
+          "value": "datm[2]"
+        },
+        {
+          "cell": "B14",
+          "value": 40.0
+        },
+        {
+          "cell": "C14",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A15",
+          "value": "datm[3]"
+        },
+        {
+          "cell": "B15",
+          "value": 0.0
+        },
+        {
+          "cell": "C15",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A16",
+          "value": "dobs[0]"
+        },
+        {
+          "cell": "B16",
+          "value": 36.0
+        },
+        {
+          "cell": "C16",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A17",
+          "value": "dobs[1]"
+        },
+        {
+          "cell": "B17",
+          "value": 1.0
+        },
+        {
+          "cell": "C17",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A18",
+          "value": "dobs[2]"
+        },
+        {
+          "cell": "B18",
+          "value": 0.0
+        },
+        {
+          "cell": "C18",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A19",
+          "value": "dobs[3]"
+        },
+        {
+          "cell": "B19",
+          "value": 1.0
+        },
+        {
+          "cell": "C19",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A20",
+          "value": "dobs[4]"
+        },
+        {
+          "cell": "B20",
+          "value": 0.0
+        },
+        {
+          "cell": "C20",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A21",
+          "value": "dobs[5]"
+        },
+        {
+          "cell": "B21",
+          "value": 0.0
+        },
+        {
+          "cell": "C21",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A22",
+          "value": "helflag"
+        },
+        {
+          "cell": "B22",
+          "value": 0
+        },
+        {
+          "cell": "C22",
+          "value": "heliacal flag bit mask"
+        },
+        {
+          "cell": "A23",
+          "value": "mag"
+        },
+        {
+          "cell": "B23",
+          "value": 0.0
+        },
+        {
+          "cell": "C23",
+          "value": "astronomical magnitude"
+        },
+        {
+          "cell": "A24",
+          "value": "azi_obj"
+        },
+        {
+          "cell": "B24",
+          "value": 90.0
+        },
+        {
+          "cell": "C24",
+          "value": "azimuth degrees"
+        },
+        {
+          "cell": "A25",
+          "value": "azi_sun"
+        },
+        {
+          "cell": "B25",
+          "value": 100.0
+        },
+        {
+          "cell": "C25",
+          "value": "azimuth degrees"
+        },
+        {
+          "cell": "A26",
+          "value": "azi_moon"
+        },
+        {
+          "cell": "B26",
+          "value": 110.0
+        },
+        {
+          "cell": "C26",
+          "value": "azimuth degrees"
+        },
+        {
+          "cell": "A27",
+          "value": "alt_moon"
+        },
+        {
+          "cell": "B27",
+          "value": -10.0
+        },
+        {
+          "cell": "C27",
+          "value": "altitude degrees"
+        },
+        {
+          "cell": "A119",
+          "value": "SW_SWE_HELIACAL_PHENO_UT"
+        },
+        {
+          "cell": "A121",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B121",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C121",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A122",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B122",
+          "value": 13.405
+        },
+        {
+          "cell": "C122",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A123",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B123",
+          "value": 52.52
+        },
+        {
+          "cell": "C123",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A124",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B124",
+          "value": 34.0
+        },
+        {
+          "cell": "C124",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A125",
+          "value": "datm[0]"
+        },
+        {
+          "cell": "B125",
+          "value": 1013.25
+        },
+        {
+          "cell": "C125",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A126",
+          "value": "datm[1]"
+        },
+        {
+          "cell": "B126",
+          "value": 15.0
+        },
+        {
+          "cell": "C126",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A127",
+          "value": "datm[2]"
+        },
+        {
+          "cell": "B127",
+          "value": 40.0
+        },
+        {
+          "cell": "C127",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A128",
+          "value": "datm[3]"
+        },
+        {
+          "cell": "B128",
+          "value": 0.0
+        },
+        {
+          "cell": "C128",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A129",
+          "value": "dobs[0]"
+        },
+        {
+          "cell": "B129",
+          "value": 36.0
+        },
+        {
+          "cell": "C129",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A130",
+          "value": "dobs[1]"
+        },
+        {
+          "cell": "B130",
+          "value": 1.0
+        },
+        {
+          "cell": "C130",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A131",
+          "value": "dobs[2]"
+        },
+        {
+          "cell": "B131",
+          "value": 0.0
+        },
+        {
+          "cell": "C131",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A132",
+          "value": "dobs[3]"
+        },
+        {
+          "cell": "B132",
+          "value": 1.0
+        },
+        {
+          "cell": "C132",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A133",
+          "value": "dobs[4]"
+        },
+        {
+          "cell": "B133",
+          "value": 0.0
+        },
+        {
+          "cell": "C133",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A134",
+          "value": "dobs[5]"
+        },
+        {
+          "cell": "B134",
+          "value": 0.0
+        },
+        {
+          "cell": "C134",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A135",
+          "value": "ObjectName"
+        },
+        {
+          "cell": "B135",
+          "value": "venus"
+        },
+        {
+          "cell": "C135",
+          "value": "planet or fixed-star name"
+        },
+        {
+          "cell": "A136",
+          "value": "TypeEvent"
+        },
+        {
+          "cell": "B136",
+          "value": 1
+        },
+        {
+          "cell": "C136",
+          "value": "heliacal event type 1..6"
+        },
+        {
+          "cell": "A137",
+          "value": "helflag"
+        },
+        {
+          "cell": "B137",
+          "value": 0
+        },
+        {
+          "cell": "C137",
+          "value": "heliacal flag bit mask"
+        },
+        {
+          "cell": "A257",
+          "value": "SW_SWE_HELIACAL_UT"
+        },
+        {
+          "cell": "A259",
+          "value": "tjdstart_ut"
+        },
+        {
+          "cell": "B259",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C259",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A260",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B260",
+          "value": 13.405
+        },
+        {
+          "cell": "C260",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A261",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B261",
+          "value": 52.52
+        },
+        {
+          "cell": "C261",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A262",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B262",
+          "value": 34.0
+        },
+        {
+          "cell": "C262",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A263",
+          "value": "datm[0]"
+        },
+        {
+          "cell": "B263",
+          "value": 1013.25
+        },
+        {
+          "cell": "C263",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A264",
+          "value": "datm[1]"
+        },
+        {
+          "cell": "B264",
+          "value": 15.0
+        },
+        {
+          "cell": "C264",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A265",
+          "value": "datm[2]"
+        },
+        {
+          "cell": "B265",
+          "value": 40.0
+        },
+        {
+          "cell": "C265",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A266",
+          "value": "datm[3]"
+        },
+        {
+          "cell": "B266",
+          "value": 0.0
+        },
+        {
+          "cell": "C266",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A267",
+          "value": "dobs[0]"
+        },
+        {
+          "cell": "B267",
+          "value": 36.0
+        },
+        {
+          "cell": "C267",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A268",
+          "value": "dobs[1]"
+        },
+        {
+          "cell": "B268",
+          "value": 1.0
+        },
+        {
+          "cell": "C268",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A269",
+          "value": "dobs[2]"
+        },
+        {
+          "cell": "B269",
+          "value": 0.0
+        },
+        {
+          "cell": "C269",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A270",
+          "value": "dobs[3]"
+        },
+        {
+          "cell": "B270",
+          "value": 1.0
+        },
+        {
+          "cell": "C270",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A271",
+          "value": "dobs[4]"
+        },
+        {
+          "cell": "B271",
+          "value": 0.0
+        },
+        {
+          "cell": "C271",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A272",
+          "value": "dobs[5]"
+        },
+        {
+          "cell": "B272",
+          "value": 0.0
+        },
+        {
+          "cell": "C272",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A273",
+          "value": "ObjectName"
+        },
+        {
+          "cell": "B273",
+          "value": "venus"
+        },
+        {
+          "cell": "C273",
+          "value": "planet or fixed-star name"
+        },
+        {
+          "cell": "A274",
+          "value": "TypeEvent"
+        },
+        {
+          "cell": "B274",
+          "value": 1
+        },
+        {
+          "cell": "C274",
+          "value": "heliacal event type 1..6"
+        },
+        {
+          "cell": "A275",
+          "value": "iflag"
+        },
+        {
+          "cell": "B275",
+          "value": 258
+        },
+        {
+          "cell": "C275",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A370",
+          "value": "SW_SWE_TOPO_ARCUS_VISIONIS"
+        },
+        {
+          "cell": "A372",
+          "value": "tjdut"
+        },
+        {
+          "cell": "B372",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C372",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A373",
+          "value": "dgeo[0]"
+        },
+        {
+          "cell": "B373",
+          "value": 13.405
+        },
+        {
+          "cell": "C373",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A374",
+          "value": "dgeo[1]"
+        },
+        {
+          "cell": "B374",
+          "value": 52.52
+        },
+        {
+          "cell": "C374",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A375",
+          "value": "dgeo[2]"
+        },
+        {
+          "cell": "B375",
+          "value": 34.0
+        },
+        {
+          "cell": "C375",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A376",
+          "value": "datm[0]"
+        },
+        {
+          "cell": "B376",
+          "value": 1013.25
+        },
+        {
+          "cell": "C376",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A377",
+          "value": "datm[1]"
+        },
+        {
+          "cell": "B377",
+          "value": 15.0
+        },
+        {
+          "cell": "C377",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A378",
+          "value": "datm[2]"
+        },
+        {
+          "cell": "B378",
+          "value": 40.0
+        },
+        {
+          "cell": "C378",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A379",
+          "value": "datm[3]"
+        },
+        {
+          "cell": "B379",
+          "value": 0.0
+        },
+        {
+          "cell": "C379",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A380",
+          "value": "dobs[0]"
+        },
+        {
+          "cell": "B380",
+          "value": 36.0
+        },
+        {
+          "cell": "C380",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A381",
+          "value": "dobs[1]"
+        },
+        {
+          "cell": "B381",
+          "value": 1.0
+        },
+        {
+          "cell": "C381",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A382",
+          "value": "dobs[2]"
+        },
+        {
+          "cell": "B382",
+          "value": 0.0
+        },
+        {
+          "cell": "C382",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A383",
+          "value": "dobs[3]"
+        },
+        {
+          "cell": "B383",
+          "value": 1.0
+        },
+        {
+          "cell": "C383",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A384",
+          "value": "dobs[4]"
+        },
+        {
+          "cell": "B384",
+          "value": 0.0
+        },
+        {
+          "cell": "C384",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A385",
+          "value": "dobs[5]"
+        },
+        {
+          "cell": "B385",
+          "value": 0.0
+        },
+        {
+          "cell": "C385",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A386",
+          "value": "helflag"
+        },
+        {
+          "cell": "B386",
+          "value": 0
+        },
+        {
+          "cell": "C386",
+          "value": "heliacal flag bit mask"
+        },
+        {
+          "cell": "A387",
+          "value": "mag"
+        },
+        {
+          "cell": "B387",
+          "value": 0.0
+        },
+        {
+          "cell": "C387",
+          "value": "astronomical magnitude"
+        },
+        {
+          "cell": "A388",
+          "value": "azi_obj"
+        },
+        {
+          "cell": "B388",
+          "value": 90.0
+        },
+        {
+          "cell": "C388",
+          "value": "azimuth degrees"
+        },
+        {
+          "cell": "A389",
+          "value": "alt_obj"
+        },
+        {
+          "cell": "B389",
+          "value": 5.0
+        },
+        {
+          "cell": "C389",
+          "value": "altitude degrees"
+        },
+        {
+          "cell": "A390",
+          "value": "azi_sun"
+        },
+        {
+          "cell": "B390",
+          "value": 100.0
+        },
+        {
+          "cell": "C390",
+          "value": "azimuth degrees"
+        },
+        {
+          "cell": "A391",
+          "value": "azi_moon"
+        },
+        {
+          "cell": "B391",
+          "value": 110.0
+        },
+        {
+          "cell": "C391",
+          "value": "azimuth degrees"
+        },
+        {
+          "cell": "A392",
+          "value": "alt_moon"
+        },
+        {
+          "cell": "B392",
+          "value": -10.0
+        },
+        {
+          "cell": "C392",
+          "value": "altitude degrees"
+        },
+        {
+          "cell": "A481",
+          "value": "SW_SWE_VIS_LIMIT_MAG"
+        },
+        {
+          "cell": "A483",
+          "value": "tjdut"
+        },
+        {
+          "cell": "B483",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C483",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A484",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B484",
+          "value": 13.405
+        },
+        {
+          "cell": "C484",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A485",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B485",
+          "value": 52.52
+        },
+        {
+          "cell": "C485",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A486",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B486",
+          "value": 34.0
+        },
+        {
+          "cell": "C486",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A487",
+          "value": "datm[0]"
+        },
+        {
+          "cell": "B487",
+          "value": 1013.25
+        },
+        {
+          "cell": "C487",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A488",
+          "value": "datm[1]"
+        },
+        {
+          "cell": "B488",
+          "value": 15.0
+        },
+        {
+          "cell": "C488",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A489",
+          "value": "datm[2]"
+        },
+        {
+          "cell": "B489",
+          "value": 40.0
+        },
+        {
+          "cell": "C489",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A490",
+          "value": "datm[3]"
+        },
+        {
+          "cell": "B490",
+          "value": 0.0
+        },
+        {
+          "cell": "C490",
+          "value": "hPa; Celsius; relative humidity percent; visibility km or extinction coefficient"
+        },
+        {
+          "cell": "A491",
+          "value": "dobs[0]"
+        },
+        {
+          "cell": "B491",
+          "value": 36.0
+        },
+        {
+          "cell": "C491",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A492",
+          "value": "dobs[1]"
+        },
+        {
+          "cell": "B492",
+          "value": 1.0
+        },
+        {
+          "cell": "C492",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A493",
+          "value": "dobs[2]"
+        },
+        {
+          "cell": "B493",
+          "value": 0.0
+        },
+        {
+          "cell": "C493",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A494",
+          "value": "dobs[3]"
+        },
+        {
+          "cell": "B494",
+          "value": 1.0
+        },
+        {
+          "cell": "C494",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A495",
+          "value": "dobs[4]"
+        },
+        {
+          "cell": "B495",
+          "value": 0.0
+        },
+        {
+          "cell": "C495",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A496",
+          "value": "dobs[5]"
+        },
+        {
+          "cell": "B496",
+          "value": 0.0
+        },
+        {
+          "cell": "C496",
+          "value": "age years; Snellen ratio; binocular flag; magnification; aperture mm; transmission fraction"
+        },
+        {
+          "cell": "A497",
+          "value": "ObjectName"
+        },
+        {
+          "cell": "B497",
+          "value": "venus"
+        },
+        {
+          "cell": "C497",
+          "value": "planet or fixed-star name"
+        },
+        {
+          "cell": "A498",
+          "value": "helflag"
+        },
+        {
+          "cell": "B498",
+          "value": 0
+        },
+        {
+          "cell": "C498",
+          "value": "heliacal flag bit mask"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_HELIACAL_ANGLE(B8,B9:B11,B12:B15,B16:B21,B22,B23,B24,B25,B26,B27,,TRUE)"
+        },
+        {
+          "cell": "D119",
+          "formula": "=SW_SWE_HELIACAL_PHENO_UT(B121,B122:B124,B125:B128,B129:B134,B135,B136,B137,,TRUE)"
+        },
+        {
+          "cell": "D257",
+          "formula": "=SW_SWE_HELIACAL_UT(B259,B260:B262,B263:B266,B267:B272,B273,B274,B275,,TRUE)"
+        },
+        {
+          "cell": "D370",
+          "formula": "=SW_SWE_TOPO_ARCUS_VISIONIS(B372,B373:B375,B376:B379,B380:B385,B386,B387,B388,B389,B390,B391,B392,,TRUE)"
+        },
+        {
+          "cell": "D481",
+          "formula": "=SW_SWE_VIS_LIMIT_MAG(B483,B484:B486,B487:B490,B491:B496,B497,B498,,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_heliacal_angle",
+          "cell": "D6",
+          "formula": "=SW_SWE_HELIACAL_ANGLE(B8,B9:B11,B12:B15,B16:B21,B22,B23,B24,B25,B26,B27,,TRUE)"
+        },
+        {
+          "name": "swe_heliacal_pheno_ut",
+          "cell": "D119",
+          "formula": "=SW_SWE_HELIACAL_PHENO_UT(B121,B122:B124,B125:B128,B129:B134,B135,B136,B137,,TRUE)"
+        },
+        {
+          "name": "swe_heliacal_ut",
+          "cell": "D257",
+          "formula": "=SW_SWE_HELIACAL_UT(B259,B260:B262,B263:B266,B267:B272,B273,B274,B275,,TRUE)"
+        },
+        {
+          "name": "swe_topo_arcus_visionis",
+          "cell": "D370",
+          "formula": "=SW_SWE_TOPO_ARCUS_VISIONIS(B372,B373:B375,B376:B379,B380:B385,B386,B387,B388,B389,B390,B391,B392,,TRUE)"
+        },
+        {
+          "name": "swe_vis_limit_mag",
+          "cell": "D481",
+          "formula": "=SW_SWE_VIS_LIMIT_MAG(B483,B484:B486,B487:B490,B491:B496,B497,B498,,TRUE)"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "title": "Events API examples",
+      "description": "Edit the input cells in column B. Detailed results spill into D:F. Indices match docs/API-REFERENCE.md; options are an optional two-column key/value range. Zero event dates mean unavailable contacts.",
+      "headers": [
+        "Input / function",
+        "Editable value",
+        "Input units",
+        "Output field",
+        "Value",
+        "Output units"
+      ],
+      "widths": [
+        39,
+        29,
+        62,
+        32,
+        42,
+        80
+      ],
+      "rows": [],
+      "cells": [
+        {
+          "cell": "A6",
+          "value": "SW_SWE_HELIO_CROSS"
+        },
+        {
+          "cell": "A8",
+          "value": "ipl"
+        },
+        {
+          "cell": "B8",
+          "value": 4
+        },
+        {
+          "cell": "C8",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A9",
+          "value": "x2cross"
+        },
+        {
+          "cell": "B9",
+          "value": 0.0
+        },
+        {
+          "cell": "C9",
+          "value": "target ecliptic longitude, degrees"
+        },
+        {
+          "cell": "A10",
+          "value": "jd_et"
+        },
+        {
+          "cell": "B10",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C10",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A11",
+          "value": "iflag"
+        },
+        {
+          "cell": "B11",
+          "value": 258
+        },
+        {
+          "cell": "C11",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A12",
+          "value": "dir"
+        },
+        {
+          "cell": "B12",
+          "value": 1
+        },
+        {
+          "cell": "C12",
+          "value": "positive forward or negative backward"
+        },
+        {
+          "cell": "A107",
+          "value": "SW_SWE_HELIO_CROSS_UT"
+        },
+        {
+          "cell": "A109",
+          "value": "ipl"
+        },
+        {
+          "cell": "B109",
+          "value": 4
+        },
+        {
+          "cell": "C109",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A110",
+          "value": "x2cross"
+        },
+        {
+          "cell": "B110",
+          "value": 0.0
+        },
+        {
+          "cell": "C110",
+          "value": "target ecliptic longitude, degrees"
+        },
+        {
+          "cell": "A111",
+          "value": "jd_ut"
+        },
+        {
+          "cell": "B111",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C111",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A112",
+          "value": "iflag"
+        },
+        {
+          "cell": "B112",
+          "value": 258
+        },
+        {
+          "cell": "C112",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A113",
+          "value": "dir"
+        },
+        {
+          "cell": "B113",
+          "value": 1
+        },
+        {
+          "cell": "C113",
+          "value": "positive forward or negative backward"
+        },
+        {
+          "cell": "A208",
+          "value": "SW_SWE_LUN_ECLIPSE_HOW"
+        },
+        {
+          "cell": "A210",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B210",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C210",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A211",
+          "value": "ifl"
+        },
+        {
+          "cell": "B211",
+          "value": 2
+        },
+        {
+          "cell": "C211",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A212",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B212",
+          "value": 13.405
+        },
+        {
+          "cell": "C212",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A213",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B213",
+          "value": 52.52
+        },
+        {
+          "cell": "C213",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A214",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B214",
+          "value": 34.0
+        },
+        {
+          "cell": "C214",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A328",
+          "value": "SW_SWE_LUN_ECLIPSE_WHEN"
+        },
+        {
+          "cell": "A330",
+          "value": "tjd_start"
+        },
+        {
+          "cell": "B330",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C330",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A331",
+          "value": "ifl"
+        },
+        {
+          "cell": "B331",
+          "value": 2
+        },
+        {
+          "cell": "C331",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A332",
+          "value": "ifltype"
+        },
+        {
+          "cell": "B332",
+          "value": 0
+        },
+        {
+          "cell": "C332",
+          "value": "event type bit mask"
+        },
+        {
+          "cell": "A333",
+          "value": "backward"
+        },
+        {
+          "cell": "B333",
+          "value": 0
+        },
+        {
+          "cell": "C333",
+          "value": "0 forward, 1 backward; occultation one-try bit 32768"
+        },
+        {
+          "cell": "A438",
+          "value": "SW_SWE_LUN_ECLIPSE_WHEN_LOC"
+        },
+        {
+          "cell": "A440",
+          "value": "tjd_start"
+        },
+        {
+          "cell": "B440",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C440",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A441",
+          "value": "ifl"
+        },
+        {
+          "cell": "B441",
+          "value": 2
+        },
+        {
+          "cell": "C441",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A442",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B442",
+          "value": 13.405
+        },
+        {
+          "cell": "C442",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A443",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B443",
+          "value": 52.52
+        },
+        {
+          "cell": "C443",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A444",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B444",
+          "value": 34.0
+        },
+        {
+          "cell": "C444",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A445",
+          "value": "backward"
+        },
+        {
+          "cell": "B445",
+          "value": 0
+        },
+        {
+          "cell": "C445",
+          "value": "0 forward, 1 backward; occultation one-try bit 32768"
+        },
+        {
+          "cell": "A568",
+          "value": "SW_SWE_LUN_OCCULT_WHEN_GLOB"
+        },
+        {
+          "cell": "A570",
+          "value": "tjd_start"
+        },
+        {
+          "cell": "B570",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C570",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A571",
+          "value": "ipl"
+        },
+        {
+          "cell": "B571",
+          "value": 3
+        },
+        {
+          "cell": "C571",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A572",
+          "value": "starname"
+        },
+        {
+          "cell": "B572",
+          "value": ""
+        },
+        {
+          "cell": "C572",
+          "value": "star name, or empty to use ipl"
+        },
+        {
+          "cell": "A573",
+          "value": "ifl"
+        },
+        {
+          "cell": "B573",
+          "value": 2
+        },
+        {
+          "cell": "C573",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A574",
+          "value": "ifltype"
+        },
+        {
+          "cell": "B574",
+          "value": 0
+        },
+        {
+          "cell": "C574",
+          "value": "event type bit mask"
+        },
+        {
+          "cell": "A575",
+          "value": "backward"
+        },
+        {
+          "cell": "B575",
+          "value": 0
+        },
+        {
+          "cell": "C575",
+          "value": "0 forward, 1 backward; occultation one-try bit 32768"
+        },
+        {
+          "cell": "A678",
+          "value": "SW_SWE_LUN_OCCULT_WHEN_LOC"
+        },
+        {
+          "cell": "A680",
+          "value": "tjd_start"
+        },
+        {
+          "cell": "B680",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C680",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A681",
+          "value": "ipl"
+        },
+        {
+          "cell": "B681",
+          "value": 3
+        },
+        {
+          "cell": "C681",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A682",
+          "value": "starname"
+        },
+        {
+          "cell": "B682",
+          "value": ""
+        },
+        {
+          "cell": "C682",
+          "value": "star name, or empty to use ipl"
+        },
+        {
+          "cell": "A683",
+          "value": "ifl"
+        },
+        {
+          "cell": "B683",
+          "value": 2
+        },
+        {
+          "cell": "C683",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A684",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B684",
+          "value": 13.405
+        },
+        {
+          "cell": "C684",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A685",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B685",
+          "value": 52.52
+        },
+        {
+          "cell": "C685",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A686",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B686",
+          "value": 34.0
+        },
+        {
+          "cell": "C686",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A687",
+          "value": "backward"
+        },
+        {
+          "cell": "B687",
+          "value": 0
+        },
+        {
+          "cell": "C687",
+          "value": "0 forward, 1 backward; occultation one-try bit 32768"
+        },
+        {
+          "cell": "A808",
+          "value": "SW_SWE_LUN_OCCULT_WHERE"
+        },
+        {
+          "cell": "A810",
+          "value": "tjd"
+        },
+        {
+          "cell": "B810",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C810",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A811",
+          "value": "ipl"
+        },
+        {
+          "cell": "B811",
+          "value": 3
+        },
+        {
+          "cell": "C811",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A812",
+          "value": "starname"
+        },
+        {
+          "cell": "B812",
+          "value": ""
+        },
+        {
+          "cell": "C812",
+          "value": "star name, or empty to use ipl"
+        },
+        {
+          "cell": "A813",
+          "value": "ifl"
+        },
+        {
+          "cell": "B813",
+          "value": 2
+        },
+        {
+          "cell": "C813",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A930",
+          "value": "SW_SWE_MOONCROSS"
+        },
+        {
+          "cell": "A932",
+          "value": "x2cross"
+        },
+        {
+          "cell": "B932",
+          "value": 0.0
+        },
+        {
+          "cell": "C932",
+          "value": "target ecliptic longitude, degrees"
+        },
+        {
+          "cell": "A933",
+          "value": "jd_et"
+        },
+        {
+          "cell": "B933",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C933",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A934",
+          "value": "flag"
+        },
+        {
+          "cell": "B934",
+          "value": 258
+        },
+        {
+          "cell": "C934",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1030",
+          "value": "SW_SWE_MOONCROSS_NODE"
+        },
+        {
+          "cell": "A1032",
+          "value": "jd_et"
+        },
+        {
+          "cell": "B1032",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1032",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A1033",
+          "value": "flag"
+        },
+        {
+          "cell": "B1033",
+          "value": 258
+        },
+        {
+          "cell": "C1033",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1132",
+          "value": "SW_SWE_MOONCROSS_NODE_UT"
+        },
+        {
+          "cell": "A1134",
+          "value": "jd_ut"
+        },
+        {
+          "cell": "B1134",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1134",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1135",
+          "value": "flag"
+        },
+        {
+          "cell": "B1135",
+          "value": 258
+        },
+        {
+          "cell": "C1135",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1234",
+          "value": "SW_SWE_MOONCROSS_UT"
+        },
+        {
+          "cell": "A1236",
+          "value": "x2cross"
+        },
+        {
+          "cell": "B1236",
+          "value": 0.0
+        },
+        {
+          "cell": "C1236",
+          "value": "target ecliptic longitude, degrees"
+        },
+        {
+          "cell": "A1237",
+          "value": "jd_ut"
+        },
+        {
+          "cell": "B1237",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1237",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1238",
+          "value": "flag"
+        },
+        {
+          "cell": "B1238",
+          "value": 258
+        },
+        {
+          "cell": "C1238",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A1334",
+          "value": "SW_SWE_RISE_TRANS"
+        },
+        {
+          "cell": "A1336",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B1336",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1336",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1337",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1337",
+          "value": 0
+        },
+        {
+          "cell": "C1337",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1338",
+          "value": "starname"
+        },
+        {
+          "cell": "B1338",
+          "value": ""
+        },
+        {
+          "cell": "C1338",
+          "value": "star name, or empty to use ipl"
+        },
+        {
+          "cell": "A1339",
+          "value": "epheflag"
+        },
+        {
+          "cell": "B1339",
+          "value": 2
+        },
+        {
+          "cell": "C1339",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A1340",
+          "value": "rsmi"
+        },
+        {
+          "cell": "B1340",
+          "value": 1
+        },
+        {
+          "cell": "C1340",
+          "value": "rise/set/transit bit mask"
+        },
+        {
+          "cell": "A1341",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B1341",
+          "value": 13.405
+        },
+        {
+          "cell": "C1341",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1342",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B1342",
+          "value": 52.52
+        },
+        {
+          "cell": "C1342",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1343",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B1343",
+          "value": 34.0
+        },
+        {
+          "cell": "C1343",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1344",
+          "value": "atpress"
+        },
+        {
+          "cell": "B1344",
+          "value": 1013.25
+        },
+        {
+          "cell": "C1344",
+          "value": "hPa (0 estimates pressure)"
+        },
+        {
+          "cell": "A1345",
+          "value": "attemp"
+        },
+        {
+          "cell": "B1345",
+          "value": 15.0
+        },
+        {
+          "cell": "C1345",
+          "value": "degrees Celsius"
+        },
+        {
+          "cell": "A1435",
+          "value": "SW_SWE_RISE_TRANS_TRUE_HOR"
+        },
+        {
+          "cell": "A1437",
+          "value": "tjd_ut"
+        },
+        {
+          "cell": "B1437",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1437",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1438",
+          "value": "ipl"
+        },
+        {
+          "cell": "B1438",
+          "value": 0
+        },
+        {
+          "cell": "C1438",
+          "value": "Swiss body ID"
+        },
+        {
+          "cell": "A1439",
+          "value": "starname"
+        },
+        {
+          "cell": "B1439",
+          "value": ""
+        },
+        {
+          "cell": "C1439",
+          "value": "star name, or empty to use ipl"
+        },
+        {
+          "cell": "A1440",
+          "value": "epheflag"
+        },
+        {
+          "cell": "B1440",
+          "value": 2
+        },
+        {
+          "cell": "C1440",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A1441",
+          "value": "rsmi"
+        },
+        {
+          "cell": "B1441",
+          "value": 1
+        },
+        {
+          "cell": "C1441",
+          "value": "rise/set/transit bit mask"
+        },
+        {
+          "cell": "A1442",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B1442",
+          "value": 13.405
+        },
+        {
+          "cell": "C1442",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1443",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B1443",
+          "value": 52.52
+        },
+        {
+          "cell": "C1443",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1444",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B1444",
+          "value": 34.0
+        },
+        {
+          "cell": "C1444",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1445",
+          "value": "atpress"
+        },
+        {
+          "cell": "B1445",
+          "value": 1013.25
+        },
+        {
+          "cell": "C1445",
+          "value": "hPa (0 estimates pressure)"
+        },
+        {
+          "cell": "A1446",
+          "value": "attemp"
+        },
+        {
+          "cell": "B1446",
+          "value": 15.0
+        },
+        {
+          "cell": "C1446",
+          "value": "degrees Celsius"
+        },
+        {
+          "cell": "A1447",
+          "value": "horhgt"
+        },
+        {
+          "cell": "B1447",
+          "value": 0.0
+        },
+        {
+          "cell": "C1447",
+          "value": "degrees"
+        },
+        {
+          "cell": "A1536",
+          "value": "SW_SWE_SOL_ECLIPSE_HOW"
+        },
+        {
+          "cell": "A1538",
+          "value": "tjd"
+        },
+        {
+          "cell": "B1538",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1538",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1539",
+          "value": "ifl"
+        },
+        {
+          "cell": "B1539",
+          "value": 2
+        },
+        {
+          "cell": "C1539",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A1540",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B1540",
+          "value": 13.405
+        },
+        {
+          "cell": "C1540",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1541",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B1541",
+          "value": 52.52
+        },
+        {
+          "cell": "C1541",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1542",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B1542",
+          "value": 34.0
+        },
+        {
+          "cell": "C1542",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1656",
+          "value": "SW_SWE_SOL_ECLIPSE_WHEN_GLOB"
+        },
+        {
+          "cell": "A1658",
+          "value": "tjd_start"
+        },
+        {
+          "cell": "B1658",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1658",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1659",
+          "value": "ifl"
+        },
+        {
+          "cell": "B1659",
+          "value": 2
+        },
+        {
+          "cell": "C1659",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A1660",
+          "value": "ifltype"
+        },
+        {
+          "cell": "B1660",
+          "value": 0
+        },
+        {
+          "cell": "C1660",
+          "value": "event type bit mask"
+        },
+        {
+          "cell": "A1661",
+          "value": "backward"
+        },
+        {
+          "cell": "B1661",
+          "value": 0
+        },
+        {
+          "cell": "C1661",
+          "value": "0 forward, 1 backward; occultation one-try bit 32768"
+        },
+        {
+          "cell": "A1766",
+          "value": "SW_SWE_SOL_ECLIPSE_WHEN_LOC"
+        },
+        {
+          "cell": "A1768",
+          "value": "tjd_start"
+        },
+        {
+          "cell": "B1768",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1768",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1769",
+          "value": "ifl"
+        },
+        {
+          "cell": "B1769",
+          "value": 2
+        },
+        {
+          "cell": "C1769",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A1770",
+          "value": "geopos[0]"
+        },
+        {
+          "cell": "B1770",
+          "value": 13.405
+        },
+        {
+          "cell": "C1770",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1771",
+          "value": "geopos[1]"
+        },
+        {
+          "cell": "B1771",
+          "value": 52.52
+        },
+        {
+          "cell": "C1771",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1772",
+          "value": "geopos[2]"
+        },
+        {
+          "cell": "B1772",
+          "value": 34.0
+        },
+        {
+          "cell": "C1772",
+          "value": "degrees east; degrees north; metres above sea level"
+        },
+        {
+          "cell": "A1773",
+          "value": "backward"
+        },
+        {
+          "cell": "B1773",
+          "value": 0
+        },
+        {
+          "cell": "C1773",
+          "value": "0 forward, 1 backward; occultation one-try bit 32768"
+        },
+        {
+          "cell": "A1896",
+          "value": "SW_SWE_SOL_ECLIPSE_WHERE"
+        },
+        {
+          "cell": "A1898",
+          "value": "tjd"
+        },
+        {
+          "cell": "B1898",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C1898",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A1899",
+          "value": "ifl"
+        },
+        {
+          "cell": "B1899",
+          "value": 2
+        },
+        {
+          "cell": "C1899",
+          "value": "ephemeris flag bit mask"
+        },
+        {
+          "cell": "A2018",
+          "value": "SW_SWE_SOLCROSS"
+        },
+        {
+          "cell": "A2020",
+          "value": "x2cross"
+        },
+        {
+          "cell": "B2020",
+          "value": 0.0
+        },
+        {
+          "cell": "C2020",
+          "value": "target ecliptic longitude, degrees"
+        },
+        {
+          "cell": "A2021",
+          "value": "jd_et"
+        },
+        {
+          "cell": "B2021",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C2021",
+          "value": "Julian day TT or explicitly named input time scale"
+        },
+        {
+          "cell": "A2022",
+          "value": "flag"
+        },
+        {
+          "cell": "B2022",
+          "value": 258
+        },
+        {
+          "cell": "C2022",
+          "value": "Swiss flag bit mask"
+        },
+        {
+          "cell": "A2118",
+          "value": "SW_SWE_SOLCROSS_UT"
+        },
+        {
+          "cell": "A2120",
+          "value": "x2cross"
+        },
+        {
+          "cell": "B2120",
+          "value": 0.0
+        },
+        {
+          "cell": "C2120",
+          "value": "target ecliptic longitude, degrees"
+        },
+        {
+          "cell": "A2121",
+          "value": "jd_ut"
+        },
+        {
+          "cell": "B2121",
+          "value": 2451545.0
+        },
+        {
+          "cell": "C2121",
+          "value": "Julian day UT1"
+        },
+        {
+          "cell": "A2122",
+          "value": "flag"
+        },
+        {
+          "cell": "B2122",
+          "value": 258
+        },
+        {
+          "cell": "C2122",
+          "value": "Swiss flag bit mask"
+        }
+      ],
+      "formulas": [
+        {
+          "cell": "D6",
+          "formula": "=SW_SWE_HELIO_CROSS(B8,B9,B10,B11,B12,,TRUE)"
+        },
+        {
+          "cell": "D107",
+          "formula": "=SW_SWE_HELIO_CROSS_UT(B109,B110,B111,B112,B113,,TRUE)"
+        },
+        {
+          "cell": "D208",
+          "formula": "=SW_SWE_LUN_ECLIPSE_HOW(B210,B211,B212:B214,,TRUE)"
+        },
+        {
+          "cell": "D328",
+          "formula": "=SW_SWE_LUN_ECLIPSE_WHEN(B330,B331,B332,B333,,TRUE)"
+        },
+        {
+          "cell": "D438",
+          "formula": "=SW_SWE_LUN_ECLIPSE_WHEN_LOC(B440,B441,B442:B444,B445,,TRUE)"
+        },
+        {
+          "cell": "D568",
+          "formula": "=SW_SWE_LUN_OCCULT_WHEN_GLOB(B570,B571,B572,B573,B574,B575,,TRUE)"
+        },
+        {
+          "cell": "D678",
+          "formula": "=SW_SWE_LUN_OCCULT_WHEN_LOC(B680,B681,B682,B683,B684:B686,B687,,TRUE)"
+        },
+        {
+          "cell": "D808",
+          "formula": "=SW_SWE_LUN_OCCULT_WHERE(B810,B811,B812,B813,,TRUE)"
+        },
+        {
+          "cell": "D930",
+          "formula": "=SW_SWE_MOONCROSS(B932,B933,B934,,TRUE)"
+        },
+        {
+          "cell": "D1030",
+          "formula": "=SW_SWE_MOONCROSS_NODE(B1032,B1033,,TRUE)"
+        },
+        {
+          "cell": "D1132",
+          "formula": "=SW_SWE_MOONCROSS_NODE_UT(B1134,B1135,,TRUE)"
+        },
+        {
+          "cell": "D1234",
+          "formula": "=SW_SWE_MOONCROSS_UT(B1236,B1237,B1238,,TRUE)"
+        },
+        {
+          "cell": "D1334",
+          "formula": "=SW_SWE_RISE_TRANS(B1336,B1337,B1338,B1339,B1340,B1341:B1343,B1344,B1345,,TRUE)"
+        },
+        {
+          "cell": "D1435",
+          "formula": "=SW_SWE_RISE_TRANS_TRUE_HOR(B1437,B1438,B1439,B1440,B1441,B1442:B1444,B1445,B1446,B1447,,TRUE)"
+        },
+        {
+          "cell": "D1536",
+          "formula": "=SW_SWE_SOL_ECLIPSE_HOW(B1538,B1539,B1540:B1542,,TRUE)"
+        },
+        {
+          "cell": "D1656",
+          "formula": "=SW_SWE_SOL_ECLIPSE_WHEN_GLOB(B1658,B1659,B1660,B1661,,TRUE)"
+        },
+        {
+          "cell": "D1766",
+          "formula": "=SW_SWE_SOL_ECLIPSE_WHEN_LOC(B1768,B1769,B1770:B1772,B1773,,TRUE)"
+        },
+        {
+          "cell": "D1896",
+          "formula": "=SW_SWE_SOL_ECLIPSE_WHERE(B1898,B1899,,TRUE)"
+        },
+        {
+          "cell": "D2018",
+          "formula": "=SW_SWE_SOLCROSS(B2020,B2021,B2022,,TRUE)"
+        },
+        {
+          "cell": "D2118",
+          "formula": "=SW_SWE_SOLCROSS_UT(B2120,B2121,B2122,,TRUE)"
+        }
+      ],
+      "examples": [
+        {
+          "name": "swe_helio_cross",
+          "cell": "D6",
+          "formula": "=SW_SWE_HELIO_CROSS(B8,B9,B10,B11,B12,,TRUE)"
+        },
+        {
+          "name": "swe_helio_cross_ut",
+          "cell": "D107",
+          "formula": "=SW_SWE_HELIO_CROSS_UT(B109,B110,B111,B112,B113,,TRUE)"
+        },
+        {
+          "name": "swe_lun_eclipse_how",
+          "cell": "D208",
+          "formula": "=SW_SWE_LUN_ECLIPSE_HOW(B210,B211,B212:B214,,TRUE)"
+        },
+        {
+          "name": "swe_lun_eclipse_when",
+          "cell": "D328",
+          "formula": "=SW_SWE_LUN_ECLIPSE_WHEN(B330,B331,B332,B333,,TRUE)"
+        },
+        {
+          "name": "swe_lun_eclipse_when_loc",
+          "cell": "D438",
+          "formula": "=SW_SWE_LUN_ECLIPSE_WHEN_LOC(B440,B441,B442:B444,B445,,TRUE)"
+        },
+        {
+          "name": "swe_lun_occult_when_glob",
+          "cell": "D568",
+          "formula": "=SW_SWE_LUN_OCCULT_WHEN_GLOB(B570,B571,B572,B573,B574,B575,,TRUE)"
+        },
+        {
+          "name": "swe_lun_occult_when_loc",
+          "cell": "D678",
+          "formula": "=SW_SWE_LUN_OCCULT_WHEN_LOC(B680,B681,B682,B683,B684:B686,B687,,TRUE)"
+        },
+        {
+          "name": "swe_lun_occult_where",
+          "cell": "D808",
+          "formula": "=SW_SWE_LUN_OCCULT_WHERE(B810,B811,B812,B813,,TRUE)"
+        },
+        {
+          "name": "swe_mooncross",
+          "cell": "D930",
+          "formula": "=SW_SWE_MOONCROSS(B932,B933,B934,,TRUE)"
+        },
+        {
+          "name": "swe_mooncross_node",
+          "cell": "D1030",
+          "formula": "=SW_SWE_MOONCROSS_NODE(B1032,B1033,,TRUE)"
+        },
+        {
+          "name": "swe_mooncross_node_ut",
+          "cell": "D1132",
+          "formula": "=SW_SWE_MOONCROSS_NODE_UT(B1134,B1135,,TRUE)"
+        },
+        {
+          "name": "swe_mooncross_ut",
+          "cell": "D1234",
+          "formula": "=SW_SWE_MOONCROSS_UT(B1236,B1237,B1238,,TRUE)"
+        },
+        {
+          "name": "swe_rise_trans",
+          "cell": "D1334",
+          "formula": "=SW_SWE_RISE_TRANS(B1336,B1337,B1338,B1339,B1340,B1341:B1343,B1344,B1345,,TRUE)"
+        },
+        {
+          "name": "swe_rise_trans_true_hor",
+          "cell": "D1435",
+          "formula": "=SW_SWE_RISE_TRANS_TRUE_HOR(B1437,B1438,B1439,B1440,B1441,B1442:B1444,B1445,B1446,B1447,,TRUE)"
+        },
+        {
+          "name": "swe_sol_eclipse_how",
+          "cell": "D1536",
+          "formula": "=SW_SWE_SOL_ECLIPSE_HOW(B1538,B1539,B1540:B1542,,TRUE)"
+        },
+        {
+          "name": "swe_sol_eclipse_when_glob",
+          "cell": "D1656",
+          "formula": "=SW_SWE_SOL_ECLIPSE_WHEN_GLOB(B1658,B1659,B1660,B1661,,TRUE)"
+        },
+        {
+          "name": "swe_sol_eclipse_when_loc",
+          "cell": "D1766",
+          "formula": "=SW_SWE_SOL_ECLIPSE_WHEN_LOC(B1768,B1769,B1770:B1772,B1773,,TRUE)"
+        },
+        {
+          "name": "swe_sol_eclipse_where",
+          "cell": "D1896",
+          "formula": "=SW_SWE_SOL_ECLIPSE_WHERE(B1898,B1899,,TRUE)"
+        },
+        {
+          "name": "swe_solcross",
+          "cell": "D2018",
+          "formula": "=SW_SWE_SOLCROSS(B2020,B2021,B2022,,TRUE)"
+        },
+        {
+          "name": "swe_solcross_ut",
+          "cell": "D2118",
+          "formula": "=SW_SWE_SOLCROSS_UT(B2120,B2121,B2122,,TRUE)"
+        }
+      ]
+    }
+  ]
+}

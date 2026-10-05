@@ -6,6 +6,24 @@ The format follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+## [0.1.0-dev.4] - 2026-10-06
+
+### Added
+
+- Safe interfaces for all 106 pinned exports: 95 worksheet functions and 11 VBA commands, reviewed buffer capacities, ownership, units, status handling, and indexed output documentation.
+- Editable examples for every worksheet interface, command recipes, and convenient UTC-offset, house-cusp and date-series helpers.
+- Independent Windows C caller with buffer canaries, all-interface numerical comparison, real worksheet execution, and state/calendar/error regressions.
+- Explicit full-project compilation through the user-authorized Excel Compile command, with temporary VBA-project access restored afterward.
+
+### Fixed
+
+- Reserve ten native output slots for heliacal event searches even though only three dates are exposed.
+- Retain scalar dates from node-crossing calls alongside their coordinates; keep updated input metadata out of compact numeric results.
+- Bind worksheet formulas after importing VBA so option ranges calculate correctly from the first saved workbook; add live recipe spill checks.
+- Decode the pinned degree formatter's UTF-8 symbol correctly and preserve the distinct ANSI path/string contract.
+
+Public-release download/onboarding acceptance is explicitly deferred. Runtime fixtures establish interface behavior on the recorded Windows host, not every possible astronomical input.
+
 ## [0.1.0-dev.3] - 2026-10-05
 
 ### Fixed

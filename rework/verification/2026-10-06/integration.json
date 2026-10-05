@@ -1,0 +1,148 @@
+{
+  "summary": "PASS=18;FAIL=0",
+  "checks": [
+    {
+      "name": "Host architecture",
+      "expected": "64-bit Excel / VBA",
+      "actual": "Win64",
+      "result": "PASS",
+      "notes": "Win64 VBA; processMachine=0x0; nativeMachine=0xAA64"
+    },
+    {
+      "name": "Expected engine metadata",
+      "expected": "Resolved runtime version",
+      "actual": "2.10.03",
+      "result": "PASS",
+      "notes": "Read from package manifest during build."
+    },
+    {
+      "name": "SW_JULDAY",
+      "expected": "2451545",
+      "actual": "2451545",
+      "result": "PASS",
+      "notes": "Calendar date/time to J2000 UT; direct wrapper call."
+    },
+    {
+      "name": "SW_DEGNORM",
+      "expected": "359",
+      "actual": "359",
+      "result": "PASS",
+      "notes": "Normalization scalar."
+    },
+    {
+      "name": "SW_VERSION",
+      "expected": "2.10.03",
+      "actual": "2.10.03",
+      "result": "PASS",
+      "notes": "Native pointer-to-string return."
+    },
+    {
+      "name": "SW_BODY_NAME",
+      "expected": "Sun",
+      "actual": "Sun",
+      "result": "PASS",
+      "notes": "Native output buffer plus pointer return."
+    },
+    {
+      "name": "Verified module path",
+      "expected": "c:\\swexcel\\swexcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+      "actual": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+      "result": "PASS",
+      "notes": "Runtime must report the actual loaded module path."
+    },
+    {
+      "name": "SW_CALC_UT return",
+      "expected": "1 x 6 Double array",
+      "actual": "1 x 6 array",
+      "result": "PASS",
+      "notes": "Longitude, latitude, distance and three speeds."
+    },
+    {
+      "name": "SW_LONGITUDE parity",
+      "expected": "280,3689186699",
+      "actual": "280,3689186699",
+      "result": "PASS",
+      "notes": "Same inputs/options as the first CALC_UT result."
+    },
+    {
+      "name": "Sun J2000 broad reference",
+      "expected": "280.369 degrees +/- 0.01",
+      "actual": "280,3689186699",
+      "result": "PASS",
+      "notes": "Independent broad README reference; not exact pinned-data numerical acceptance."
+    },
+    {
+      "name": "Invalid calendar date",
+      "expected": "Excel error",
+      "actual": "Error 2015",
+      "result": "PASS",
+      "notes": "February 30 must fail rather than silently roll into March."
+    },
+    {
+      "name": "Native failure then recovery",
+      "expected": "Error for body 1000; valid Sun calculation",
+      "actual": "Error 2042; then 280,3689186699",
+      "result": "PASS",
+      "notes": "Valid calculation immediately after native failure confirms calculation guard release."
+    },
+    {
+      "name": "Direct detail",
+      "expected": "Required fields; flags 258; Status OK; scalar/path parity",
+      "actual": "22 x 3 array",
+      "result": "PASS",
+      "notes": "Status=OK; flags=258; warning="
+    },
+    {
+      "name": "Formula2 scalar cells",
+      "expected": "JULDAY 2451545; DEGNORM 359; version; Sun",
+      "actual": "See B27:B30",
+      "result": "PASS",
+      "notes": "Stored worksheet formulas, independently recalculated."
+    },
+    {
+      "name": "Formula2 longitude",
+      "expected": "280,3689186699",
+      "actual": "280,3689186699",
+      "result": "PASS",
+      "notes": "Worksheet formula versus direct call."
+    },
+    {
+      "name": "Formula2 calculation spill",
+      "expected": "Six adjacent numeric values",
+      "actual": "280,3689186699",
+      "result": "PASS",
+      "notes": "Compares every spilled value to the direct vector."
+    },
+    {
+      "name": "Formula2 detail spill",
+      "expected": "Required fields; flags 258; Status OK; scalar/path parity",
+      "actual": "22 x 3 array",
+      "result": "PASS",
+      "notes": "Status=OK; flags=258; warning="
+    },
+    {
+      "name": "Blocked spill demonstration",
+      "expected": "#SPILL! (2045)",
+      "actual": "Error 2045",
+      "result": "PASS",
+      "notes": "C63 intentionally blocks output. This expected error is a PASS."
+    }
+  ],
+  "environment": {
+    "applicationVersion": "16.0",
+    "applicationBuild": "20430",
+    "OperatingSystem": "Windows (64-bit ARM) NT 10.00",
+    "powershellProcessBits": 64,
+    "Application.Version": "16.0",
+    "Application.Build": "20430",
+    "Host process architecture": "Win64 VBA; processMachine=0x0; nativeMachine=0xAA64",
+    "Workbook path": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\SWExcel.xlsm",
+    "Native module path": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+    "Data path": "C:\\SWExcel\\SWExcel-0.1.0-dev.4\\runtime\\ephe",
+    "Runtime status": "Ready for integration testing; runtime 2.10.03",
+    "Run time (local)": "2026-10-06 00:22:20",
+    "Smoke summary": "PASS=18;FAIL=0",
+    "Coverage": "18 smoke checks only; full API comparison is recorded separately."
+  },
+  "coverage": "This report covers 18 integration smoke checks. Full API and regression results are separate evidence files."
+}

@@ -1,0 +1,9 @@
+{
+    "time":  "2026-10-05T21:37:38.8642605Z",
+    "workbook":  "C:\\SWExcel\\delivered-dev3\\SWExcel-0.1.0-dev.3\\SWExcel.xlsm",
+    "command":  "Compi\u0026le VBAProject",
+    "enabledBefore":  true,
+    "enabledAfter":  false,
+    "result":  "passed",
+    "method":  "User-authorized Excel COM Compile command"
+}

@@ -4,7 +4,7 @@
 
 # Swiss Ephemeris for 64-bit Excel & VBA
 
-A modern replacement is being developed in [`rework/`](rework/README.md). Its first source checkpoint targets Windows Microsoft 365 Excel and the latest pinned Swiss Ephemeris source; Windows integration remains pending. The workbook and instructions below describe the preserved legacy version.
+A modern replacement is being developed in [`rework/`](rework/README.md). The development package targets Windows Microsoft 365 Excel, with all 106 pinned Swiss Ephemeris exports wrapped and exercised on Windows. Public-release download/onboarding acceptance is deferred. The workbook and instructions below describe the preserved legacy version.
 
 A VBA implementation of the [Swiss Ephemeris](https://www.astro.com/swisseph/swephinfo_e.htm) by Astrodienst AG, packaged as a ready-to-use 64-bit Excel spreadsheet. Calculate natal charts, Cosmodynes (planet/sign/house power scores), and precise transit dates — all from inside Excel.
 

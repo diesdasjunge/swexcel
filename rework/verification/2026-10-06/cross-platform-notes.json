@@ -1,0 +1,85 @@
+{
+  "scope": "Exploratory development comparison to independently compiled macOS native engine; the final supported Windows native/VBA comparison passes all 106 fixtures.",
+  "differences": [
+    {
+      "name": "swe_fixstar",
+      "passed": false,
+      "status": "OK",
+      "nativeReturn": 258,
+      "differences": [
+        {
+          "field": "xx[5]",
+          "difference": 0.0010983638342750082,
+          "actual": -0.020714232013625176,
+          "tolerance": 1e-07,
+          "expected": -0.019615868179350168
+        }
+      ],
+      "error": null
+    },
+    {
+      "name": "swe_fixstar2",
+      "passed": false,
+      "status": "OK",
+      "nativeReturn": 258,
+      "differences": [
+        {
+          "field": "xx[5]",
+          "difference": 0.0010983638342750082,
+          "actual": -0.020714232013625176,
+          "tolerance": 1e-07,
+          "expected": -0.019615868179350168
+        }
+      ],
+      "error": null
+    },
+    {
+      "name": "swe_fixstar2_ut",
+      "passed": false,
+      "status": "OK",
+      "nativeReturn": 258,
+      "differences": [
+        {
+          "field": "xx[5]",
+          "difference": 0.0015198201217755322,
+          "actual": -0.017517447598900414,
+          "tolerance": 1e-07,
+          "expected": -0.01599762747712488
+        }
+      ],
+      "error": null
+    },
+    {
+      "name": "swe_fixstar_ut",
+      "passed": false,
+      "status": "OK",
+      "nativeReturn": 258,
+      "differences": [
+        {
+          "field": "xx[5]",
+          "difference": 0.0015198201217755322,
+          "actual": -0.017517447598900414,
+          "tolerance": 1e-07,
+          "expected": -0.01599762747712488
+        }
+      ],
+      "error": null
+    },
+    {
+      "name": "swe_lun_occult_when_loc",
+      "passed": false,
+      "status": "OK",
+      "nativeReturn": 32644,
+      "differences": [
+        {
+          "field": "attr[4]",
+          "difference": 3.1551439860777464e-07,
+          "actual": 336.42583629332887,
+          "tolerance": 1e-07,
+          "expected": 336.42583660884327
+        }
+      ],
+      "error": null
+    }
+  ]
+}

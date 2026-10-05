@@ -1,3 +1,5 @@
+**Follow-up, 2026-10-06:** The earlier compile gate passed through the user-authorized script (`compile-dev3.json`). Full API completion and current evidence are in [2026-10-06](../2026-10-06/README.md). The record below describes the earlier checkpoint.
+
 # Windows verification — 2026-10-05
 
 Status: **version 0.1.0-dev.3 built and execution-tested; explicit VBE compile remains unverified**.
