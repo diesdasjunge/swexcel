@@ -73,3 +73,7 @@ The user requested the latest Swiss Ephemeris version during implementation. The
 ## Authorized continuation, 2026-10-05/06
 
 The user lifted the pre-Parallels stop, requested full API implementation, and authorized scripted Excel compilation/builds with temporary VBA-project access restored afterward. The earlier stop section is historical. Version 0.1.0-dev.4 implements the full API/workbook scope; see verification/2026-10-06/README.md for executed evidence and limits. Public-release download/onboarding acceptance is explicitly deferred; compatibility and optional data-pack phases remain on ROADMAP.md.
+
+## Authorized release preparation, 2026-10-07
+
+The user authorized completion of the Windows checks using computer use and alternative automation. The actual browser-downloaded dev.4 package passed live calculation and all 25 desktop checks after file-specific unblocking. Publish it as an explicitly labeled development prerelease with first-use instructions. This existing-profile run does not establish clean-profile acceptance; stable 1.0 remains pending that gate. See verification/2026-10-07/README.md.

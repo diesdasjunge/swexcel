@@ -1,0 +1,183 @@
+{
+    "recordedAtUtc":  "2026-10-07T16:03:37.6147250Z",
+    "package":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4",
+    "workbook":  "SWExcel.xlsm",
+    "checks":  [
+                   {
+                       "name":  "Fresh Excel integration",
+                       "passed":  true,
+                       "actual":  "PASS=18;FAIL=0"
+                   },
+                   {
+                       "name":  "Six-value swetest parity (1e-7 printed tolerance)",
+                       "passed":  true,
+                       "actual":  {
+                                      "reference":  [
+                                                        280.3689187,
+                                                        0.0002274,
+                                                        0.983327625,
+                                                        1.0194342,
+                                                        -6E-07,
+                                                        -7.351E-06
+                                                    ],
+                                      "absoluteDifferences":  [
+                                                                  3.0100295589363668E-08,
+                                                                  4.652412879588546E-08,
+                                                                  3.6250547008620515E-10,
+                                                                  3.7056446577921065E-08,
+                                                                  1.2388822053543158E-08,
+                                                                  2.2202500275812288E-10
+                                                              ],
+                                      "excel":  [
+                                                    280.3689186698997,
+                                                    0.00022735347587120411,
+                                                    0.98332762536250551,
+                                                    1.0194341629435535,
+                                                    -5.8761117794645681E-07,
+                                                    -7.3507779749972415E-06
+                                                ]
+                                  }
+                   },
+                   {
+                       "name":  "Interleaved sidereal modes",
+                       "passed":  true,
+                       "actual":  [
+                                      255.63248854314455,
+                                      256.51569618387066,
+                                      255.63248854314455
+                                  ]
+                   },
+                   {
+                       "name":  "Interleaved observers",
+                       "passed":  true,
+                       "actual":  [
+                                      223.03869779978149,
+                                      223.71769127446728,
+                                      223.03869779978149
+                                  ]
+                   },
+                   {
+                       "name":  "Default options restored after state changes",
+                       "passed":  true,
+                       "actual":  280.3689186698997
+                   },
+                   {
+                       "name":  "Diagnostic decimal preserved as text",
+                       "passed":  true,
+                       "actual":  "280,3689186699"
+                   },
+                   {
+                       "name":  "Blocked spill restores six values",
+                       "passed":  true,
+                       "actual":  [
+                                      "$B$63:$G$63",
+                                      280.3689186698997
+                                  ]
+                   },
+                   {
+                       "name":  "Input edit and dependent recalculation",
+                       "passed":  true,
+                       "actual":  [
+                                      280.3689186698997,
+                                      281.3883980130596,
+                                      282.3883980130596
+                                  ]
+                   },
+                   {
+                       "name":  "200-formula batch calculation",
+                       "passed":  true,
+                       "actual":  {
+                                      "count":  200,
+                                      "milliseconds":  1001.7376
+                                  }
+                   },
+                   {
+                       "name":  "Smoke after spill and recalculation edits",
+                       "passed":  true,
+                       "actual":  "PASS=18;FAIL=0"
+                   },
+                   {
+                       "name":  "Saved workbook reopened in fresh Excel",
+                       "passed":  true,
+                       "actual":  "Ready for integration testing; runtime 2.10.03"
+                   },
+                   {
+                       "name":  "Saved workbook reopened in fresh Excel integration",
+                       "passed":  true,
+                       "actual":  "PASS=18;FAIL=0"
+                   },
+                   {
+                       "name":  "Saved workbook reopened in fresh Excel engine path",
+                       "passed":  true,
+                       "actual":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll"
+                   },
+                   {
+                       "name":  "Space path",
+                       "passed":  true,
+                       "actual":  "Ready for integration testing; runtime 2.10.03"
+                   },
+                   {
+                       "name":  "Space path integration",
+                       "passed":  true,
+                       "actual":  "PASS=18;FAIL=0"
+                   },
+                   {
+                       "name":  "Space path engine path",
+                       "passed":  true,
+                       "actual":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding-acceptance-20261007\\package with spaces\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll"
+                   },
+                   {
+                       "name":  "ANSI non-ASCII path",
+                       "passed":  true,
+                       "actual":  "Ready for integration testing; runtime 2.10.03"
+                   },
+                   {
+                       "name":  "ANSI non-ASCII path integration",
+                       "passed":  true,
+                       "actual":  "PASS=18;FAIL=0"
+                   },
+                   {
+                       "name":  "ANSI non-ASCII path engine path",
+                       "passed":  true,
+                       "actual":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding-acceptance-20261007\\München\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll"
+                   },
+                   {
+                       "name":  "Unrepresentable Unicode path is explicit",
+                       "passed":  true,
+                       "actual":  "ERROR: The package path cannot be represented by the Windows ANSI code page. Move it to an ASCII path."
+                   },
+                   {
+                       "name":  "Missing DLL diagnostic",
+                       "passed":  true,
+                       "actual":  "ERROR: The package DLL is missing: C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding-acceptance-20261007\\missing dll\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll"
+                   },
+                   {
+                       "name":  "Missing data diagnostic",
+                       "passed":  true,
+                       "actual":  "ERROR: Required package data is missing: sepl_18.se1"
+                   },
+                   {
+                       "name":  "x86 DLL rejected by 64-bit Excel",
+                       "passed":  true,
+                       "actual":  "ERROR: Windows could not load the x64 engine (error 193). Check Excel process architecture and the package files."
+                   },
+                   {
+                       "name":  "Two workbooks sharing package isolate observer options",
+                       "passed":  true,
+                       "actual":  [
+                                      223.03869779978149,
+                                      223.71769127446728,
+                                      223.03869779978149
+                                  ]
+                   },
+                   {
+                       "name":  "Different package in same Excel process rejected",
+                       "passed":  true,
+                       "actual":  "ERROR: A different SWExcel package DLL is already loaded: C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll. Open this package in a separate Excel process."
+                   }
+               ],
+    "passed":  25,
+    "failed":  0,
+    "manualCompile":  "separate UI gate",
+    "downloadOnboarding":  "not tested"
+}

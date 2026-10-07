@@ -6,6 +6,10 @@ The format follows [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/
 
 ## [Unreleased]
 
+### Documentation
+
+- Publish the unchanged dev.4 build as a Windows development preview with first-use instructions and dated browser-download, macro-onboarding and desktop acceptance evidence. Clean-profile testing remains a stable-release gate.
+
 ## [0.1.0-dev.4] - 2026-10-06
 
 ### Added

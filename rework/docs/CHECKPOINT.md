@@ -1,6 +1,6 @@
 # Current development package and historical checkpoints
 
-**2026-10-06:** Full API interfaces, examples and helpers are implemented in 0.1.0-dev.4. The explicit VBA compile gate passed through the authorized Windows script. See [current evidence](../verification/2026-10-06/README.md) and [API guide](API.md). Public-release download/onboarding acceptance is explicitly deferred.
+**2026-10-06:** Full API interfaces, examples and helpers are implemented in 0.1.0-dev.4. The explicit VBA compile gate passed through the authorized Windows script. See [current evidence](../verification/2026-10-06/README.md) and [API guide](API.md). Update 2026-10-07: downloaded-package checks passed on the existing profile; see [download evidence](../verification/2026-10-07/README.md) and [preview quickstart](QUICKSTART.md). Clean-profile stable-release acceptance remains pending.
 
 The sections below preserve the earlier checkpoint record; their pending/stop statements describe those earlier versions, not the current development package.
 

@@ -1,0 +1,1079 @@
+﻿{
+    "time":  "2026-10-07T16:07:27.3281712Z",
+    "workbook":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\SWExcel.xlsm",
+    "checks":  [
+                   {
+                       "name":  "swe_azalt",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_azalt_rev",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_calc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_calc_pctr",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_calc_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_close",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_cotrans",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_cotrans_sp",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_cs2degstr",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  " 3°25\u002745",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_cs2lonlatstr",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "3N25\u002746",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_cs2timestr",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "03:25:46",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_csnorm",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  129240000,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_csroundsec",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  1234600,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_d2l",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  12,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_date_conversion",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_day_of_week",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  5,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_deg_midp",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_degnorm",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  12.345,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_deltat",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0.00073876058949334,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_deltat_ex",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0.00073876058949334,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_difcs2n",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  -360000,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_difcsn",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  129240000,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_difdeg2n",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  -20,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_difdegn",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  340,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_difrad2n",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  -0.28318530717958623,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_fixstar",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_fixstar2",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_fixstar2_mag",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_fixstar2_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_fixstar_mag",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_fixstar_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  258,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_gauquelin_sector",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_astro_models",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_ayanamsa",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  24.740299966181283,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_ayanamsa_ex",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_ayanamsa_ex_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_ayanamsa_name",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "Lahiri",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_ayanamsa_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  24.740299994434963,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_current_file_data",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\ephe\\sepl_18.se1",
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_get_library_path",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\engine\\swexcel-se-2.10.3b-x64.dll",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_orbital_elements",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_planet_name",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "Sun",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_get_tid_acc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  -25.8,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_heliacal_angle",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_heliacal_pheno_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_heliacal_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_helio_cross",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_helio_cross_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_house_name",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "Placidus",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_house_pos",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  10.041203783688626,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_houses",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_houses_armc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_houses_armc_ex2",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_houses_ex",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_houses_ex2",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_jdet_to_utc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_jdut1_to_utc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_julday",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451545,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lat_to_lmt",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lmt_to_lat",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lun_eclipse_how",
+                       "passed":  true,
+                       "status":  "NO_EVENT",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lun_eclipse_when",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  4,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lun_eclipse_when_loc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  16260,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lun_occult_when_glob",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  5,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lun_occult_when_loc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  32644,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_lun_occult_where",
+                       "passed":  true,
+                       "status":  "NO_EVENT",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_mooncross",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451556.2843313944,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_mooncross_node",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451551.7577673392,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_mooncross_node_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451551.7570285141,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_mooncross_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451556.2835925259,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_nod_aps",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_nod_aps_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_orbit_max_min_true_distance",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_pheno",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_pheno_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_rad_midp",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  4.0708113989715944,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_radnorm",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  6.0618146928204144,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_refrac",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  5.1589460364639574,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_refrac_extended",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  5.1580458742973834,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_revjul",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_rise_trans",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_rise_trans_true_hor",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_set_astro_models",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_delta_t_userdef",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_ephe_path",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_interpolate_nut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_jpl_file",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_lapse_rate",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_sid_mode",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_tid_acc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_set_topo",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null,
+                       "commandInvoked":  true
+                   },
+                   {
+                       "name":  "swe_sidtime",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  18.697138162535065,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_sidtime0",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  18.697374867705111,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_sol_eclipse_how",
+                       "passed":  true,
+                       "status":  "NO_EVENT",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_sol_eclipse_when_glob",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  18,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_sol_eclipse_when_loc",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  4498,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_sol_eclipse_where",
+                       "passed":  true,
+                       "status":  "NO_EVENT",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_solcross",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451623.8168813307,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_solcross_ut",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  2451623.8161418387,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_split_deg",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_time_equ",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_topo_arcus_visionis",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_utc_time_zone",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_utc_to_jd",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_version",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  "2.10.03",
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   },
+                   {
+                       "name":  "swe_vis_limit_mag",
+                       "passed":  true,
+                       "status":  "OK",
+                       "nativeReturn":  0,
+                       "differences":  [
+
+                                       ],
+                       "error":  null
+                   }
+               ],
+    "passed":  106,
+    "failed":  0
+}

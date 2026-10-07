@@ -2,11 +2,13 @@
 
 Development checkpoint for a modern Swiss Ephemeris toolkit in 64-bit Microsoft 365 Excel on Windows. The original workbook, VBA and `ephem/` files remain the legacy reference.
 
-**Status: full API development package; public-release acceptance deferred.** Version `0.1.0-dev.4` provides 95 worksheet functions and 11 VBA commands covering all 106 exports, plus convenient UTC-offset, house and date-series helpers. Editable examples, independent Windows C comparisons, explicit full-project compilation and error/state regressions are recorded in [verification evidence](verification/2026-10-06/README.md).
+**Status: Windows development preview; stable 1.0 acceptance pending.** Version `0.1.0-dev.4` provides 95 worksheet functions and 11 VBA commands covering all 106 exports, plus convenient UTC-offset, house and date-series helpers. Editable examples, independent Windows C comparisons, explicit full-project compilation and error/state regressions are recorded in [verification evidence](verification/2026-10-06/README.md).
 
 The source targets the latest official Swiss Ephemeris release checked on 2026-10-01: [v2.10.3bfinal](https://github.com/aloistr/swisseph/releases/tag/v2.10.3bfinal), commit `f4dcd18e8005dde95fd8a8d2312ed12f9accd1b0`. Its C source version remains `2.10.03`. Its published Windows DLL is identical to the old repository DLL, so the Windows gate first builds an x64 engine from the pinned latest source. `runtimeVersion` alone cannot identify this upstream release.
 
-Read these files in order:
+Start with [the download and first-use guide](docs/QUICKSTART.md). The [downloaded-package report](verification/2026-10-07/README.md) records browser onboarding, live calculation and reopening checks on the existing Windows profile. Clean-profile acceptance remains pending.
+
+For source and developer documentation:
 
 1. [PLAN.md](PLAN.md): complete agreed V1 specification and the latest-engine amendment.
 2. [docs/CHECKPOINT.md](docs/CHECKPOINT.md): implemented and pending work, checks and the stop boundary.

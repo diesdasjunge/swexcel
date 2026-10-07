@@ -1,8 +1,8 @@
 {
   "version": "0.1.0-dev.4",
   "date": "2026-10-07",
-  "method": "Computer use through Parallels Desktop, Windows Edge, Explorer and Microsoft 365 Excel",
-  "draftRelease": "https://github.com/diesdasjunge/swexcel/releases/tag/untagged-e68a9e723ff963b213f7",
+  "method": "Browser download and onboarding observed through computer use; user completed file-specific unblocking; calculations verified through authorized Excel COM in interactive Windows session 1",
+  "draftRelease": "https://github.com/diesdasjunge/swexcel/releases/tag/v0.1.0-dev.4",
   "published": false,
   "archiveSha256": "c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd",
   "archiveSize": 16493542,
@@ -15,19 +15,27 @@
     "excelProtectedView": true,
     "workbookDisplayedVersion": "0.1.0-dev.4",
     "excelInternetMacroBlockAfterEnableEditing": true,
-    "securityBannersAbsentAfterUserUnblockAndReopen": true
+    "securityBannersAbsentAfterUserUnblockAndReopen": true,
+    "windowsArchiveHashMatches": true,
+    "liveRecipesDayEditDelta": 1,
+    "liveRecipesRestoredValue": 2451545.0007428704,
+    "smokeSummary": "PASS=18;FAIL=0",
+    "desktopAcceptancePassed": 25,
+    "desktopAcceptanceFailed": 0,
+    "AccessVBOM": 0,
+    "VBAWarnings": 2,
+    "nativeInterfacesPassed": 106,
+    "nativeInterfacesFailed": 0,
+    "apiRegressionPassed": 136,
+    "apiRegressionFailed": 0
   },
   "pending": [
-    "Restore Windows guest input and verify downloaded workbook macro execution",
-    "Live calculation after downloaded-file onboarding",
-    "Clean Windows profile acceptance",
-    "Final release version, package and publication"
+    "Clean Windows profile acceptance before stable 1.0",
+    "Stable release version and package"
   ],
   "limitations": [
-    "File-specific trust approved by user; computer-use guest input currently unresponsive",
     "Existing Windows user profile; not clean-profile acceptance",
-    "Downloaded Windows archive hash not yet independently measured",
-    "Macro execution and live recalculation not verified in this downloaded copy"
+    "Computer-use guest input failed; user performed unblock and reopening, then authorized alternative Excel automation"
   ],
   "userReported": {
     "fileSpecificUnblockAndReopenCompleted": true

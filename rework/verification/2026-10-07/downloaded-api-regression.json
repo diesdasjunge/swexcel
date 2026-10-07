@@ -1,0 +1,1000 @@
+﻿{
+    "time":  "2026-10-07T16:07:30.1959313Z",
+    "checks":  [
+                   {
+                       "name":  "Fractional positive and negative UTC offsets",
+                       "actual":  [
+                                      2451545.0007428704,
+                                      2451545.00000411
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "UTC leap second round trip",
+                       "actual":  [
+                                      2016,
+                                      60.000005424022675
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Invalid civil date rejected",
+                       "actual":  "-2146826273",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Julian and Gregorian leap dates",
+                       "actual":  [
+                                      2415091.5,
+                                      2451603.5
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Negative angle wraps",
+                       "actual":  359,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "UTF-8 degree symbol decoded",
+                       "actual":  " 3°25\u002745",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Gauquelin 36 sector buffer",
+                       "actual":  36,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "House system I",
+                       "actual":  "51.6259492638294",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "House system i",
+                       "actual":  "51.6259492638294",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "House system J",
+                       "actual":  "51.6259492638294",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "House system P",
+                       "actual":  "51.6259492638294",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "House system W",
+                       "actual":  "30",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Unavailable polar houses surfaced",
+                       "actual":  "ERROR",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Sunshine house position explicit declination",
+                       "actual":  "OK",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Sidereal state reset and custom epoch",
+                       "actual":  [
+                                      255.63248854314455,
+                                      256.51569618387066,
+                                      256.3727885093258,
+                                      255.63248854314455
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Topocentric state reset",
+                       "actual":  [
+                                      222.60629115164633,
+                                      223.03869779978149,
+                                      222.60629115164633
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "User delta T reset",
+                       "actual":  [
+                                      0.00073876058949334,
+                                      0.001,
+                                      0.00073876058949334
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Date-series helper matches scalar endpoint",
+                       "actual":  284.44720548108324,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Node crossing retains date and coordinates",
+                       "actual":  2451551.7570285141,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Compact star result has six numeric values",
+                       "actual":  6,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Unknown star",
+                       "actual":  "error, swe_fixstar(): could not find star name not-a-real-star-xyz",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Wrong vector size",
+                       "actual":  "Incorrect vector length; expected 3.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "NUL in string",
+                       "actual":  "C strings cannot contain a NUL character.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Oversize string",
+                       "actual":  "The encoded C string exceeds the engine buffer limit. Use a shorter package path.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Unknown house code",
+                       "actual":  "Unknown house system code.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Missing optional Eros file",
+                       "actual":  "SwissEph file \u0027se00433s.se1\u0027 not found in PATH \u0027C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\ephe\\\u0027",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Invalid model ID",
+                       "actual":  "Astronomical model ID exceeds the pinned engine\u0027s range.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Missing JPL fallback surfaced",
+                       "actual":  " Requested ephemeris 1; actual 2.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "No eclipse is not zero success",
+                       "actual":  "NO_EVENT",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Circumpolar no-rise status",
+                       "actual":  "NO_EVENT",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Outside bundled dates reports fallback",
+                       "actual":  "SwissEph file \u0027sepl_12.se1\u0027 not found in PATH \u0027C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\ephe\\\u0027 \nusing Moshier eph.;  Requested ephemeris 2; actual 4.",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Outside engine dates reports error",
+                       "actual":  "SwissEph file \u0027sepl_222.se1\u0027 not found in PATH \u0027C:\\Users\\kiryll\\Downloads\\SWExcel-onboarding\\SWExcel-0.1.0-dev.4\\runtime\\ephe\\\u0027",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Unknown option rejected",
+                       "actual":  "Unknown option: unknown_option",
+                       "passed":  true
+                   },
+                   {
+                       "name":  "VBA setter cannot contaminate worksheet default",
+                       "actual":  [
+                                      -25.8,
+                                      -25.8
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Two workbooks isolate explicit sidereal options",
+                       "actual":  [
+                                      255.63248854314455,
+                                      255.63248854314455
+                                  ],
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Recipe B16 calculates and spills",
+                       "actual":  2451545.0007428704,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Recipe A28 calculates and spills",
+                       "actual":  2451545,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Recipe B43 calculates and spills",
+                       "actual":  51.6259492638294,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Recipe B48 calculates and spills",
+                       "actual":  256.51569618387066,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Recipe B52 calculates and spills",
+                       "actual":  223.03869779978149,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Catalog links reach all worksheet examples",
+                       "actual":  95,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_azalt",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_azalt_rev",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D109"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_cotrans",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D211"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_cotrans_sp",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D314"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_cs2degstr",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D420"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_cs2lonlatstr",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D521"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_csnorm",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D622"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_csroundsec",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D722"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_d2l",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D822"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_deg_midp",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D922"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_degnorm",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1022"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_difcs2n",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1122"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_difcsn",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1222"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_difdeg2n",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1322"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_difdegn",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1422"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_difrad2n",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1522"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_astro_models",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1622"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_library_path",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1723"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_rad_midp",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1824"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_radnorm",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D1924"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_refrac",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D2024"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_refrac_extended",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D2124"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_split_deg",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D2228"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_version",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Utilities!D2333"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_calc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_calc_pctr",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D112"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_calc_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D218"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_ayanamsa",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D324"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_ayanamsa_ex",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D424"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_ayanamsa_ex_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D525"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_ayanamsa_name",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D626"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_ayanamsa_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D726"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_orbital_elements",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D826"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_planet_name",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D943"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_nod_aps",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D1044"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_nod_aps_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D1168"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_orbit_max_min_true_distance",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D1292"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_pheno",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D1395"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_pheno_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Positions!D1501"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_cs2timestr",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_date_conversion",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D107"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_day_of_week",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D208"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_deltat",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D308"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_deltat_ex",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D408"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_get_tid_acc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D508"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_jdet_to_utc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D608"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_jdut1_to_utc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D714"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_julday",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D820"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lat_to_lmt",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D920"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lmt_to_lat",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1021"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_revjul",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1122"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_sidtime",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1226"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_sidtime0",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1326"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_time_equ",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1426"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_utc_time_zone",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1527"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_utc_to_jd",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Time!D1633"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_fixstar",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Stars!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_fixstar2",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Stars!D113"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_fixstar2_mag",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Stars!D220"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_fixstar2_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Stars!D322"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_fixstar_mag",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Stars!D429"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_fixstar_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Stars!D531"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_gauquelin_sector",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_house_name",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D107"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_house_pos",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D207"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_houses",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D307"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_houses_armc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D427"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_houses_armc_ex2",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D549"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_houses_ex",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D691"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_houses_ex2",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Houses!D811"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_heliacal_angle",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Heliacal!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_heliacal_pheno_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Heliacal!D119"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_heliacal_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Heliacal!D257"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_topo_arcus_visionis",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Heliacal!D370"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_vis_limit_mag",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Heliacal!D481"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_helio_cross",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D6"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_helio_cross_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D107"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lun_eclipse_how",
+                       "actual":  {
+                                      "status":  "NO_EVENT",
+                                      "cell":  "Events!D208"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lun_eclipse_when",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D328"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lun_eclipse_when_loc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D438"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lun_occult_when_glob",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D568"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lun_occult_when_loc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D678"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_lun_occult_where",
+                       "actual":  {
+                                      "status":  "NO_EVENT",
+                                      "cell":  "Events!D808"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_mooncross",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D930"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_mooncross_node",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1030"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_mooncross_node_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1132"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_mooncross_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1234"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_rise_trans",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1334"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_rise_trans_true_hor",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1435"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_sol_eclipse_how",
+                       "actual":  {
+                                      "status":  "NO_EVENT",
+                                      "cell":  "Events!D1536"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_sol_eclipse_when_glob",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1656"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_sol_eclipse_when_loc",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D1766"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_sol_eclipse_where",
+                       "actual":  {
+                                      "status":  "NO_EVENT",
+                                      "cell":  "Events!D1896"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_solcross",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D2018"
+                                  },
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Worksheet example swe_solcross_ut",
+                       "actual":  {
+                                      "status":  "OK",
+                                      "cell":  "Events!D2118"
+                                  },
+                       "passed":  true
+                   }
+               ],
+    "passed":  136,
+    "failed":  0
+}

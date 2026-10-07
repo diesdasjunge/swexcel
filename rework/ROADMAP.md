@@ -6,7 +6,7 @@ V1, V2 and V3 are product phases. Releases use Semantic Versioning independently
 
 64-bit Microsoft 365 Excel on Windows; downloadable XLSM package; full native Swiss Ephemeris coverage, Swiss-style worksheet interfaces and friendly helpers; guided reference sheets. Exactly three binary data files plus `sefstars.txt`, `seasnam.txt` and `seorbel.txt`.
 
-Version 0.1.0-dev.4 implements and exercises all 106 interfaces, fractional-offset UTC/UT1/TT conversion, houses, date-series helpers and worked examples. Public-release download/extraction/macro-onboarding acceptance is explicitly deferred by the user. The tested local development package does not establish that clean-profile experience. `PLAN.md` records the complete specification.
+Version 0.1.0-dev.4 implements and exercises all 106 interfaces, fractional-offset UTC/UT1/TT conversion, houses, date-series helpers and worked examples. Downloaded-package onboarding and desktop checks passed on the existing Windows profile on 2026-10-07. Publish the tested development preview with this limitation; clean-profile acceptance remains required before stable 1.0. `PLAN.md` records the complete specification.
 
 ## V2 — Excel 2024
 
