@@ -14,7 +14,9 @@ Status: **partial; not public-release acceptance**. The user authorized computer
 
 ## Pending boundary
 
-The user granted file-specific trust confirmation for enabling editing, unblocking the downloaded workbook if needed, and enabling its macros. Computer-use clicks and keyboard shortcuts did not visibly reach the Windows guest after this approval, including after reconnecting and resetting the computer-use session. The workbook remained in Protected View. A manual click on Enable Editing was requested to restore progress. This downloaded copy has not yet executed its macros or calculations. Global Excel security settings and VBA-project access were not changed.
+The user granted file-specific trust confirmation for enabling editing, unblocking the downloaded workbook if needed, and enabling its macros. After the user reported enabling editing, computer use observed Excel's red banner stating that macros were blocked because the file source was untrusted. The user subsequently reported completing the file Properties Unblock and reopen steps. Computer use then observed the dev.4 Welcome sheet without either the Protected View or macro-blocking banner.
+
+Computer-use guest input remains unresponsive: clicking Recipes and sending Ctrl+Page Down did not change the displayed sheet. Reconnecting and resetting the session had also failed to restore guest input. Therefore banner clearance is observed, but macro execution, live recalculation and save/reopen calculation persistence are not yet verified in this downloaded copy. No global Excel security settings or VBA-project access were changed by the agent.
 
 This is the existing Windows user profile, not a clean profile. Clean-profile acceptance, the downloaded archive's independently measured hash, post-onboarding live calculations, final release packaging/versioning and public publication remain pending. Prior local development checks are recorded separately under `../2026-10-06/` and do not substitute for these steps.
 

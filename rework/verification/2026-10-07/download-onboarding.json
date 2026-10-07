@@ -13,10 +13,12 @@
     "archivePropertiesInternetMarking": true,
     "explorerExtraction": true,
     "excelProtectedView": true,
-    "workbookDisplayedVersion": "0.1.0-dev.4"
+    "workbookDisplayedVersion": "0.1.0-dev.4",
+    "excelInternetMacroBlockAfterEnableEditing": true,
+    "securityBannersAbsentAfterUserUnblockAndReopen": true
   },
   "pending": [
-    "Restore Windows guest input and complete approved file-specific macro onboarding",
+    "Restore Windows guest input and verify downloaded workbook macro execution",
     "Live calculation after downloaded-file onboarding",
     "Clean Windows profile acceptance",
     "Final release version, package and publication"
@@ -25,6 +27,9 @@
     "File-specific trust approved by user; computer-use guest input currently unresponsive",
     "Existing Windows user profile; not clean-profile acceptance",
     "Downloaded Windows archive hash not yet independently measured",
-    "Macros not executed in this downloaded copy"
-  ]
+    "Macro execution and live recalculation not verified in this downloaded copy"
+  ],
+  "userReported": {
+    "fileSpecificUnblockAndReopenCompleted": true
+  }
 }
