@@ -2,8 +2,7 @@
   "version": "0.1.0-dev.4",
   "date": "2026-10-07",
   "method": "Browser download and onboarding observed through computer use; user completed file-specific unblocking; calculations verified through authorized Excel COM in interactive Windows session 1",
-  "draftRelease": "https://github.com/diesdasjunge/swexcel/releases/tag/v0.1.0-dev.4",
-  "published": false,
+  "published": true,
   "archiveSha256": "c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd",
   "archiveSize": 16493542,
   "windowsArchive": "C:/Users/kiryll/Downloads/SWExcel-onboarding.zip",
@@ -27,7 +26,8 @@
     "nativeInterfacesPassed": 106,
     "nativeInterfacesFailed": 0,
     "apiRegressionPassed": 136,
-    "apiRegressionFailed": 0
+    "apiRegressionFailed": 0,
+    "anonymousPublicDownloadSha256": "c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd"
   },
   "pending": [
     "Clean Windows profile acceptance before stable 1.0",
@@ -39,5 +39,8 @@
   ],
   "userReported": {
     "fileSpecificUnblockAndReopenCompleted": true
-  }
+  },
+  "release": "https://github.com/diesdasjunge/swexcel/releases/tag/v0.1.0-dev.4",
+  "prerelease": true,
+  "publishedAt": "2026-10-07T16:09:59Z"
 }

@@ -32,3 +32,7 @@ An initial all-interface rerun used the old reference JSON: two path outputs dif
 
 
 Release target: https://github.com/diesdasjunge/swexcel/releases/tag/v0.1.0-dev.4
+
+## Published preview
+
+Published `v0.1.0-dev.4` as a GitHub prerelease at 2026-10-07T16:09:59Z, retaining the product tag at `7888ec00895ed6363fe4542f14876608803719af`. GitHub reports draft=false and prerelease=true. An unauthenticated HTTPS download of the public ZIP matched SHA-256 `c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd`. The release includes QUICKSTART.md as a separate asset. The product and archive were unchanged, so no product version bump was needed for this documentation-only publication.
