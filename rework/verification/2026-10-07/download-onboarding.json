@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0-dev.4",
+  "date": "2026-10-07",
+  "method": "Computer use through Parallels Desktop, Windows Edge, Explorer and Microsoft 365 Excel",
+  "draftRelease": "https://github.com/diesdasjunge/swexcel/releases/tag/untagged-e68a9e723ff963b213f7",
+  "published": false,
+  "archiveSha256": "c3604d01cb360a809d77c259faa37f21231d3f9047928b06c95b2f1893ba39dd",
+  "archiveSize": 16493542,
+  "windowsArchive": "C:/Users/kiryll/Downloads/SWExcel-onboarding.zip",
+  "windowsWorkbook": "C:/Users/kiryll/Downloads/SWExcel-onboarding/SWExcel-0.1.0-dev.4/SWExcel.xlsm",
+  "observed": {
+    "edgeDownload": true,
+    "archivePropertiesInternetMarking": true,
+    "explorerExtraction": true,
+    "excelProtectedView": true,
+    "workbookDisplayedVersion": "0.1.0-dev.4"
+  },
+  "pending": [
+    "File-specific trust confirmation and macro onboarding",
+    "Live calculation after downloaded-file onboarding",
+    "Clean Windows profile acceptance",
+    "Final release version, package and publication"
+  ],
+  "limitations": [
+    "Existing Windows user profile; not clean-profile acceptance",
+    "Downloaded Windows archive hash not yet independently measured",
+    "Macros not executed in this downloaded copy"
+  ]
+}
