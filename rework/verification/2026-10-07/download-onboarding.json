@@ -16,12 +16,13 @@
     "workbookDisplayedVersion": "0.1.0-dev.4"
   },
   "pending": [
-    "File-specific trust confirmation and macro onboarding",
+    "Restore Windows guest input and complete approved file-specific macro onboarding",
     "Live calculation after downloaded-file onboarding",
     "Clean Windows profile acceptance",
     "Final release version, package and publication"
   ],
   "limitations": [
+    "File-specific trust approved by user; computer-use guest input currently unresponsive",
     "Existing Windows user profile; not clean-profile acceptance",
     "Downloaded Windows archive hash not yet independently measured",
     "Macros not executed in this downloaded copy"

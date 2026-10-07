@@ -14,7 +14,7 @@ Status: **partial; not public-release acceptance**. The user authorized computer
 
 ## Pending boundary
 
-File-specific trust confirmation was requested before enabling editing, unblocking the downloaded workbook if needed, and enabling its macros. This downloaded copy has not yet executed its macros or calculations. Global Excel security settings and VBA-project access were not changed.
+The user granted file-specific trust confirmation for enabling editing, unblocking the downloaded workbook if needed, and enabling its macros. Computer-use clicks and keyboard shortcuts did not visibly reach the Windows guest after this approval, including after reconnecting and resetting the computer-use session. The workbook remained in Protected View. A manual click on Enable Editing was requested to restore progress. This downloaded copy has not yet executed its macros or calculations. Global Excel security settings and VBA-project access were not changed.
 
 This is the existing Windows user profile, not a clean profile. Clean-profile acceptance, the downloaded archive's independently measured hash, post-onboarding live calculations, final release packaging/versioning and public publication remain pending. Prior local development checks are recorded separately under `../2026-10-06/` and do not substitute for these steps.
 
